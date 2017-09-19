@@ -393,7 +393,7 @@ public class EditTableData extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    //reflash the rows
+    //reflesh the rows
     private void jButton3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MouseClicked
         // TODO add your handling code here:
         if(ToolConfig.loadAllRow){

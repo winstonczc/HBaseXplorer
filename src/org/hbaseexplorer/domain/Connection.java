@@ -29,11 +29,12 @@ public class Connection implements Serializable {
     public Connection(Configuration configuration) {
         hbaseConfiguration = HBaseConfiguration.create(configuration);
         String resource = "./conf/hbase.xml";
-        hbaseConfiguration.addResource(new Path(resource));
+        Path path = new Path(resource);
+        hbaseConfiguration.addResource(path);
         tableList = new ArrayList<Table>();
     }
 
-    public void connect() throws ZooKeeperConnectionException {
+    public void connect() throws ZooKeeperConnectionException, IOException {
         try {
             //
             hbaseAdmin = new HBaseAdmin(hbaseConfiguration);
@@ -44,13 +45,12 @@ public class Connection implements Serializable {
                 config.set("hbase.zookeeper.property.clientPort","2181");
                 config.set("hbase.master", "192.168.56.56:60000");
                 //HBaseConfiguration config = HBaseConfiguration.create();
-    //config.set("hbase.zookeeper.quorum", "localhost");  // Here we are running zookeeper locally
+            //config.set("hbase.zookeeper.quorum", "localhost");  // Here we are running zookeeper locally
                 HBaseAdmin.checkHBaseAvailable(config);
              * 
              */
             refreshTables();
-        }
-        catch(MasterNotRunningException me) {
+        } catch (MasterNotRunningException me) {
             throw new ExplorerException("Cannot connect to cluster");
         }
     }
@@ -59,16 +59,16 @@ public class Connection implements Serializable {
         try {
             tableList = new ArrayList<Table>();
             HTableDescriptor hTables[] = hbaseAdmin.listTables();
-            
+
             Log log = Utils.getLog();
             log.info("*****table");
             log.info(hTables.length);
-            
-            for(HTableDescriptor tableDescriptor : hTables) {
+
+            for (HTableDescriptor tableDescriptor : hTables) {
                 tableList.add(new Table(tableDescriptor, this));
             }
-        }
-        catch(IOException ioe) {
+        } catch (IOException ioe) {
+            ioe.printStackTrace();
             throw new ExplorerException("Error while getting table list!");
         }
     }
@@ -76,7 +76,7 @@ public class Connection implements Serializable {
     public String getName() {
         return hbaseConfiguration.get("hbase.zookeeper.quorum");
     }
-    
+
     public ArrayList<Table> getTableList() {
         return tableList;
     }

@@ -1,1 +1,5 @@
 /build/
+/bin/
+/lib/
+bin/
+lib/
