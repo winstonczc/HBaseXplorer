@@ -15,6 +15,7 @@ import java.awt.Component;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.io.IOException;
+
 import javax.swing.DefaultListModel;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
@@ -25,6 +26,7 @@ import javax.swing.table.DefaultTableColumnModel;
 import javax.swing.table.TableCellRenderer;
 import javax.swing.table.TableColumn;
 import javax.swing.table.TableColumnModel;
+
 import org.apache.commons.logging.Log;
 import org.apache.hadoop.hbase.client.Delete;
 import org.apache.hadoop.hbase.client.Put;
@@ -39,18 +41,23 @@ import org.hbaseexplorer.domain.RowData;
 import org.hbaseexplorer.domain.Table;
 import org.hbaseexplorer.exception.ExplorerException;
 import org.jdesktop.application.Action;
+
 /**
  *
  * @author zaharije
  */
 public class EditTableData extends javax.swing.JPanel {
 
+    /**
+     * serialVersionUID
+     */
+    private static final long serialVersionUID = -1830949697485025845L;
     private Table table;
     private String rowKey;
     private FilterModel filterModel;
-    private int Total=0;
-    //add row keys
-    //private ArrayList allRowKey;
+    private int Total = 0;
+    // add row keys
+    // private ArrayList allRowKey;
 
     /** Creates new form EditTableData */
     public EditTableData(Table table) {
@@ -59,50 +66,47 @@ public class EditTableData extends javax.swing.JPanel {
         this.filterModel = new FilterModel();
 
         Log log = Utils.getLog();
-        //tableData.setDefaultRenderer(String.class, new EditTableCellRenderer());
-        long start =  System.currentTimeMillis();
+        // tableData.setDefaultRenderer(String.class, new EditTableCellRenderer());
+        long start = System.currentTimeMillis();
         showData(0);
         log.info("first show Data" + (System.currentTimeMillis() - start));
-        //add by xinqiyang
-        //load Rows
-        long startLoad =  System.currentTimeMillis();
-        //get row count then load rows
+        // add by xinqiyang
+        // load Rows
+        long startLoad = System.currentTimeMillis();
+        // get row count then load rows
         //
-        if(ToolConfig.loadAllRow) {
+        if (ToolConfig.loadAllRow) {
             loadRows(ToolConfig.maxLoadRow.intValue());
             setjListRowListener();
-            jLabel1.setText("   ROWS TATAL:"+String.valueOf(this.Total));
+            jLabel1.setText("   ROWS TATAL:" + String.valueOf(this.Total));
             log.info("start load show Data" + (System.currentTimeMillis() - startLoad));
-        }else{
+        } else {
             jListRow.setVisible(false);
-            //set panel disable 
+            // set panel disable
             jScrollPane2.setVisible(false);
             log.info("set jListRow disable");
-            
+
         }
     }
-    
-    private void loadRows(int num)
-    {
-        EditTableDataModel model = new EditTableDataModel(table, num);
+
+    private void loadRows(int num) {
+        EditTableDataModel model = new EditTableDataModel(this.table, num);
         jListRow.setModel(model.getRowData(num));
         this.Total = model.getRowsTotal();
-        //jLabel1.setText(String.valueOf(model.getRowsTotal()));
-        
+        // jLabel1.setText(String.valueOf(model.getRowsTotal()));
+
     }
-    
-    
-    private void setjListRowListener()
-    {
+
+    private void setjListRowListener() {
         jListRow.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent evt) {
-                //JList list = (JList)evt.getSource();
-                if (evt.getClickCount() == 1) {          // Double-click
+                // JList list = (JList)evt.getSource();
+                if (evt.getClickCount() == 1) { // Double-click
                     // Get item index
-                    //int index = list.locationToIndex(evt.getPoint());
+                    // int index = list.locationToIndex(evt.getPoint());
                     String itemKey = (String)jListRow.getSelectedValue();
-                    //JOptionPane.showMessageDialog(null,index+"  "+itemKey);
+                    // JOptionPane.showMessageDialog(null,index+" "+itemKey);
                     txtFieldRowKey.setText(itemKey);
                     btnGoClickAction();
                 }
@@ -110,45 +114,41 @@ public class EditTableData extends javax.swing.JPanel {
         });
     }
 
-    //get row from list
-    //when click or set a row find the column family and columns.
+    // get row from list
+    // when click or set a row find the column family and columns.
     private void showData(int skip) {
-        
+
         EditTableDataModel model = new EditTableDataModel(table, skip, rowKey, filterModel);
-        
+
         autoResizeColWidth(tableData, model);
 
         Log log = Utils.getLog();
-        long start =  System.currentTimeMillis();
+        long start = System.currentTimeMillis();
         TableColumnModel columnModel = tableData.getColumnModel();
-        
-        //table data
+
+        // table data
         //
         for (int i = 0; i < tableData.getColumnCount(); i++) {
-            //edit
+            // edit
             columnModel.getColumn(i).setCellRenderer(new EditTableCellRenderer());
         }
-        
+
         log.info("end time:" + (System.currentTimeMillis() - start));
         rowKey = model.getRowKey();
-        //set the first rowkey
+        // set the first rowkey
         txtFieldRowKey.setText(rowKey);
-        
-        //get all Row keys.
-        //allRowKey = model.getRowKey();
-        if(skip == 0){
-           //if is get single row
-           
+
+        // get all Row keys.
+        // allRowKey = model.getRowKey();
+        if (skip == 0) {
+            // if is get single row
+
         }
     }
-    
-    
-    
 
     public EditTableDataModel getTableModel() {
         return (EditTableDataModel)tableData.getModel();
     }
-
 
     private JTable autoResizeColWidth(JTable table, EditTableDataModel model) {
         table.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
@@ -157,10 +157,10 @@ public class EditTableData extends javax.swing.JPanel {
         int margin = 5;
 
         for (int i = 0; i < table.getColumnCount(); i++) {
-            int                     vColIndex = i;
-            DefaultTableColumnModel colModel  = (DefaultTableColumnModel) table.getColumnModel();
-            TableColumn             col       = colModel.getColumn(vColIndex);
-            int                     width     = 0;
+            int vColIndex = i;
+            DefaultTableColumnModel colModel = (DefaultTableColumnModel)table.getColumnModel();
+            TableColumn col = colModel.getColumn(vColIndex);
+            int width = 0;
 
             // Get width of column header
             TableCellRenderer renderer = col.getHeaderRenderer();
@@ -176,8 +176,8 @@ public class EditTableData extends javax.swing.JPanel {
             // Get maximum width of column data
             for (int r = 0; r < table.getRowCount(); r++) {
                 renderer = table.getCellRenderer(r, vColIndex);
-                comp     = renderer.getTableCellRendererComponent(table, table.getValueAt(r, vColIndex), false, false,
-                        r, vColIndex);
+                comp = renderer.getTableCellRendererComponent(table, table.getValueAt(r, vColIndex), false, false,
+                    r, vColIndex);
                 width = Math.max(width, comp.getPreferredSize().width);
             }
 
@@ -188,7 +188,7 @@ public class EditTableData extends javax.swing.JPanel {
             col.setPreferredWidth(width);
         }
 
-        ((DefaultTableCellRenderer) table.getTableHeader().getDefaultRenderer()).setHorizontalAlignment(
+        ((DefaultTableCellRenderer)table.getTableHeader().getDefaultRenderer()).setHorizontalAlignment(
             SwingConstants.LEFT);
 
         // table.setAutoCreateRowSorter(true);
@@ -197,13 +197,12 @@ public class EditTableData extends javax.swing.JPanel {
         return table;
     }
 
-
-    /** This method is called from within the constructor to
+    /**
+     * This method is called from within the constructor to
      * initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is
      * always regenerated by the Form Editor.
      */
-    @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
@@ -213,7 +212,7 @@ public class EditTableData extends javax.swing.JPanel {
         txtFieldRowKey = new javax.swing.JTextField();
         btnGo = new javax.swing.JButton();
         jToolBar2 = new javax.swing.JToolBar();
-        jButton3 = new javax.swing.JButton();
+        refreshBtn = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
         btnAddColumn = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
@@ -226,16 +225,18 @@ public class EditTableData extends javax.swing.JPanel {
         jScrollPane1 = new javax.swing.JScrollPane();
         tableData = new javax.swing.JTable();
         jScrollPane2 = new javax.swing.JScrollPane();
-        jListRow = new javax.swing.JList();
+        jListRow = new javax.swing.JList<String>();
 
         setName("Form"); // NOI18N
 
         jToolBar1.setRollover(true);
         jToolBar1.setName("jToolBar1"); // NOI18N
 
-        javax.swing.ActionMap actionMap = org.jdesktop.application.Application.getInstance(org.hbaseexplorer.HBaseExplorerApp.class).getContext().getActionMap(EditTableData.class, this);
+        javax.swing.ActionMap actionMap = org.jdesktop.application.Application
+            .getInstance(org.hbaseexplorer.HBaseExplorerApp.class).getContext().getActionMap(EditTableData.class, this);
         btnFirst.setAction(actionMap.get("fristBtnClickAction")); // NOI18N
-        org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(org.hbaseexplorer.HBaseExplorerApp.class).getContext().getResourceMap(EditTableData.class);
+        org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application
+            .getInstance(org.hbaseexplorer.HBaseExplorerApp.class).getContext().getResourceMap(EditTableData.class);
         btnFirst.setText(resourceMap.getString("btnFirst.text")); // NOI18N
         btnFirst.setFocusable(false);
         btnFirst.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -267,17 +268,17 @@ public class EditTableData extends javax.swing.JPanel {
         jToolBar2.setRollover(true);
         jToolBar2.setName("jToolBar2"); // NOI18N
 
-        jButton3.setText(resourceMap.getString("jButton3.text")); // NOI18N
-        jButton3.setFocusable(false);
-        jButton3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton3.setName("jButton3"); // NOI18N
-        jButton3.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jButton3.addMouseListener(new java.awt.event.MouseAdapter() {
+        refreshBtn.setText(resourceMap.getString("refreshBtn.text")); // NOI18N
+        refreshBtn.setFocusable(false);
+        refreshBtn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        refreshBtn.setName("refreshBtn"); // NOI18N
+        refreshBtn.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        refreshBtn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton3MouseClicked(evt);
+                refreshBtnMouseClicked(evt);
             }
         });
-        jToolBar2.add(jButton3);
+        jToolBar2.add(refreshBtn);
 
         jButton1.setAction(actionMap.get("btnSaveClickAction")); // NOI18N
         jButton1.setText(resourceMap.getString("jButton1.text")); // NOI18N
@@ -347,16 +348,15 @@ public class EditTableData extends javax.swing.JPanel {
 
         tableData.setFont(resourceMap.getFont("tableData.font")); // NOI18N
         tableData.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
+            new Object[][] {
                 {null, null, null, null},
                 {null, null, null, null},
                 {null, null, null, null},
                 {null, null, null, null}
             },
-            new String [] {
+            new String[] {
                 "Title 1", "Title 2", "Title 3", "Title 4"
-            }
-        ));
+            }));
         tableData.setName("tableData"); // NOI18N
         jScrollPane1.setViewportView(tableData);
 
@@ -364,10 +364,21 @@ public class EditTableData extends javax.swing.JPanel {
 
         jScrollPane2.setName("jScrollPane2"); // NOI18N
 
-        jListRow.setModel(new javax.swing.AbstractListModel() {
-            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
-            public int getSize() { return strings.length; }
-            public Object getElementAt(int i) { return strings[i]; }
+        jListRow.setModel(new javax.swing.AbstractListModel<String>() {
+            /**
+             * serialVersionUID
+             */
+            private static final long serialVersionUID = 1L;
+
+            String[] strings = {"Item 1", "Item 2", "Item 3", "Item 4", "Item 5"};
+
+            public int getSize() {
+                return strings.length;
+            }
+
+            public String getElementAt(int i) {
+                return strings[i];
+            }
         });
         jListRow.setName("jListRow"); // NOI18N
         jScrollPane2.setViewportView(jListRow);
@@ -378,35 +389,35 @@ public class EditTableData extends javax.swing.JPanel {
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(jToolBar1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 900, Short.MAX_VALUE)
-            .add(jToolBar2, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 900, Short.MAX_VALUE)
-            .add(jSplitPane1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 900, Short.MAX_VALUE)
-        );
+                .add(jToolBar1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 900, Short.MAX_VALUE)
+                .add(jToolBar2, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 900, Short.MAX_VALUE)
+                .add(jSplitPane1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 900, Short.MAX_VALUE));
         layout.setVerticalGroup(
             layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-            .add(layout.createSequentialGroup()
-                .add(jToolBar1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 25, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(jToolBar2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 25, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                .add(jSplitPane1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 596, Short.MAX_VALUE))
-        );
+                .add(layout.createSequentialGroup()
+                    .add(jToolBar1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 25,
+                        org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                    .add(jToolBar2, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 25,
+                        org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                    .add(jSplitPane1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 596, Short.MAX_VALUE)));
     }// </editor-fold>//GEN-END:initComponents
 
-    //reflesh the rows
-    private void jButton3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MouseClicked
+    // reflesh the rows
+    private void refreshBtnMouseClicked(java.awt.event.MouseEvent evt) {// GEN-FIRST:event_refreshBtnMouseClicked
         // TODO add your handling code here:
-        if(ToolConfig.loadAllRow){
-            //load all data
-            DefaultListModel alist = new DefaultListModel();
-            //clear
+        if (ToolConfig.loadAllRow) {
+            // load all data
+            DefaultListModel<String> alist = new DefaultListModel<String>();
+            // clear
             jListRow.setModel(alist);
-            
+
             loadRows(ToolConfig.maxLoadRow.intValue());
             setjListRowListener();
-            //Utils.getLog().info("list ok");
+            // Utils.getLog().info("list ok");
         }
-    }//GEN-LAST:event_jButton3MouseClicked
+    }// GEN-LAST:event_refreshBtnMouseClicked
 
     @Action
     public void fristBtnClickAction() {
@@ -430,8 +441,7 @@ public class EditTableData extends javax.swing.JPanel {
             } catch (IOException ex) {
                 throw new ExplorerException("Error saving to table " + table.getFullName());
             }
-        }
-        else {
+        } else {
             JOptionPane.showMessageDialog(this, "Nothing to save.");
         }
     }
@@ -447,14 +457,14 @@ public class EditTableData extends javax.swing.JPanel {
         if (triplet != null) {
             try {
                 Put put = new Put(rowKey.getBytes());
-                put.add(triplet.getFamily(), triplet.getQualifier(), triplet.getValue());
+                put.addColumn(triplet.getFamily(), triplet.getQualifier(), triplet.getValue());
                 table.getHTable().put(put);
                 showData(0);
             } catch (IOException ex) {
                 throw new ExplorerException("Error adding column : " + triplet);
             }
         }
-        
+
     }
 
     @Action
@@ -465,14 +475,13 @@ public class EditTableData extends javax.swing.JPanel {
             String column = tableData.getModel().getValueAt(rowId, 1).toString();
 
             int result = JOptionPane.showConfirmDialog(
-                    this,
-                    "Are you sure you wanna to delete\n" + rowKey +"\n" + family + ":" + column,
-                    "Delete column",
-                    JOptionPane.YES_NO_OPTION
-                   );
+                this,
+                "Are you sure you wanna to delete\n" + rowKey + "\n" + family + ":" + column,
+                "Delete column",
+                JOptionPane.YES_NO_OPTION);
             if (result == JOptionPane.YES_OPTION) {
                 Delete delete = new Delete(rowKey.getBytes());
-                delete.deleteColumns(family.getBytes(), column.getBytes());
+                delete.addColumns(family.getBytes(), column.getBytes());
                 try {
                     table.getHTable().delete(delete);
                 } catch (IOException ex) {
@@ -485,13 +494,13 @@ public class EditTableData extends javax.swing.JPanel {
 
     @Action
     public void btnGoClickAction() {
-        //get row key then load data
+        // get row key then load data
         rowKey = txtFieldRowKey.getText();
         showData(0);
     }
-    
+
     public void jListItemClickAction() {
-        
+
     }
 
     @Action
@@ -512,11 +521,6 @@ public class EditTableData extends javax.swing.JPanel {
 
         showData(0);
     }
-    
-    
-    
-
-
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAddColumn;
@@ -529,9 +533,9 @@ public class EditTableData extends javax.swing.JPanel {
     private javax.swing.JCheckBox checkBoxFilter;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
+    private javax.swing.JButton refreshBtn;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JList jListRow;
+    private javax.swing.JList<String> jListRow;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JSplitPane jSplitPane1;

@@ -8,6 +8,11 @@ import org.jdesktop.application.Action;
 
 public class HBaseExplorerAboutBox extends javax.swing.JDialog {
 
+    /** 
+     * serialVersionUID 
+     */  
+    private static final long serialVersionUID = -1696162870559605557L;
+
     public HBaseExplorerAboutBox(java.awt.Frame parent) {
         super(parent);
         initComponents();

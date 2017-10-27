@@ -8,17 +8,16 @@ import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
 import javax.swing.DefaultListModel;
 import javax.swing.table.AbstractTableModel;
-import org.apache.commons.logging.Log;
+
 import org.apache.hadoop.hbase.KeyValue;
-import org.apache.hadoop.hbase.client.Scan;
 import org.apache.hadoop.hbase.client.Result;
 import org.apache.hadoop.hbase.client.ResultScanner;
+import org.apache.hadoop.hbase.client.Scan;
 import org.apache.hadoop.hbase.filter.CompareFilter;
 import org.apache.hadoop.hbase.filter.FirstKeyOnlyFilter;
-import org.apache.hadoop.hbase.filter.QualifierFilter;
-import org.apache.hadoop.hbase.filter.RegexStringComparator;
 import org.apache.hadoop.hbase.filter.SingleColumnValueFilter;
 import org.buddy.javatools.ToolConfig;
 import org.buddy.javatools.Utils;
@@ -61,7 +60,7 @@ public class EditTableDataModel extends AbstractTableModel {
         this.table = table;
         this.rowData = null;
         this.skip = skip;
-        this.rowKey = rowKey;
+        // this.rowKey = rowKey;
         this.filterModel = new FilterModel();
     }
 
@@ -205,13 +204,13 @@ public class EditTableDataModel extends AbstractTableModel {
     // add by xinqiyang
     // return the rowData of the table
     // it will wast time here , the num max set 1000
-    public DefaultListModel getRowData(int num) {
-        DefaultListModel alist = new DefaultListModel();
+    public DefaultListModel<String> getRowData(int num) {
+        DefaultListModel<String> rklist = new DefaultListModel<String>();
 
         try {
             // load first,scan class have a limit setting????
             Scan scan = new Scan();
-            Log log = Utils.getLog();
+            // Log log = Utils.getLog();
             // set a filter only load a first column,means get row.
             scan.setFilter(new FirstKeyOnlyFilter());
 
@@ -226,16 +225,18 @@ public class EditTableDataModel extends AbstractTableModel {
                     // log.info(result.getRowResult());
                     rowData.setRowKey(result.getRow());
                     // rowData.
-                    alist.addElement(rowData.getRowKeyString());
+                    rklist.addElement(rowData.getRowKeyString());
                     this.loadCount++;
+                } else {
+                    break;
                 }
                 num--;
             }
-            return alist;
+            return rklist;
         } catch (IOException ex) {
             Logger.getLogger(EditTableDataModel.class.getName()).log(Level.SEVERE, null, ex);
         }
-        return alist;
+        return rklist;
     }
 
     public int getColumnCount() {

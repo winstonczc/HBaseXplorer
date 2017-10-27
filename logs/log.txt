@@ -1,129 +1,873 @@
-2017-09-19 15:08:33,273 INFO  [main] HBaseExplorerApp (HBaseExplorerApp.java:59) main - -----HADOOP_HOME:E:\study\apache\hadoop-common-2.2.0-bin-master
-2017-09-19 15:08:39,502 ERROR [AWT-EventQueue-0] HBaseExplorerView (HBaseExplorerView.java:306) newConnectionAction - ZK:100.84.47.67
-2017-09-19 15:08:40,992 INFO  [AWT-EventQueue-0] RecoverableZooKeeper (RecoverableZooKeeper.java:120) <init> - Process identifier=hconnection-0x17a7c8d8 connecting to ZooKeeper ensemble=100.84.47.67:2181
-2017-09-19 15:08:41,033 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:zookeeper.version=3.2.2-888565, built on 12/08/2009 21:51 GMT
-2017-09-19 15:08:41,033 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:host.name=100.84.51.95
-2017-09-19 15:08:41,033 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.version=1.8.0_111
-2017-09-19 15:08:41,033 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.vendor=Oracle Corporation
-2017-09-19 15:08:41,043 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.home=D:\Program Files\Java\jdk1.8.0_111\jre
-2017-09-19 15:08:41,043 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.class.path=D:\repositories_git\HBaseXplorer\bin;D:\repositories_git\HBaseXplorer\lib\AgileJSON-2009-03-30.jar;D:\repositories_git\HBaseXplorer\lib\appframework-1.0.3.jar;D:\repositories_git\HBaseXplorer\lib\beansbinding-1.2.1.jar;D:\repositories_git\HBaseXplorer\lib\commons-cli-2.0-SNAPSHOT.jar;D:\repositories_git\HBaseXplorer\lib\commons-el-from-jetty-5.1.4.jar;D:\repositories_git\HBaseXplorer\lib\commons-httpclient-3.0.1.jar;D:\repositories_git\HBaseXplorer\lib\commons-logging-1.0.4.jar;D:\repositories_git\HBaseXplorer\lib\commons-logging-api-1.0.4.jar;D:\repositories_git\HBaseXplorer\lib\commons-math-1.1.jar;D:\repositories_git\HBaseXplorer\lib\jasper-compiler-5.5.12.jar;D:\repositories_git\HBaseXplorer\lib\jasper-runtime-5.5.12.jar;D:\repositories_git\HBaseXplorer\lib\jetty-6.1.14.jar;D:\repositories_git\HBaseXplorer\lib\jetty-util-6.1.14.jar;D:\repositories_git\HBaseXplorer\lib\jruby-complete-1.2.0.jar;D:\repositories_git\HBaseXplorer\lib\json.jar;D:\repositories_git\HBaseXplorer\lib\junit-3.8.1.jar;D:\repositories_git\HBaseXplorer\lib\libthrift-r771587.jar;D:\repositories_git\HBaseXplorer\lib\log4j-1.2.15.jar;D:\repositories_git\HBaseXplorer\lib\lucene-core-3.0.0.jar;D:\repositories_git\HBaseXplorer\lib\servlet-api-2.5-6.1.14.jar;D:\repositories_git\HBaseXplorer\lib\slf4j-api-1.6.1.jar;D:\repositories_git\HBaseXplorer\lib\slf4j-log4j12-1.6.1.jar;D:\repositories_git\HBaseXplorer\lib\swing-layout-1.0.4.jar;D:\repositories_git\HBaseXplorer\lib\swing-worker-1.1.jar;D:\repositories_git\HBaseXplorer\lib\xmlenc-0.52.jar;D:\repositories_git\HBaseXplorer\lib\zookeeper-3.2.2.jar;D:\repositories_git\HBaseXplorer\lib\commons-configuration-1.6.jar;D:\repositories_git\HBaseXplorer\lib\commons-lang-2.5.jar;D:\repositories_git\HBaseXplorer\lib\hadoop-common-2.5.1.jar;D:\repositories_git\HBaseXplorer\lib\hbase-client-1.2.6.jar;D:\repositories_git\HBaseXplorer\lib\hbase-common-1.2.6.jar;D:\repositories_git\HBaseXplorer\lib\guava-12.0.1.jar;D:\repositories_git\HBaseXplorer\lib\commons-collections-3.2.2.jar;D:\repositories_git\HBaseXplorer\lib\protobuf-java-2.5.0.jar;D:\repositories_git\HBaseXplorer\lib\hadoop-auth-2.5.1.jar;D:\repositories_git\HBaseXplorer\lib\hbase-protocol-1.2.6.jar;D:\repositories_git\HBaseXplorer\lib\htrace-core-3.1.0-incubating.jar;D:\repositories_git\HBaseXplorer\lib\netty-all-4.0.23.Final.jar;D:\repositories_git\HBaseXplorer\lib\metrics-core-2.2.0.jar;D:\repositories_git\HBaseXplorer\lib\commons-codec-1.9.jar
-2017-09-19 15:08:41,043 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.library.path=D:\Program Files\Java\jdk1.8.0_111\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\Program Files\Java\jdk1.8.0_111\jre\bin;D:/Program Files/Java/jdk1.8.0_111/bin/../jre/bin/server;D:/Program Files/Java/jdk1.8.0_111/bin/../jre/bin;D:/Program Files/Java/jdk1.8.0_111/bin/../jre/lib/amd64;C:\Program Files (x86)\Common Files\NetSarang;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;D:\Program Files\Java\jdk1.8.0_111\bin;D:\projects\jws-1.6.0.4\;D:\projects\jws-1.6.2\;D:\projects\jws-1.6.1.1\;D:\projects\jws-1.5.7.3\;D:\apache-maven-3.2.5\bin\;D:\apache-ant-1.9.7\bin\;D:\Program Files\nodejs\;D:\gradle\bin;E:\study\apache\hadoop-common-2.2.0-bin-master\bin\;C:\Users\Administrator\AppData\Roaming\npm;C:\Program Files\jee-neon\eclipse;;.
-2017-09-19 15:08:41,043 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.io.tmpdir=C:\Users\ADMINI~1\AppData\Local\Temp\
-2017-09-19 15:08:41,043 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.compiler=<NA>
-2017-09-19 15:08:41,043 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:os.name=Windows 7
-2017-09-19 15:08:41,043 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:os.arch=amd64
-2017-09-19 15:08:41,043 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:os.version=6.1
-2017-09-19 15:08:41,043 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:user.name=Administrator
-2017-09-19 15:08:41,043 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:user.home=C:\Users\Administrator
-2017-09-19 15:08:41,043 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:user.dir=D:\repositories_git\HBaseXplorer
-2017-09-19 15:08:41,053 INFO  [AWT-EventQueue-0] ZooKeeper (ZooKeeper.java:369) <init> - Initiating client connection, connectString=100.84.47.67:2181 sessionTimeout=90000 watcher=hconnection-0x17a7c8d80x0, quorum=100.84.47.67:2181, baseZNode=/hbase
-2017-09-19 15:08:41,053 INFO  [AWT-EventQueue-0] ClientCnxn (ClientCnxn.java:92) <clinit> - zookeeper.disableAutoWatchReset is false
-2017-09-19 15:08:41,307 INFO  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:869) startConnect - Attempting connection to server /100.84.47.67:2181
-2017-09-19 15:08:41,337 INFO  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:785) primeConnection - Priming connection to java.nio.channels.SocketChannel[connected local=/100.84.51.95:51683 remote=/100.84.47.67:2181]
-2017-09-19 15:08:41,346 INFO  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:937) run - Server connection successful
-2017-09-19 15:08:42,626 INFO  [AWT-EventQueue-0] Connection (Connection.java:64) refreshTables - *****table
-2017-09-19 15:08:42,626 INFO  [AWT-EventQueue-0] Connection (Connection.java:65) refreshTables - 5
-2017-09-19 15:08:45,637 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:132) showData - end time:10
-2017-09-19 15:08:45,637 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:65) <init> - first show Data496
-2017-09-19 15:08:45,637 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:80) <init> - set jListRow disable
-2017-09-19 15:08:45,647 INFO  [AWT-EventQueue-0] ConnectionTree (ConnectionTree.java:72) doubleClick - double click time time:675
-2017-09-19 15:08:45,852 INFO  [AWT-EventQueue-0] ConnectionTree (ConnectionTree.java:72) doubleClick - double click time time:0
-2017-09-19 15:08:47,562 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:132) showData - end time:1
-2017-09-19 15:08:47,563 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:65) <init> - first show Data27
-2017-09-19 15:08:47,564 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:80) <init> - set jListRow disable
-2017-09-19 15:08:47,567 INFO  [AWT-EventQueue-0] ConnectionTree (ConnectionTree.java:72) doubleClick - double click time time:65
-2017-09-19 15:08:49,348 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:132) showData - end time:0
-2017-09-19 15:08:49,348 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:65) <init> - first show Data20
-2017-09-19 15:08:49,348 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:80) <init> - set jListRow disable
-2017-09-19 15:08:49,348 INFO  [AWT-EventQueue-0] ConnectionTree (ConnectionTree.java:72) doubleClick - double click time time:30
-2017-09-19 15:08:49,933 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:132) showData - end time:1
-2017-09-19 15:08:49,933 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:65) <init> - first show Data23
-2017-09-19 15:08:49,933 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:80) <init> - set jListRow disable
-2017-09-19 15:08:49,933 INFO  [AWT-EventQueue-0] ConnectionTree (ConnectionTree.java:72) doubleClick - double click time time:42
-2017-09-19 15:08:50,496 INFO  [AWT-EventQueue-0] ConnectionTree (ConnectionTree.java:72) doubleClick - double click time time:0
-2017-09-19 15:08:52,876 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:132) showData - end time:1
-2017-09-19 15:08:53,283 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:132) showData - end time:1
-2017-09-19 15:13:20,866 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:132) showData - end time:0
-2017-09-19 15:13:22,155 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:132) showData - end time:0
-2017-09-19 15:13:26,333 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:132) showData - end time:10
-2017-09-19 15:13:26,971 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:132) showData - end time:0
-2017-09-19 15:30:11,485 INFO  [main] HBaseExplorerApp (HBaseExplorerApp.java:59) main - -----HADOOP_HOME:E:\study\apache\hadoop-common-2.2.0-bin-master
-2017-09-19 15:30:13,701 ERROR [AWT-EventQueue-0] HBaseExplorerView (HBaseExplorerView.java:306) newConnectionAction - ZK:null
-2017-09-19 15:31:18,610 INFO  [main] HBaseExplorerApp (HBaseExplorerApp.java:59) main - -----HADOOP_HOME:E:\study\apache\hadoop-common-2.2.0-bin-master
-2017-09-19 15:31:25,686 ERROR [AWT-EventQueue-0] HBaseExplorerView (HBaseExplorerView.java:306) newConnectionAction - ZK:null
-2017-09-19 16:01:43,315 INFO  [main] HBaseExplorerApp (HBaseExplorerApp.java:59) main - -----HADOOP_HOME:E:\study\apache\hadoop-common-2.2.0-bin-master
-2017-09-19 16:12:33,759 INFO  [main] HBaseExplorerApp (HBaseExplorerApp.java:59) main - -----HADOOP_HOME:E:\study\apache\hadoop-common-2.2.0-bin-master
-2017-09-19 16:12:35,560 ERROR [AWT-EventQueue-0] HBaseExplorerView (HBaseExplorerView.java:306) newConnectionAction - ZK:100.84.47.67
-2017-09-19 16:12:36,216 INFO  [AWT-EventQueue-0] RecoverableZooKeeper (RecoverableZooKeeper.java:120) <init> - Process identifier=hconnection-0xc1558d9 connecting to ZooKeeper ensemble=100.84.47.67:2181
-2017-09-19 16:12:36,226 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:zookeeper.version=3.2.2-888565, built on 12/08/2009 21:51 GMT
-2017-09-19 16:12:36,226 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:host.name=100.84.51.95
-2017-09-19 16:12:36,226 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.version=1.8.0_111
-2017-09-19 16:12:36,226 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.vendor=Oracle Corporation
-2017-09-19 16:12:36,226 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.home=D:\Program Files\Java\jdk1.8.0_111\jre
-2017-09-19 16:12:36,226 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.class.path=D:\repositories_git\HBaseXplorer\bin;D:\repositories_git\HBaseXplorer\lib\AgileJSON-2009-03-30.jar;D:\repositories_git\HBaseXplorer\lib\appframework-1.0.3.jar;D:\repositories_git\HBaseXplorer\lib\beansbinding-1.2.1.jar;D:\repositories_git\HBaseXplorer\lib\commons-cli-2.0-SNAPSHOT.jar;D:\repositories_git\HBaseXplorer\lib\commons-el-from-jetty-5.1.4.jar;D:\repositories_git\HBaseXplorer\lib\commons-httpclient-3.0.1.jar;D:\repositories_git\HBaseXplorer\lib\commons-logging-1.0.4.jar;D:\repositories_git\HBaseXplorer\lib\commons-math-1.1.jar;D:\repositories_git\HBaseXplorer\lib\jasper-compiler-5.5.12.jar;D:\repositories_git\HBaseXplorer\lib\jasper-runtime-5.5.12.jar;D:\repositories_git\HBaseXplorer\lib\jetty-6.1.14.jar;D:\repositories_git\HBaseXplorer\lib\jetty-util-6.1.14.jar;D:\repositories_git\HBaseXplorer\lib\jruby-complete-1.2.0.jar;D:\repositories_git\HBaseXplorer\lib\json.jar;D:\repositories_git\HBaseXplorer\lib\junit-3.8.1.jar;D:\repositories_git\HBaseXplorer\lib\libthrift-r771587.jar;D:\repositories_git\HBaseXplorer\lib\log4j-1.2.15.jar;D:\repositories_git\HBaseXplorer\lib\lucene-core-3.0.0.jar;D:\repositories_git\HBaseXplorer\lib\servlet-api-2.5-6.1.14.jar;D:\repositories_git\HBaseXplorer\lib\slf4j-api-1.6.1.jar;D:\repositories_git\HBaseXplorer\lib\slf4j-log4j12-1.6.1.jar;D:\repositories_git\HBaseXplorer\lib\swing-layout-1.0.4.jar;D:\repositories_git\HBaseXplorer\lib\swing-worker-1.1.jar;D:\repositories_git\HBaseXplorer\lib\xmlenc-0.52.jar;D:\repositories_git\HBaseXplorer\lib\zookeeper-3.2.2.jar;D:\repositories_git\HBaseXplorer\lib\commons-configuration-1.6.jar;D:\repositories_git\HBaseXplorer\lib\commons-lang-2.5.jar;D:\repositories_git\HBaseXplorer\lib\hadoop-common-2.5.1.jar;D:\repositories_git\HBaseXplorer\lib\hbase-client-1.2.6.jar;D:\repositories_git\HBaseXplorer\lib\hbase-common-1.2.6.jar;D:\repositories_git\HBaseXplorer\lib\guava-12.0.1.jar;D:\repositories_git\HBaseXplorer\lib\commons-collections-3.2.2.jar;D:\repositories_git\HBaseXplorer\lib\protobuf-java-2.5.0.jar;D:\repositories_git\HBaseXplorer\lib\hadoop-auth-2.5.1.jar;D:\repositories_git\HBaseXplorer\lib\hbase-protocol-1.2.6.jar;D:\repositories_git\HBaseXplorer\lib\htrace-core-3.1.0-incubating.jar;D:\repositories_git\HBaseXplorer\lib\netty-all-4.0.23.Final.jar;D:\repositories_git\HBaseXplorer\lib\metrics-core-2.2.0.jar;D:\repositories_git\HBaseXplorer\lib\commons-codec-1.9.jar
-2017-09-19 16:12:36,226 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.library.path=D:\Program Files\Java\jdk1.8.0_111\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\Program Files\Java\jdk1.8.0_111\jre\bin;D:/Program Files/Java/jdk1.8.0_111/bin/../jre/bin/server;D:/Program Files/Java/jdk1.8.0_111/bin/../jre/bin;D:/Program Files/Java/jdk1.8.0_111/bin/../jre/lib/amd64;C:\Program Files (x86)\Common Files\NetSarang;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;D:\Program Files\Java\jdk1.8.0_111\bin;D:\projects\jws-1.6.0.4\;D:\projects\jws-1.6.2\;D:\projects\jws-1.6.1.1\;D:\projects\jws-1.5.7.3\;D:\apache-maven-3.2.5\bin\;D:\apache-ant-1.9.7\bin\;D:\Program Files\nodejs\;D:\gradle\bin;E:\study\apache\hadoop-common-2.2.0-bin-master\bin\;C:\Users\Administrator\AppData\Roaming\npm;C:\Program Files\jee-neon\eclipse;;.
-2017-09-19 16:12:36,226 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.io.tmpdir=C:\Users\ADMINI~1\AppData\Local\Temp\
-2017-09-19 16:12:36,226 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.compiler=<NA>
-2017-09-19 16:12:36,236 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:os.name=Windows 7
-2017-09-19 16:12:36,236 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:os.arch=amd64
-2017-09-19 16:12:36,236 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:os.version=6.1
-2017-09-19 16:12:36,236 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:user.name=Administrator
-2017-09-19 16:12:36,236 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:user.home=C:\Users\Administrator
-2017-09-19 16:12:36,236 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:user.dir=D:\repositories_git\HBaseXplorer
-2017-09-19 16:12:36,236 INFO  [AWT-EventQueue-0] ZooKeeper (ZooKeeper.java:369) <init> - Initiating client connection, connectString=100.84.47.67:2181 sessionTimeout=90000 watcher=hconnection-0xc1558d90x0, quorum=100.84.47.67:2181, baseZNode=/hbase
-2017-09-19 16:12:36,236 INFO  [AWT-EventQueue-0] ClientCnxn (ClientCnxn.java:92) <clinit> - zookeeper.disableAutoWatchReset is false
-2017-09-19 16:12:36,411 INFO  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:869) startConnect - Attempting connection to server /100.84.47.67:2181
-2017-09-19 16:12:36,441 INFO  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:785) primeConnection - Priming connection to java.nio.channels.SocketChannel[connected local=/100.84.51.95:52340 remote=/100.84.47.67:2181]
-2017-09-19 16:12:36,441 INFO  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:937) run - Server connection successful
-2017-09-19 16:12:36,922 INFO  [AWT-EventQueue-0] Connection (Connection.java:64) refreshTables - *****table
-2017-09-19 16:12:36,922 INFO  [AWT-EventQueue-0] Connection (Connection.java:65) refreshTables - 5
-2017-09-19 16:12:38,525 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
-2017-09-19 16:12:38,525 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
-2017-09-19 16:12:38,525 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
-2017-09-19 16:12:38,525 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
-2017-09-19 16:12:38,656 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:132) showData - end time:0
-2017-09-19 16:12:38,656 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:65) <init> - first show Data141
-2017-09-19 16:12:38,666 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:75) <init> - start load show Data10
-2017-09-19 16:12:38,666 INFO  [AWT-EventQueue-0] ConnectionTree (ConnectionTree.java:72) doubleClick - double click time time:181
-2017-09-19 16:12:39,474 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
-2017-09-19 16:12:39,474 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
-2017-09-19 16:12:39,474 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
-2017-09-19 16:12:39,474 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
-2017-09-19 16:12:39,504 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:132) showData - end time:0
-2017-09-19 16:12:39,504 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:65) <init> - first show Data30
-2017-09-19 16:12:39,504 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:75) <init> - start load show Data0
-2017-09-19 16:12:39,504 INFO  [AWT-EventQueue-0] ConnectionTree (ConnectionTree.java:72) doubleClick - double click time time:40
-2017-09-19 16:12:40,039 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
-2017-09-19 16:12:40,039 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
-2017-09-19 16:12:40,039 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
-2017-09-19 16:12:40,039 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
-2017-09-19 16:12:40,060 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:132) showData - end time:0
-2017-09-19 16:12:40,060 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:65) <init> - first show Data21
-2017-09-19 16:12:40,060 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:75) <init> - start load show Data0
-2017-09-19 16:12:40,070 INFO  [AWT-EventQueue-0] ConnectionTree (ConnectionTree.java:72) doubleClick - double click time time:61
-2017-09-19 16:12:40,547 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
-2017-09-19 16:12:40,567 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
-2017-09-19 16:12:40,577 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
-2017-09-19 16:12:40,577 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
-2017-09-19 16:12:40,587 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:132) showData - end time:0
-2017-09-19 16:12:40,587 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:65) <init> - first show Data40
-2017-09-19 16:12:40,597 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:75) <init> - start load show Data10
-2017-09-19 16:12:40,597 INFO  [AWT-EventQueue-0] ConnectionTree (ConnectionTree.java:72) doubleClick - double click time time:70
-2017-09-19 16:12:41,167 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
-2017-09-19 16:12:41,167 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
-2017-09-19 16:12:41,167 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
-2017-09-19 16:12:41,167 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
-2017-09-19 16:12:41,208 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:132) showData - end time:0
-2017-09-19 16:12:41,208 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:65) <init> - first show Data41
-2017-09-19 16:12:41,218 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:75) <init> - start load show Data10
-2017-09-19 16:12:41,218 INFO  [AWT-EventQueue-0] ConnectionTree (ConnectionTree.java:72) doubleClick - double click time time:81
-2017-09-19 16:12:41,988 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
-2017-09-19 16:12:41,988 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
-2017-09-19 16:12:41,988 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
-2017-09-19 16:12:41,988 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
-2017-09-19 16:12:42,028 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:132) showData - end time:0
-2017-09-19 16:12:42,268 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
-2017-09-19 16:12:42,278 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
-2017-09-19 16:12:42,278 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
-2017-09-19 16:12:42,278 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
-2017-09-19 16:12:42,284 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:132) showData - end time:0
+2017-10-27 14:21:49,741 INFO  [main] HBaseExplorerApp (HBaseExplorerApp.java:56) main - -----HADOOP_HOME:E:\study\apache\hadoop-common-2.2.0-bin-master
+2017-10-27 14:22:07,946 ERROR [AWT-EventQueue-0] HBaseExplorerView (HBaseExplorerView.java:306) newConnectionAction - ZK:100.84.47.67
+2017-10-27 14:22:09,531 INFO  [AWT-EventQueue-0] RecoverableZooKeeper (RecoverableZooKeeper.java:120) <init> - Process identifier=hconnection-0x356bb744 connecting to ZooKeeper ensemble=100.84.47.67:2181
+2017-10-27 14:22:09,539 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:zookeeper.version=3.2.2-888565, built on 12/08/2009 21:51 GMT
+2017-10-27 14:22:09,540 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:host.name=100.84.51.95
+2017-10-27 14:22:09,540 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.version=1.8.0_111
+2017-10-27 14:22:09,541 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.vendor=Oracle Corporation
+2017-10-27 14:22:09,541 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.home=D:\Program Files\Java\jdk1.8.0_111\jre
+2017-10-27 14:22:09,541 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.class.path=D:\repositories_git\HBaseXplorer\bin;D:\repositories_git\HBaseXplorer\lib\AgileJSON-2009-03-30.jar;D:\repositories_git\HBaseXplorer\lib\appframework-1.0.3.jar;D:\repositories_git\HBaseXplorer\lib\beansbinding-1.2.1.jar;D:\repositories_git\HBaseXplorer\lib\commons-cli-2.0-SNAPSHOT.jar;D:\repositories_git\HBaseXplorer\lib\commons-el-from-jetty-5.1.4.jar;D:\repositories_git\HBaseXplorer\lib\commons-httpclient-3.0.1.jar;D:\repositories_git\HBaseXplorer\lib\commons-logging-1.0.4.jar;D:\repositories_git\HBaseXplorer\lib\commons-math-1.1.jar;D:\repositories_git\HBaseXplorer\lib\jasper-compiler-5.5.12.jar;D:\repositories_git\HBaseXplorer\lib\jasper-runtime-5.5.12.jar;D:\repositories_git\HBaseXplorer\lib\jetty-6.1.14.jar;D:\repositories_git\HBaseXplorer\lib\jetty-util-6.1.14.jar;D:\repositories_git\HBaseXplorer\lib\jruby-complete-1.2.0.jar;D:\repositories_git\HBaseXplorer\lib\json.jar;D:\repositories_git\HBaseXplorer\lib\junit-3.8.1.jar;D:\repositories_git\HBaseXplorer\lib\libthrift-r771587.jar;D:\repositories_git\HBaseXplorer\lib\log4j-1.2.15.jar;D:\repositories_git\HBaseXplorer\lib\lucene-core-3.0.0.jar;D:\repositories_git\HBaseXplorer\lib\servlet-api-2.5-6.1.14.jar;D:\repositories_git\HBaseXplorer\lib\slf4j-api-1.6.1.jar;D:\repositories_git\HBaseXplorer\lib\slf4j-log4j12-1.6.1.jar;D:\repositories_git\HBaseXplorer\lib\swing-layout-1.0.4.jar;D:\repositories_git\HBaseXplorer\lib\swing-worker-1.1.jar;D:\repositories_git\HBaseXplorer\lib\xmlenc-0.52.jar;D:\repositories_git\HBaseXplorer\lib\zookeeper-3.2.2.jar;D:\repositories_git\HBaseXplorer\lib\commons-configuration-1.6.jar;D:\repositories_git\HBaseXplorer\lib\commons-lang-2.5.jar;D:\repositories_git\HBaseXplorer\lib\hadoop-common-2.5.1.jar;D:\repositories_git\HBaseXplorer\lib\hbase-client-1.2.6.jar;D:\repositories_git\HBaseXplorer\lib\hbase-common-1.2.6.jar;D:\repositories_git\HBaseXplorer\lib\guava-12.0.1.jar;D:\repositories_git\HBaseXplorer\lib\commons-collections-3.2.2.jar;D:\repositories_git\HBaseXplorer\lib\protobuf-java-2.5.0.jar;D:\repositories_git\HBaseXplorer\lib\hadoop-auth-2.5.1.jar;D:\repositories_git\HBaseXplorer\lib\hbase-protocol-1.2.6.jar;D:\repositories_git\HBaseXplorer\lib\htrace-core-3.1.0-incubating.jar;D:\repositories_git\HBaseXplorer\lib\netty-all-4.0.23.Final.jar;D:\repositories_git\HBaseXplorer\lib\metrics-core-2.2.0.jar;D:\repositories_git\HBaseXplorer\lib\commons-codec-1.9.jar
+2017-10-27 14:22:09,542 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.library.path=D:\Program Files\Java\jdk1.8.0_111\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\Program Files\Java\jdk1.8.0_111\jre\bin;D:/Program Files/Java/jdk1.8.0_111/bin/../jre/bin/server;D:/Program Files/Java/jdk1.8.0_111/bin/../jre/bin;D:/Program Files/Java/jdk1.8.0_111/bin/../jre/lib/amd64;D:\Ruby24-x64\bin;C:\Program Files (x86)\Common Files\NetSarang;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;D:\Program Files\Java\jdk1.8.0_111\bin;D:\projects\jws-1.6.0.4\;D:\projects\jws-1.6.2.1\;D:\apache-maven-3.2.5\bin\;D:\apache-ant-1.9.7\bin\;D:\Program Files\nodejs\;D:\gradle\bin;E:\study\apache\hadoop-common-2.2.0-bin-master\bin\;C:\cygwin64\bin\;C:\Users\Administrator\AppData\Roaming\npm;C:\Program Files\jee-neon\eclipse;;.
+2017-10-27 14:22:09,542 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.io.tmpdir=C:\Users\ADMINI~1\AppData\Local\Temp\
+2017-10-27 14:22:09,542 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.compiler=<NA>
+2017-10-27 14:22:09,543 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:os.name=Windows 7
+2017-10-27 14:22:09,543 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:os.arch=amd64
+2017-10-27 14:22:09,543 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:os.version=6.1
+2017-10-27 14:22:09,543 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:user.name=Administrator
+2017-10-27 14:22:09,544 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:user.home=C:\Users\Administrator
+2017-10-27 14:22:09,544 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:user.dir=D:\repositories_git\HBaseXplorer
+2017-10-27 14:22:09,545 INFO  [AWT-EventQueue-0] ZooKeeper (ZooKeeper.java:369) <init> - Initiating client connection, connectString=100.84.47.67:2181 sessionTimeout=90000 watcher=hconnection-0x356bb7440x0, quorum=100.84.47.67:2181, baseZNode=/hbase
+2017-10-27 14:22:09,546 INFO  [AWT-EventQueue-0] ClientCnxn (ClientCnxn.java:92) <clinit> - zookeeper.disableAutoWatchReset is false
+2017-10-27 14:22:09,653 INFO  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:869) startConnect - Attempting connection to server /100.84.47.67:2181
+2017-10-27 14:22:10,660 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:967) run - Exception closing session 0x0 to sun.nio.ch.SelectionKeyImpl@12a620b
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:933)
+2017-10-27 14:22:10,663 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:1001) cleanup - Ignoring exception during shutdown input
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.shutdownInput(SocketChannelImpl.java:780)
+	at sun.nio.ch.SocketAdaptor.shutdownInput(SocketAdaptor.java:399)
+	at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:999)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:970)
+2017-10-27 14:22:10,664 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:1006) cleanup - Ignoring exception during shutdown output
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.shutdownOutput(SocketChannelImpl.java:797)
+	at sun.nio.ch.SocketAdaptor.shutdownOutput(SocketAdaptor.java:407)
+	at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:1004)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:970)
+2017-10-27 14:22:12,022 INFO  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:869) startConnect - Attempting connection to server /100.84.47.67:2181
+2017-10-27 14:22:13,024 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:967) run - Exception closing session 0x0 to sun.nio.ch.SelectionKeyImpl@19e6221a
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:933)
+2017-10-27 14:22:13,025 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:1001) cleanup - Ignoring exception during shutdown input
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.shutdownInput(SocketChannelImpl.java:780)
+	at sun.nio.ch.SocketAdaptor.shutdownInput(SocketAdaptor.java:399)
+	at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:999)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:970)
+2017-10-27 14:22:13,026 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:1006) cleanup - Ignoring exception during shutdown output
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.shutdownOutput(SocketChannelImpl.java:797)
+	at sun.nio.ch.SocketAdaptor.shutdownOutput(SocketAdaptor.java:407)
+	at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:1004)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:970)
+2017-10-27 14:22:14,570 INFO  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:869) startConnect - Attempting connection to server /100.84.47.67:2181
+2017-10-27 14:22:15,573 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:967) run - Exception closing session 0x0 to sun.nio.ch.SelectionKeyImpl@16685cb4
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:933)
+2017-10-27 14:22:15,573 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:1001) cleanup - Ignoring exception during shutdown input
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.shutdownInput(SocketChannelImpl.java:780)
+	at sun.nio.ch.SocketAdaptor.shutdownInput(SocketAdaptor.java:399)
+	at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:999)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:970)
+2017-10-27 14:22:15,575 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:1006) cleanup - Ignoring exception during shutdown output
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.shutdownOutput(SocketChannelImpl.java:797)
+	at sun.nio.ch.SocketAdaptor.shutdownOutput(SocketAdaptor.java:407)
+	at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:1004)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:970)
+2017-10-27 14:22:17,102 INFO  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:869) startConnect - Attempting connection to server /100.84.47.67:2181
+2017-10-27 14:22:18,115 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:967) run - Exception closing session 0x0 to sun.nio.ch.SelectionKeyImpl@23db41a1
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:933)
+2017-10-27 14:22:18,115 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:1001) cleanup - Ignoring exception during shutdown input
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.shutdownInput(SocketChannelImpl.java:780)
+	at sun.nio.ch.SocketAdaptor.shutdownInput(SocketAdaptor.java:399)
+	at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:999)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:970)
+2017-10-27 14:22:18,116 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:1006) cleanup - Ignoring exception during shutdown output
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.shutdownOutput(SocketChannelImpl.java:797)
+	at sun.nio.ch.SocketAdaptor.shutdownOutput(SocketAdaptor.java:407)
+	at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:1004)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:970)
+2017-10-27 14:22:19,255 INFO  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:869) startConnect - Attempting connection to server /100.84.47.67:2181
+2017-10-27 14:22:20,257 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:967) run - Exception closing session 0x0 to sun.nio.ch.SelectionKeyImpl@460e3145
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:933)
+2017-10-27 14:22:20,258 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:1001) cleanup - Ignoring exception during shutdown input
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.shutdownInput(SocketChannelImpl.java:780)
+	at sun.nio.ch.SocketAdaptor.shutdownInput(SocketAdaptor.java:399)
+	at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:999)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:970)
+2017-10-27 14:22:20,259 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:1006) cleanup - Ignoring exception during shutdown output
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.shutdownOutput(SocketChannelImpl.java:797)
+	at sun.nio.ch.SocketAdaptor.shutdownOutput(SocketAdaptor.java:407)
+	at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:1004)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:970)
+2017-10-27 14:22:21,879 INFO  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:869) startConnect - Attempting connection to server /100.84.47.67:2181
+2017-10-27 14:22:22,880 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:967) run - Exception closing session 0x0 to sun.nio.ch.SelectionKeyImpl@ecd3ec4
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:933)
+2017-10-27 14:22:22,881 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:1001) cleanup - Ignoring exception during shutdown input
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.shutdownInput(SocketChannelImpl.java:780)
+	at sun.nio.ch.SocketAdaptor.shutdownInput(SocketAdaptor.java:399)
+	at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:999)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:970)
+2017-10-27 14:22:22,881 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:1006) cleanup - Ignoring exception during shutdown output
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.shutdownOutput(SocketChannelImpl.java:797)
+	at sun.nio.ch.SocketAdaptor.shutdownOutput(SocketAdaptor.java:407)
+	at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:1004)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:970)
+2017-10-27 14:22:24,750 INFO  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:869) startConnect - Attempting connection to server /100.84.47.67:2181
+2017-10-27 14:22:25,773 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:967) run - Exception closing session 0x0 to sun.nio.ch.SelectionKeyImpl@e8c7603
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:933)
+2017-10-27 14:22:25,774 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:1001) cleanup - Ignoring exception during shutdown input
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.shutdownInput(SocketChannelImpl.java:780)
+	at sun.nio.ch.SocketAdaptor.shutdownInput(SocketAdaptor.java:399)
+	at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:999)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:970)
+2017-10-27 14:22:25,775 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:1006) cleanup - Ignoring exception during shutdown output
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.shutdownOutput(SocketChannelImpl.java:797)
+	at sun.nio.ch.SocketAdaptor.shutdownOutput(SocketAdaptor.java:407)
+	at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:1004)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:970)
+2017-10-27 14:22:27,307 INFO  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:869) startConnect - Attempting connection to server /100.84.47.67:2181
+2017-10-27 14:22:28,309 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:967) run - Exception closing session 0x0 to sun.nio.ch.SelectionKeyImpl@758bf8c7
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:933)
+2017-10-27 14:22:28,310 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:1001) cleanup - Ignoring exception during shutdown input
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.shutdownInput(SocketChannelImpl.java:780)
+	at sun.nio.ch.SocketAdaptor.shutdownInput(SocketAdaptor.java:399)
+	at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:999)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:970)
+2017-10-27 14:22:28,310 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:1006) cleanup - Ignoring exception during shutdown output
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.shutdownOutput(SocketChannelImpl.java:797)
+	at sun.nio.ch.SocketAdaptor.shutdownOutput(SocketAdaptor.java:407)
+	at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:1004)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:970)
+2017-10-27 14:22:28,412 ERROR [AWT-EventQueue-0] RecoverableZooKeeper (RecoverableZooKeeper.java:274) retryOrThrow - ZooKeeper exists failed after 4 attempts
+2017-10-27 14:22:28,413 WARN  [AWT-EventQueue-0] ZKUtil (ZKUtil.java:422) checkExists - hconnection-0x356bb7440x0, quorum=100.84.47.67:2181, baseZNode=/hbase Unable to set watcher on znode (/hbase/hbaseid)
+org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /hbase/hbaseid
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:90)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:42)
+	at org.apache.zookeeper.ZooKeeper.exists(ZooKeeper.java:780)
+	at org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper.exists(RecoverableZooKeeper.java:220)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.checkExists(ZKUtil.java:419)
+	at org.apache.hadoop.hbase.zookeeper.ZKClusterId.readClusterIdZNode(ZKClusterId.java:65)
+	at org.apache.hadoop.hbase.client.ZooKeeperRegistry.getClusterId(ZooKeeperRegistry.java:105)
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation.retrieveClusterId(ConnectionManager.java:905)
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation.<init>(ConnectionManager.java:648)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.apache.hadoop.hbase.client.ConnectionFactory.createConnection(ConnectionFactory.java:238)
+	at org.apache.hadoop.hbase.client.ConnectionManager.createConnection(ConnectionManager.java:431)
+	at org.apache.hadoop.hbase.client.ConnectionManager.createConnection(ConnectionManager.java:424)
+	at org.apache.hadoop.hbase.client.ConnectionManager.getConnectionInternal(ConnectionManager.java:302)
+	at org.apache.hadoop.hbase.client.HBaseAdmin.<init>(HBaseAdmin.java:236)
+	at org.hbaseexplorer.domain.Connection.connect(Connection.java:40)
+	at org.hbaseexplorer.components.ConnectionTree.createConnection(ConnectionTree.java:54)
+	at org.hbaseexplorer.HBaseExplorerView.newConnectionAction(HBaseExplorerView.java:314)
+	at org.hbaseexplorer.HBaseExplorerView.<init>(HBaseExplorerView.java:100)
+	at org.hbaseexplorer.HBaseExplorerApp.startup(HBaseExplorerApp.java:24)
+	at org.jdesktop.application.Application$1.run(Application.java:171)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:756)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:726)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+2017-10-27 14:22:28,414 ERROR [AWT-EventQueue-0] ZooKeeperWatcher (ZooKeeperWatcher.java:744) keeperException - hconnection-0x356bb7440x0, quorum=100.84.47.67:2181, baseZNode=/hbase Received unexpected KeeperException, re-throwing exception
+org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /hbase/hbaseid
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:90)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:42)
+	at org.apache.zookeeper.ZooKeeper.exists(ZooKeeper.java:780)
+	at org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper.exists(RecoverableZooKeeper.java:220)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.checkExists(ZKUtil.java:419)
+	at org.apache.hadoop.hbase.zookeeper.ZKClusterId.readClusterIdZNode(ZKClusterId.java:65)
+	at org.apache.hadoop.hbase.client.ZooKeeperRegistry.getClusterId(ZooKeeperRegistry.java:105)
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation.retrieveClusterId(ConnectionManager.java:905)
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation.<init>(ConnectionManager.java:648)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.apache.hadoop.hbase.client.ConnectionFactory.createConnection(ConnectionFactory.java:238)
+	at org.apache.hadoop.hbase.client.ConnectionManager.createConnection(ConnectionManager.java:431)
+	at org.apache.hadoop.hbase.client.ConnectionManager.createConnection(ConnectionManager.java:424)
+	at org.apache.hadoop.hbase.client.ConnectionManager.getConnectionInternal(ConnectionManager.java:302)
+	at org.apache.hadoop.hbase.client.HBaseAdmin.<init>(HBaseAdmin.java:236)
+	at org.hbaseexplorer.domain.Connection.connect(Connection.java:40)
+	at org.hbaseexplorer.components.ConnectionTree.createConnection(ConnectionTree.java:54)
+	at org.hbaseexplorer.HBaseExplorerView.newConnectionAction(HBaseExplorerView.java:314)
+	at org.hbaseexplorer.HBaseExplorerView.<init>(HBaseExplorerView.java:100)
+	at org.hbaseexplorer.HBaseExplorerApp.startup(HBaseExplorerApp.java:24)
+	at org.jdesktop.application.Application$1.run(Application.java:171)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:756)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:726)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+2017-10-27 14:22:28,416 WARN  [AWT-EventQueue-0] ZooKeeperRegistry (ZooKeeperRegistry.java:110) getClusterId - Can't retrieve clusterId from Zookeeper
+org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /hbase/hbaseid
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:90)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:42)
+	at org.apache.zookeeper.ZooKeeper.exists(ZooKeeper.java:780)
+	at org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper.exists(RecoverableZooKeeper.java:220)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.checkExists(ZKUtil.java:419)
+	at org.apache.hadoop.hbase.zookeeper.ZKClusterId.readClusterIdZNode(ZKClusterId.java:65)
+	at org.apache.hadoop.hbase.client.ZooKeeperRegistry.getClusterId(ZooKeeperRegistry.java:105)
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation.retrieveClusterId(ConnectionManager.java:905)
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation.<init>(ConnectionManager.java:648)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.apache.hadoop.hbase.client.ConnectionFactory.createConnection(ConnectionFactory.java:238)
+	at org.apache.hadoop.hbase.client.ConnectionManager.createConnection(ConnectionManager.java:431)
+	at org.apache.hadoop.hbase.client.ConnectionManager.createConnection(ConnectionManager.java:424)
+	at org.apache.hadoop.hbase.client.ConnectionManager.getConnectionInternal(ConnectionManager.java:302)
+	at org.apache.hadoop.hbase.client.HBaseAdmin.<init>(HBaseAdmin.java:236)
+	at org.hbaseexplorer.domain.Connection.connect(Connection.java:40)
+	at org.hbaseexplorer.components.ConnectionTree.createConnection(ConnectionTree.java:54)
+	at org.hbaseexplorer.HBaseExplorerView.newConnectionAction(HBaseExplorerView.java:314)
+	at org.hbaseexplorer.HBaseExplorerView.<init>(HBaseExplorerView.java:100)
+	at org.hbaseexplorer.HBaseExplorerApp.startup(HBaseExplorerApp.java:24)
+	at org.jdesktop.application.Application$1.run(Application.java:171)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:756)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:726)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+2017-10-27 14:22:29,884 INFO  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:869) startConnect - Attempting connection to server /100.84.47.67:2181
+2017-10-27 14:22:30,885 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:967) run - Exception closing session 0x0 to sun.nio.ch.SelectionKeyImpl@6d1c5cf1
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:933)
+2017-10-27 14:22:30,885 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:1001) cleanup - Ignoring exception during shutdown input
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.shutdownInput(SocketChannelImpl.java:780)
+	at sun.nio.ch.SocketAdaptor.shutdownInput(SocketAdaptor.java:399)
+	at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:999)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:970)
+2017-10-27 14:22:30,886 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:1006) cleanup - Ignoring exception during shutdown output
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.shutdownOutput(SocketChannelImpl.java:797)
+	at sun.nio.ch.SocketAdaptor.shutdownOutput(SocketAdaptor.java:407)
+	at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:1004)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:970)
+2017-10-27 14:22:32,114 INFO  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:869) startConnect - Attempting connection to server /100.84.47.67:2181
+2017-10-27 14:22:33,115 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:967) run - Exception closing session 0x0 to sun.nio.ch.SelectionKeyImpl@78a4369f
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:933)
+2017-10-27 14:22:33,116 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:1001) cleanup - Ignoring exception during shutdown input
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.shutdownInput(SocketChannelImpl.java:780)
+	at sun.nio.ch.SocketAdaptor.shutdownInput(SocketAdaptor.java:399)
+	at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:999)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:970)
+2017-10-27 14:22:33,116 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:1006) cleanup - Ignoring exception during shutdown output
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.shutdownOutput(SocketChannelImpl.java:797)
+	at sun.nio.ch.SocketAdaptor.shutdownOutput(SocketAdaptor.java:407)
+	at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:1004)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:970)
+2017-10-27 14:22:35,003 INFO  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:869) startConnect - Attempting connection to server /100.84.47.67:2181
+2017-10-27 14:22:36,008 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:967) run - Exception closing session 0x0 to sun.nio.ch.SelectionKeyImpl@3481676
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:933)
+2017-10-27 14:22:36,009 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:1001) cleanup - Ignoring exception during shutdown input
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.shutdownInput(SocketChannelImpl.java:780)
+	at sun.nio.ch.SocketAdaptor.shutdownInput(SocketAdaptor.java:399)
+	at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:999)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:970)
+2017-10-27 14:22:36,010 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:1006) cleanup - Ignoring exception during shutdown output
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.shutdownOutput(SocketChannelImpl.java:797)
+	at sun.nio.ch.SocketAdaptor.shutdownOutput(SocketAdaptor.java:407)
+	at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:1004)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:970)
+2017-10-27 14:22:37,914 INFO  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:869) startConnect - Attempting connection to server /100.84.47.67:2181
+2017-10-27 14:22:38,916 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:967) run - Exception closing session 0x0 to sun.nio.ch.SelectionKeyImpl@1a695166
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:933)
+2017-10-27 14:22:38,916 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:1001) cleanup - Ignoring exception during shutdown input
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.shutdownInput(SocketChannelImpl.java:780)
+	at sun.nio.ch.SocketAdaptor.shutdownInput(SocketAdaptor.java:399)
+	at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:999)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:970)
+2017-10-27 14:22:38,916 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:1006) cleanup - Ignoring exception during shutdown output
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.shutdownOutput(SocketChannelImpl.java:797)
+	at sun.nio.ch.SocketAdaptor.shutdownOutput(SocketAdaptor.java:407)
+	at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:1004)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:970)
+2017-10-27 14:22:40,117 INFO  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:869) startConnect - Attempting connection to server /100.84.47.67:2181
+2017-10-27 14:22:41,118 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:967) run - Exception closing session 0x0 to sun.nio.ch.SelectionKeyImpl@7f0ca235
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:933)
+2017-10-27 14:22:41,119 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:1001) cleanup - Ignoring exception during shutdown input
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.shutdownInput(SocketChannelImpl.java:780)
+	at sun.nio.ch.SocketAdaptor.shutdownInput(SocketAdaptor.java:399)
+	at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:999)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:970)
+2017-10-27 14:22:41,119 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:1006) cleanup - Ignoring exception during shutdown output
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.shutdownOutput(SocketChannelImpl.java:797)
+	at sun.nio.ch.SocketAdaptor.shutdownOutput(SocketAdaptor.java:407)
+	at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:1004)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:970)
+2017-10-27 14:22:42,888 INFO  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:869) startConnect - Attempting connection to server /100.84.47.67:2181
+2017-10-27 14:22:43,890 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:967) run - Exception closing session 0x0 to sun.nio.ch.SelectionKeyImpl@6a1cd440
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:933)
+2017-10-27 14:22:43,891 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:1001) cleanup - Ignoring exception during shutdown input
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.shutdownInput(SocketChannelImpl.java:780)
+	at sun.nio.ch.SocketAdaptor.shutdownInput(SocketAdaptor.java:399)
+	at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:999)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:970)
+2017-10-27 14:22:43,892 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:1006) cleanup - Ignoring exception during shutdown output
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.shutdownOutput(SocketChannelImpl.java:797)
+	at sun.nio.ch.SocketAdaptor.shutdownOutput(SocketAdaptor.java:407)
+	at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:1004)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:970)
+2017-10-27 14:22:45,069 INFO  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:869) startConnect - Attempting connection to server /100.84.47.67:2181
+2017-10-27 14:22:46,082 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:967) run - Exception closing session 0x0 to sun.nio.ch.SelectionKeyImpl@420aea32
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:933)
+2017-10-27 14:22:46,083 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:1001) cleanup - Ignoring exception during shutdown input
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.shutdownInput(SocketChannelImpl.java:780)
+	at sun.nio.ch.SocketAdaptor.shutdownInput(SocketAdaptor.java:399)
+	at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:999)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:970)
+2017-10-27 14:22:46,083 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:1006) cleanup - Ignoring exception during shutdown output
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.shutdownOutput(SocketChannelImpl.java:797)
+	at sun.nio.ch.SocketAdaptor.shutdownOutput(SocketAdaptor.java:407)
+	at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:1004)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:970)
+2017-10-27 14:22:47,668 INFO  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:869) startConnect - Attempting connection to server /100.84.47.67:2181
+2017-10-27 14:22:48,670 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:967) run - Exception closing session 0x0 to sun.nio.ch.SelectionKeyImpl@23e9bb62
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:933)
+2017-10-27 14:22:48,671 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:1001) cleanup - Ignoring exception during shutdown input
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.shutdownInput(SocketChannelImpl.java:780)
+	at sun.nio.ch.SocketAdaptor.shutdownInput(SocketAdaptor.java:399)
+	at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:999)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:970)
+2017-10-27 14:22:48,671 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:1006) cleanup - Ignoring exception during shutdown output
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.shutdownOutput(SocketChannelImpl.java:797)
+	at sun.nio.ch.SocketAdaptor.shutdownOutput(SocketAdaptor.java:407)
+	at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:1004)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:970)
+2017-10-27 14:22:49,862 INFO  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:869) startConnect - Attempting connection to server /100.84.47.67:2181
+2017-10-27 14:22:50,874 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:967) run - Exception closing session 0x0 to sun.nio.ch.SelectionKeyImpl@2c86ffe3
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:933)
+2017-10-27 14:22:50,875 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:1001) cleanup - Ignoring exception during shutdown input
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.shutdownInput(SocketChannelImpl.java:780)
+	at sun.nio.ch.SocketAdaptor.shutdownInput(SocketAdaptor.java:399)
+	at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:999)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:970)
+2017-10-27 14:22:50,875 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:1006) cleanup - Ignoring exception during shutdown output
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.shutdownOutput(SocketChannelImpl.java:797)
+	at sun.nio.ch.SocketAdaptor.shutdownOutput(SocketAdaptor.java:407)
+	at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:1004)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:970)
+2017-10-27 14:22:50,976 ERROR [AWT-EventQueue-0] RecoverableZooKeeper (RecoverableZooKeeper.java:274) retryOrThrow - ZooKeeper exists failed after 4 attempts
+2017-10-27 14:22:50,976 WARN  [AWT-EventQueue-0] ZKUtil (ZKUtil.java:422) checkExists - hconnection-0x356bb7440x0, quorum=100.84.47.67:2181, baseZNode=/hbase Unable to set watcher on znode (/hbase)
+org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /hbase
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:90)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:42)
+	at org.apache.zookeeper.ZooKeeper.exists(ZooKeeper.java:780)
+	at org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper.exists(RecoverableZooKeeper.java:220)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.checkExists(ZKUtil.java:419)
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation.checkIfBaseNodeAvailable(ConnectionManager.java:921)
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation.access$400(ConnectionManager.java:556)
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation$StubMaker.makeStubNoRetries(ConnectionManager.java:1510)
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation$StubMaker.makeStub(ConnectionManager.java:1552)
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation$MasterServiceStubMaker.makeStub(ConnectionManager.java:1581)
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation.getKeepAliveMasterService(ConnectionManager.java:1738)
+	at org.apache.hadoop.hbase.client.MasterCallable.prepare(MasterCallable.java:38)
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:134)
+	at org.apache.hadoop.hbase.client.HBaseAdmin.executeCallable(HBaseAdmin.java:4297)
+	at org.apache.hadoop.hbase.client.HBaseAdmin.executeCallable(HBaseAdmin.java:4289)
+	at org.apache.hadoop.hbase.client.HBaseAdmin.listTables(HBaseAdmin.java:437)
+	at org.apache.hadoop.hbase.client.HBaseAdmin.listTables(HBaseAdmin.java:421)
+	at org.hbaseexplorer.domain.Connection.refreshTables(Connection.java:61)
+	at org.hbaseexplorer.domain.Connection.connect(Connection.java:52)
+	at org.hbaseexplorer.components.ConnectionTree.createConnection(ConnectionTree.java:54)
+	at org.hbaseexplorer.HBaseExplorerView.newConnectionAction(HBaseExplorerView.java:314)
+	at org.hbaseexplorer.HBaseExplorerView.<init>(HBaseExplorerView.java:100)
+	at org.hbaseexplorer.HBaseExplorerApp.startup(HBaseExplorerApp.java:24)
+	at org.jdesktop.application.Application$1.run(Application.java:171)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:756)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:726)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+2017-10-27 14:22:50,977 ERROR [AWT-EventQueue-0] ZooKeeperWatcher (ZooKeeperWatcher.java:744) keeperException - hconnection-0x356bb7440x0, quorum=100.84.47.67:2181, baseZNode=/hbase Received unexpected KeeperException, re-throwing exception
+org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /hbase
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:90)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:42)
+	at org.apache.zookeeper.ZooKeeper.exists(ZooKeeper.java:780)
+	at org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper.exists(RecoverableZooKeeper.java:220)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.checkExists(ZKUtil.java:419)
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation.checkIfBaseNodeAvailable(ConnectionManager.java:921)
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation.access$400(ConnectionManager.java:556)
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation$StubMaker.makeStubNoRetries(ConnectionManager.java:1510)
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation$StubMaker.makeStub(ConnectionManager.java:1552)
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation$MasterServiceStubMaker.makeStub(ConnectionManager.java:1581)
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation.getKeepAliveMasterService(ConnectionManager.java:1738)
+	at org.apache.hadoop.hbase.client.MasterCallable.prepare(MasterCallable.java:38)
+	at org.apache.hadoop.hbase.client.RpcRetryingCaller.callWithRetries(RpcRetryingCaller.java:134)
+	at org.apache.hadoop.hbase.client.HBaseAdmin.executeCallable(HBaseAdmin.java:4297)
+	at org.apache.hadoop.hbase.client.HBaseAdmin.executeCallable(HBaseAdmin.java:4289)
+	at org.apache.hadoop.hbase.client.HBaseAdmin.listTables(HBaseAdmin.java:437)
+	at org.apache.hadoop.hbase.client.HBaseAdmin.listTables(HBaseAdmin.java:421)
+	at org.hbaseexplorer.domain.Connection.refreshTables(Connection.java:61)
+	at org.hbaseexplorer.domain.Connection.connect(Connection.java:52)
+	at org.hbaseexplorer.components.ConnectionTree.createConnection(ConnectionTree.java:54)
+	at org.hbaseexplorer.HBaseExplorerView.newConnectionAction(HBaseExplorerView.java:314)
+	at org.hbaseexplorer.HBaseExplorerView.<init>(HBaseExplorerView.java:100)
+	at org.hbaseexplorer.HBaseExplorerApp.startup(HBaseExplorerApp.java:24)
+	at org.jdesktop.application.Application$1.run(Application.java:171)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:756)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:726)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+2017-10-27 14:22:50,978 ERROR [AWT-EventQueue-0] ConnectionManager$HConnectionImplementation (ConnectionManager.java:931) checkIfBaseNodeAvailable - Can't get connection to ZooKeeper: KeeperErrorCode = ConnectionLoss for /hbase
+2017-10-27 14:22:52,149 INFO  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:869) startConnect - Attempting connection to server /100.84.47.67:2181
+2017-10-27 14:22:53,152 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:967) run - Exception closing session 0x0 to sun.nio.ch.SelectionKeyImpl@4593398d
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:933)
+2017-10-27 14:22:53,153 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:1001) cleanup - Ignoring exception during shutdown input
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.shutdownInput(SocketChannelImpl.java:780)
+	at sun.nio.ch.SocketAdaptor.shutdownInput(SocketAdaptor.java:399)
+	at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:999)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:970)
+2017-10-27 14:22:53,154 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:1006) cleanup - Ignoring exception during shutdown output
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.shutdownOutput(SocketChannelImpl.java:797)
+	at sun.nio.ch.SocketAdaptor.shutdownOutput(SocketAdaptor.java:407)
+	at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:1004)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:970)
+2017-10-27 14:22:54,772 INFO  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:869) startConnect - Attempting connection to server /100.84.47.67:2181
+2017-10-27 14:22:55,774 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:967) run - Exception closing session 0x0 to sun.nio.ch.SelectionKeyImpl@6936f6af
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:933)
+2017-10-27 14:22:55,775 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:1001) cleanup - Ignoring exception during shutdown input
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.shutdownInput(SocketChannelImpl.java:780)
+	at sun.nio.ch.SocketAdaptor.shutdownInput(SocketAdaptor.java:399)
+	at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:999)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:970)
+2017-10-27 14:22:55,777 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:1006) cleanup - Ignoring exception during shutdown output
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.shutdownOutput(SocketChannelImpl.java:797)
+	at sun.nio.ch.SocketAdaptor.shutdownOutput(SocketAdaptor.java:407)
+	at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:1004)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:970)
+2017-10-27 14:25:06,782 INFO  [main] HBaseExplorerApp (HBaseExplorerApp.java:56) main - -----HADOOP_HOME:E:\study\apache\hadoop-common-2.2.0-bin-master
+2017-10-27 14:25:09,682 ERROR [AWT-EventQueue-0] HBaseExplorerView (HBaseExplorerView.java:306) newConnectionAction - ZK:100.84.47.67
+2017-10-27 14:25:10,296 INFO  [AWT-EventQueue-0] RecoverableZooKeeper (RecoverableZooKeeper.java:120) <init> - Process identifier=hconnection-0xbd58f4e connecting to ZooKeeper ensemble=100.84.47.67:2181
+2017-10-27 14:25:10,305 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:zookeeper.version=3.2.2-888565, built on 12/08/2009 21:51 GMT
+2017-10-27 14:25:10,305 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:host.name=100.84.51.95
+2017-10-27 14:25:10,306 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.version=1.8.0_111
+2017-10-27 14:25:10,306 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.vendor=Oracle Corporation
+2017-10-27 14:25:10,307 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.home=D:\Program Files\Java\jdk1.8.0_111\jre
+2017-10-27 14:25:10,307 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.class.path=D:\repositories_git\HBaseXplorer\bin;D:\repositories_git\HBaseXplorer\lib\AgileJSON-2009-03-30.jar;D:\repositories_git\HBaseXplorer\lib\appframework-1.0.3.jar;D:\repositories_git\HBaseXplorer\lib\beansbinding-1.2.1.jar;D:\repositories_git\HBaseXplorer\lib\commons-cli-2.0-SNAPSHOT.jar;D:\repositories_git\HBaseXplorer\lib\commons-el-from-jetty-5.1.4.jar;D:\repositories_git\HBaseXplorer\lib\commons-httpclient-3.0.1.jar;D:\repositories_git\HBaseXplorer\lib\commons-logging-1.0.4.jar;D:\repositories_git\HBaseXplorer\lib\commons-math-1.1.jar;D:\repositories_git\HBaseXplorer\lib\jasper-compiler-5.5.12.jar;D:\repositories_git\HBaseXplorer\lib\jasper-runtime-5.5.12.jar;D:\repositories_git\HBaseXplorer\lib\jetty-6.1.14.jar;D:\repositories_git\HBaseXplorer\lib\jetty-util-6.1.14.jar;D:\repositories_git\HBaseXplorer\lib\jruby-complete-1.2.0.jar;D:\repositories_git\HBaseXplorer\lib\json.jar;D:\repositories_git\HBaseXplorer\lib\junit-3.8.1.jar;D:\repositories_git\HBaseXplorer\lib\libthrift-r771587.jar;D:\repositories_git\HBaseXplorer\lib\log4j-1.2.15.jar;D:\repositories_git\HBaseXplorer\lib\lucene-core-3.0.0.jar;D:\repositories_git\HBaseXplorer\lib\servlet-api-2.5-6.1.14.jar;D:\repositories_git\HBaseXplorer\lib\slf4j-api-1.6.1.jar;D:\repositories_git\HBaseXplorer\lib\slf4j-log4j12-1.6.1.jar;D:\repositories_git\HBaseXplorer\lib\swing-layout-1.0.4.jar;D:\repositories_git\HBaseXplorer\lib\swing-worker-1.1.jar;D:\repositories_git\HBaseXplorer\lib\xmlenc-0.52.jar;D:\repositories_git\HBaseXplorer\lib\zookeeper-3.2.2.jar;D:\repositories_git\HBaseXplorer\lib\commons-configuration-1.6.jar;D:\repositories_git\HBaseXplorer\lib\commons-lang-2.5.jar;D:\repositories_git\HBaseXplorer\lib\hadoop-common-2.5.1.jar;D:\repositories_git\HBaseXplorer\lib\hbase-client-1.2.6.jar;D:\repositories_git\HBaseXplorer\lib\hbase-common-1.2.6.jar;D:\repositories_git\HBaseXplorer\lib\guava-12.0.1.jar;D:\repositories_git\HBaseXplorer\lib\commons-collections-3.2.2.jar;D:\repositories_git\HBaseXplorer\lib\protobuf-java-2.5.0.jar;D:\repositories_git\HBaseXplorer\lib\hadoop-auth-2.5.1.jar;D:\repositories_git\HBaseXplorer\lib\hbase-protocol-1.2.6.jar;D:\repositories_git\HBaseXplorer\lib\htrace-core-3.1.0-incubating.jar;D:\repositories_git\HBaseXplorer\lib\netty-all-4.0.23.Final.jar;D:\repositories_git\HBaseXplorer\lib\metrics-core-2.2.0.jar;D:\repositories_git\HBaseXplorer\lib\commons-codec-1.9.jar
+2017-10-27 14:25:10,308 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.library.path=D:\Program Files\Java\jdk1.8.0_111\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\Program Files\Java\jdk1.8.0_111\jre\bin;D:/Program Files/Java/jdk1.8.0_111/bin/../jre/bin/server;D:/Program Files/Java/jdk1.8.0_111/bin/../jre/bin;D:/Program Files/Java/jdk1.8.0_111/bin/../jre/lib/amd64;D:\Ruby24-x64\bin;C:\Program Files (x86)\Common Files\NetSarang;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;D:\Program Files\Java\jdk1.8.0_111\bin;D:\projects\jws-1.6.0.4\;D:\projects\jws-1.6.2.1\;D:\apache-maven-3.2.5\bin\;D:\apache-ant-1.9.7\bin\;D:\Program Files\nodejs\;D:\gradle\bin;E:\study\apache\hadoop-common-2.2.0-bin-master\bin\;C:\cygwin64\bin\;C:\Users\Administrator\AppData\Roaming\npm;C:\Program Files\jee-neon\eclipse;;.
+2017-10-27 14:25:10,309 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.io.tmpdir=C:\Users\ADMINI~1\AppData\Local\Temp\
+2017-10-27 14:25:10,309 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.compiler=<NA>
+2017-10-27 14:25:10,310 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:os.name=Windows 7
+2017-10-27 14:25:10,310 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:os.arch=amd64
+2017-10-27 14:25:10,310 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:os.version=6.1
+2017-10-27 14:25:10,311 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:user.name=Administrator
+2017-10-27 14:25:10,311 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:user.home=C:\Users\Administrator
+2017-10-27 14:25:10,312 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:user.dir=D:\repositories_git\HBaseXplorer
+2017-10-27 14:25:10,313 INFO  [AWT-EventQueue-0] ZooKeeper (ZooKeeper.java:369) <init> - Initiating client connection, connectString=100.84.47.67:2181 sessionTimeout=90000 watcher=hconnection-0xbd58f4e0x0, quorum=100.84.47.67:2181, baseZNode=/hbase
+2017-10-27 14:25:10,315 INFO  [AWT-EventQueue-0] ClientCnxn (ClientCnxn.java:92) <clinit> - zookeeper.disableAutoWatchReset is false
+2017-10-27 14:25:10,474 INFO  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:869) startConnect - Attempting connection to server /100.84.47.67:2181
+2017-10-27 14:25:10,479 INFO  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:785) primeConnection - Priming connection to java.nio.channels.SocketChannel[connected local=/100.84.51.95:59967 remote=/100.84.47.67:2181]
+2017-10-27 14:25:10,493 INFO  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:937) run - Server connection successful
+2017-10-27 14:25:11,577 INFO  [AWT-EventQueue-0] Connection (Connection.java:64) refreshTables - *****table
+2017-10-27 14:25:11,578 INFO  [AWT-EventQueue-0] Connection (Connection.java:65) refreshTables - 5
+2017-10-27 14:25:56,316 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 14:25:56,316 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 14:25:56,317 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 14:25:56,317 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 14:25:56,604 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:132) showData - end time:1
+2017-10-27 14:25:56,604 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:65) <init> - first show Data306
+2017-10-27 14:25:56,641 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:75) <init> - start load show Data36
+2017-10-27 14:25:56,655 INFO  [AWT-EventQueue-0] ConnectionTree (ConnectionTree.java:72) doubleClick - double click time time:566
+2017-10-27 14:27:01,201 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 14:27:01,202 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 14:27:01,203 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 14:27:01,203 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 14:27:06,291 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:132) showData - end time:1
+2017-10-27 14:27:06,294 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:65) <init> - first show Data10053
+2017-10-27 14:27:06,311 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:75) <init> - start load show Data17
+2017-10-27 14:27:06,323 INFO  [AWT-EventQueue-0] ConnectionTree (ConnectionTree.java:72) doubleClick - double click time time:10092
+2017-10-27 14:27:06,367 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 14:27:06,368 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 14:27:06,368 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 14:27:06,368 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 14:27:06,387 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:132) showData - end time:1
+2017-10-27 14:27:06,387 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:65) <init> - first show Data20
+2017-10-27 14:27:06,397 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:75) <init> - start load show Data10
+2017-10-27 14:27:06,400 INFO  [AWT-EventQueue-0] ConnectionTree (ConnectionTree.java:72) doubleClick - double click time time:42
+2017-10-27 14:27:29,623 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 14:27:29,624 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 14:27:29,624 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 14:27:29,626 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 14:27:29,638 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:132) showData - end time:2
+2017-10-27 14:27:35,715 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 14:27:35,717 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 14:27:35,718 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 14:27:35,719 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 14:27:35,745 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:132) showData - end time:0
+2017-10-27 14:27:36,640 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 14:27:36,641 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 14:27:36,642 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 14:27:36,643 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 14:27:36,660 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:132) showData - end time:0
+2017-10-27 14:27:37,360 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 14:27:37,361 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 14:27:37,362 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 14:27:37,363 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 14:27:37,385 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:132) showData - end time:0
+2017-10-27 14:33:07,599 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 14:33:07,600 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 14:33:07,601 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 14:33:07,602 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 14:33:07,632 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:132) showData - end time:0
+2017-10-27 14:33:07,633 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:65) <init> - first show Data35
+2017-10-27 14:33:07,641 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:75) <init> - start load show Data8
+2017-10-27 14:33:07,643 INFO  [AWT-EventQueue-0] ConnectionTree (ConnectionTree.java:72) doubleClick - double click time time:66
+2017-10-27 14:34:25,648 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 14:34:25,654 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 14:34:25,655 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 14:34:25,655 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 14:34:25,665 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:132) showData - end time:0
+2017-10-27 14:34:26,496 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 14:34:26,498 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 14:34:26,499 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 14:34:26,500 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 14:34:26,513 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:132) showData - end time:1
+2017-10-27 14:34:27,280 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 14:34:28,322 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 14:34:28,323 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 14:34:28,324 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 14:34:28,337 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:132) showData - end time:0
+2017-10-27 15:39:51,210 INFO  [main] HBaseExplorerApp (HBaseExplorerApp.java:56) main - -----HADOOP_HOME:E:\study\apache\hadoop-common-2.2.0-bin-master
+2017-10-27 15:39:53,392 ERROR [AWT-EventQueue-0] HBaseExplorerView (HBaseExplorerView.java:305) newConnectionAction - ZK:100.84.47.67
+2017-10-27 15:39:54,106 INFO  [AWT-EventQueue-0] RecoverableZooKeeper (RecoverableZooKeeper.java:120) <init> - Process identifier=hconnection-0xb42508c connecting to ZooKeeper ensemble=100.84.47.67:2181
+2017-10-27 15:39:54,116 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:zookeeper.version=3.2.2-888565, built on 12/08/2009 21:51 GMT
+2017-10-27 15:39:54,116 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:host.name=100.84.51.95
+2017-10-27 15:39:54,117 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.version=1.8.0_111
+2017-10-27 15:39:54,117 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.vendor=Oracle Corporation
+2017-10-27 15:39:54,117 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.home=D:\Program Files\Java\jdk1.8.0_111\jre
+2017-10-27 15:39:54,118 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.class.path=D:\repositories_git\HBaseXplorer\bin;D:\repositories_git\HBaseXplorer\lib\AgileJSON-2009-03-30.jar;D:\repositories_git\HBaseXplorer\lib\appframework-1.0.3.jar;D:\repositories_git\HBaseXplorer\lib\beansbinding-1.2.1.jar;D:\repositories_git\HBaseXplorer\lib\commons-cli-2.0-SNAPSHOT.jar;D:\repositories_git\HBaseXplorer\lib\commons-el-from-jetty-5.1.4.jar;D:\repositories_git\HBaseXplorer\lib\commons-httpclient-3.0.1.jar;D:\repositories_git\HBaseXplorer\lib\commons-logging-1.0.4.jar;D:\repositories_git\HBaseXplorer\lib\commons-math-1.1.jar;D:\repositories_git\HBaseXplorer\lib\jasper-compiler-5.5.12.jar;D:\repositories_git\HBaseXplorer\lib\jasper-runtime-5.5.12.jar;D:\repositories_git\HBaseXplorer\lib\jetty-6.1.14.jar;D:\repositories_git\HBaseXplorer\lib\jetty-util-6.1.14.jar;D:\repositories_git\HBaseXplorer\lib\jruby-complete-1.2.0.jar;D:\repositories_git\HBaseXplorer\lib\json.jar;D:\repositories_git\HBaseXplorer\lib\junit-3.8.1.jar;D:\repositories_git\HBaseXplorer\lib\libthrift-r771587.jar;D:\repositories_git\HBaseXplorer\lib\log4j-1.2.15.jar;D:\repositories_git\HBaseXplorer\lib\lucene-core-3.0.0.jar;D:\repositories_git\HBaseXplorer\lib\servlet-api-2.5-6.1.14.jar;D:\repositories_git\HBaseXplorer\lib\slf4j-api-1.6.1.jar;D:\repositories_git\HBaseXplorer\lib\slf4j-log4j12-1.6.1.jar;D:\repositories_git\HBaseXplorer\lib\swing-layout-1.0.4.jar;D:\repositories_git\HBaseXplorer\lib\swing-worker-1.1.jar;D:\repositories_git\HBaseXplorer\lib\xmlenc-0.52.jar;D:\repositories_git\HBaseXplorer\lib\zookeeper-3.2.2.jar;D:\repositories_git\HBaseXplorer\lib\commons-configuration-1.6.jar;D:\repositories_git\HBaseXplorer\lib\commons-lang-2.5.jar;D:\repositories_git\HBaseXplorer\lib\hadoop-common-2.5.1.jar;D:\repositories_git\HBaseXplorer\lib\hbase-client-1.2.6.jar;D:\repositories_git\HBaseXplorer\lib\hbase-common-1.2.6.jar;D:\repositories_git\HBaseXplorer\lib\guava-12.0.1.jar;D:\repositories_git\HBaseXplorer\lib\commons-collections-3.2.2.jar;D:\repositories_git\HBaseXplorer\lib\protobuf-java-2.5.0.jar;D:\repositories_git\HBaseXplorer\lib\hadoop-auth-2.5.1.jar;D:\repositories_git\HBaseXplorer\lib\hbase-protocol-1.2.6.jar;D:\repositories_git\HBaseXplorer\lib\htrace-core-3.1.0-incubating.jar;D:\repositories_git\HBaseXplorer\lib\netty-all-4.0.23.Final.jar;D:\repositories_git\HBaseXplorer\lib\metrics-core-2.2.0.jar;D:\repositories_git\HBaseXplorer\lib\commons-codec-1.9.jar
+2017-10-27 15:39:54,118 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.library.path=D:\Program Files\Java\jdk1.8.0_111\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\Program Files\Java\jdk1.8.0_111\jre\bin;D:/Program Files/Java/jdk1.8.0_111/bin/../jre/bin/server;D:/Program Files/Java/jdk1.8.0_111/bin/../jre/bin;D:/Program Files/Java/jdk1.8.0_111/bin/../jre/lib/amd64;D:\Ruby24-x64\bin;C:\Program Files (x86)\Common Files\NetSarang;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;D:\Program Files\Java\jdk1.8.0_111\bin;D:\projects\jws-1.6.0.4\;D:\projects\jws-1.6.2.1\;D:\apache-maven-3.2.5\bin\;D:\apache-ant-1.9.7\bin\;D:\Program Files\nodejs\;D:\gradle\bin;E:\study\apache\hadoop-common-2.2.0-bin-master\bin\;C:\cygwin64\bin\;C:\Users\Administrator\AppData\Roaming\npm;C:\Program Files\jee-neon\eclipse;;.
+2017-10-27 15:39:54,119 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.io.tmpdir=C:\Users\ADMINI~1\AppData\Local\Temp\
+2017-10-27 15:39:54,119 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.compiler=<NA>
+2017-10-27 15:39:54,120 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:os.name=Windows 7
+2017-10-27 15:39:54,120 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:os.arch=amd64
+2017-10-27 15:39:54,120 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:os.version=6.1
+2017-10-27 15:39:54,121 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:user.name=Administrator
+2017-10-27 15:39:54,121 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:user.home=C:\Users\Administrator
+2017-10-27 15:39:54,121 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:user.dir=D:\repositories_git\HBaseXplorer
+2017-10-27 15:39:54,123 INFO  [AWT-EventQueue-0] ZooKeeper (ZooKeeper.java:369) <init> - Initiating client connection, connectString=100.84.47.67:2181 sessionTimeout=90000 watcher=hconnection-0xb42508c0x0, quorum=100.84.47.67:2181, baseZNode=/hbase
+2017-10-27 15:39:54,124 INFO  [AWT-EventQueue-0] ClientCnxn (ClientCnxn.java:92) <clinit> - zookeeper.disableAutoWatchReset is false
+2017-10-27 15:39:54,304 INFO  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:869) startConnect - Attempting connection to server /100.84.47.67:2181
+2017-10-27 15:39:54,306 INFO  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:785) primeConnection - Priming connection to java.nio.channels.SocketChannel[connected local=/100.84.51.95:60871 remote=/100.84.47.67:2181]
+2017-10-27 15:39:54,311 INFO  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:937) run - Server connection successful
+2017-10-27 15:39:54,809 INFO  [AWT-EventQueue-0] Connection (Connection.java:64) refreshTables - *****table
+2017-10-27 15:39:54,810 INFO  [AWT-EventQueue-0] Connection (Connection.java:65) refreshTables - 5
+2017-10-27 15:43:37,545 INFO  [main] HBaseExplorerApp (HBaseExplorerApp.java:60) main - -----HADOOP_HOME:E:\study\apache\hadoop-common-2.2.0-bin-master
+2017-10-27 15:43:39,699 ERROR [AWT-EventQueue-0] HBaseExplorerView (HBaseExplorerView.java:306) newConnectionAction - ZK:100.84.47.67
+2017-10-27 15:43:40,373 INFO  [AWT-EventQueue-0] RecoverableZooKeeper (RecoverableZooKeeper.java:120) <init> - Process identifier=hconnection-0x706602b4 connecting to ZooKeeper ensemble=100.84.47.67:2181
+2017-10-27 15:43:40,379 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:zookeeper.version=3.2.2-888565, built on 12/08/2009 21:51 GMT
+2017-10-27 15:43:40,380 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:host.name=100.84.51.95
+2017-10-27 15:43:40,381 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.version=1.8.0_111
+2017-10-27 15:43:40,381 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.vendor=Oracle Corporation
+2017-10-27 15:43:40,381 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.home=D:\Program Files\Java\jdk1.8.0_111\jre
+2017-10-27 15:43:40,382 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.class.path=D:\repositories_git\HBaseXplorer\bin;D:\repositories_git\HBaseXplorer\lib\AgileJSON-2009-03-30.jar;D:\repositories_git\HBaseXplorer\lib\appframework-1.0.3.jar;D:\repositories_git\HBaseXplorer\lib\beansbinding-1.2.1.jar;D:\repositories_git\HBaseXplorer\lib\commons-cli-2.0-SNAPSHOT.jar;D:\repositories_git\HBaseXplorer\lib\commons-el-from-jetty-5.1.4.jar;D:\repositories_git\HBaseXplorer\lib\commons-httpclient-3.0.1.jar;D:\repositories_git\HBaseXplorer\lib\commons-logging-1.0.4.jar;D:\repositories_git\HBaseXplorer\lib\commons-math-1.1.jar;D:\repositories_git\HBaseXplorer\lib\jasper-compiler-5.5.12.jar;D:\repositories_git\HBaseXplorer\lib\jasper-runtime-5.5.12.jar;D:\repositories_git\HBaseXplorer\lib\jetty-6.1.14.jar;D:\repositories_git\HBaseXplorer\lib\jetty-util-6.1.14.jar;D:\repositories_git\HBaseXplorer\lib\jruby-complete-1.2.0.jar;D:\repositories_git\HBaseXplorer\lib\json.jar;D:\repositories_git\HBaseXplorer\lib\junit-3.8.1.jar;D:\repositories_git\HBaseXplorer\lib\libthrift-r771587.jar;D:\repositories_git\HBaseXplorer\lib\log4j-1.2.15.jar;D:\repositories_git\HBaseXplorer\lib\lucene-core-3.0.0.jar;D:\repositories_git\HBaseXplorer\lib\servlet-api-2.5-6.1.14.jar;D:\repositories_git\HBaseXplorer\lib\slf4j-api-1.6.1.jar;D:\repositories_git\HBaseXplorer\lib\slf4j-log4j12-1.6.1.jar;D:\repositories_git\HBaseXplorer\lib\swing-layout-1.0.4.jar;D:\repositories_git\HBaseXplorer\lib\swing-worker-1.1.jar;D:\repositories_git\HBaseXplorer\lib\xmlenc-0.52.jar;D:\repositories_git\HBaseXplorer\lib\zookeeper-3.2.2.jar;D:\repositories_git\HBaseXplorer\lib\commons-configuration-1.6.jar;D:\repositories_git\HBaseXplorer\lib\commons-lang-2.5.jar;D:\repositories_git\HBaseXplorer\lib\hadoop-common-2.5.1.jar;D:\repositories_git\HBaseXplorer\lib\hbase-client-1.2.6.jar;D:\repositories_git\HBaseXplorer\lib\hbase-common-1.2.6.jar;D:\repositories_git\HBaseXplorer\lib\guava-12.0.1.jar;D:\repositories_git\HBaseXplorer\lib\commons-collections-3.2.2.jar;D:\repositories_git\HBaseXplorer\lib\protobuf-java-2.5.0.jar;D:\repositories_git\HBaseXplorer\lib\hadoop-auth-2.5.1.jar;D:\repositories_git\HBaseXplorer\lib\hbase-protocol-1.2.6.jar;D:\repositories_git\HBaseXplorer\lib\htrace-core-3.1.0-incubating.jar;D:\repositories_git\HBaseXplorer\lib\netty-all-4.0.23.Final.jar;D:\repositories_git\HBaseXplorer\lib\metrics-core-2.2.0.jar;D:\repositories_git\HBaseXplorer\lib\commons-codec-1.9.jar
+2017-10-27 15:43:40,382 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.library.path=D:\Program Files\Java\jdk1.8.0_111\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\Program Files\Java\jdk1.8.0_111\jre\bin;D:/Program Files/Java/jdk1.8.0_111/bin/../jre/bin/server;D:/Program Files/Java/jdk1.8.0_111/bin/../jre/bin;D:/Program Files/Java/jdk1.8.0_111/bin/../jre/lib/amd64;D:\Ruby24-x64\bin;C:\Program Files (x86)\Common Files\NetSarang;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;D:\Program Files\Java\jdk1.8.0_111\bin;D:\projects\jws-1.6.0.4\;D:\projects\jws-1.6.2.1\;D:\apache-maven-3.2.5\bin\;D:\apache-ant-1.9.7\bin\;D:\Program Files\nodejs\;D:\gradle\bin;E:\study\apache\hadoop-common-2.2.0-bin-master\bin\;C:\cygwin64\bin\;C:\Users\Administrator\AppData\Roaming\npm;C:\Program Files\jee-neon\eclipse;;.
+2017-10-27 15:43:40,382 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.io.tmpdir=C:\Users\ADMINI~1\AppData\Local\Temp\
+2017-10-27 15:43:40,383 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.compiler=<NA>
+2017-10-27 15:43:40,383 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:os.name=Windows 7
+2017-10-27 15:43:40,385 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:os.arch=amd64
+2017-10-27 15:43:40,385 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:os.version=6.1
+2017-10-27 15:43:40,385 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:user.name=Administrator
+2017-10-27 15:43:40,386 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:user.home=C:\Users\Administrator
+2017-10-27 15:43:40,386 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:user.dir=D:\repositories_git\HBaseXplorer
+2017-10-27 15:43:40,387 INFO  [AWT-EventQueue-0] ZooKeeper (ZooKeeper.java:369) <init> - Initiating client connection, connectString=100.84.47.67:2181 sessionTimeout=90000 watcher=hconnection-0x706602b40x0, quorum=100.84.47.67:2181, baseZNode=/hbase
+2017-10-27 15:43:40,389 INFO  [AWT-EventQueue-0] ClientCnxn (ClientCnxn.java:92) <clinit> - zookeeper.disableAutoWatchReset is false
+2017-10-27 15:43:40,557 INFO  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:869) startConnect - Attempting connection to server /100.84.47.67:2181
+2017-10-27 15:43:40,560 INFO  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:785) primeConnection - Priming connection to java.nio.channels.SocketChannel[connected local=/100.84.51.95:60908 remote=/100.84.47.67:2181]
+2017-10-27 15:43:40,565 INFO  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:937) run - Server connection successful
+2017-10-27 15:43:40,983 INFO  [AWT-EventQueue-0] Connection (Connection.java:64) refreshTables - *****table
+2017-10-27 15:43:40,983 INFO  [AWT-EventQueue-0] Connection (Connection.java:65) refreshTables - 5
+2017-10-27 15:43:57,754 INFO  [main] HBaseExplorerApp (HBaseExplorerApp.java:60) main - -----HADOOP_HOME:E:\study\apache\hadoop-common-2.2.0-bin-master
+2017-10-27 15:43:59,674 ERROR [AWT-EventQueue-0] HBaseExplorerView (HBaseExplorerView.java:306) newConnectionAction - ZK:100.84.47.67
+2017-10-27 15:44:00,299 INFO  [AWT-EventQueue-0] RecoverableZooKeeper (RecoverableZooKeeper.java:120) <init> - Process identifier=hconnection-0x356bb744 connecting to ZooKeeper ensemble=100.84.47.67:2181
+2017-10-27 15:44:00,304 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:zookeeper.version=3.2.2-888565, built on 12/08/2009 21:51 GMT
+2017-10-27 15:44:00,305 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:host.name=100.84.51.95
+2017-10-27 15:44:00,305 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.version=1.8.0_111
+2017-10-27 15:44:00,305 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.vendor=Oracle Corporation
+2017-10-27 15:44:00,306 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.home=D:\Program Files\Java\jdk1.8.0_111\jre
+2017-10-27 15:44:00,306 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.class.path=D:\repositories_git\HBaseXplorer\bin;D:\repositories_git\HBaseXplorer\lib\AgileJSON-2009-03-30.jar;D:\repositories_git\HBaseXplorer\lib\appframework-1.0.3.jar;D:\repositories_git\HBaseXplorer\lib\beansbinding-1.2.1.jar;D:\repositories_git\HBaseXplorer\lib\commons-cli-2.0-SNAPSHOT.jar;D:\repositories_git\HBaseXplorer\lib\commons-el-from-jetty-5.1.4.jar;D:\repositories_git\HBaseXplorer\lib\commons-httpclient-3.0.1.jar;D:\repositories_git\HBaseXplorer\lib\commons-logging-1.0.4.jar;D:\repositories_git\HBaseXplorer\lib\commons-math-1.1.jar;D:\repositories_git\HBaseXplorer\lib\jasper-compiler-5.5.12.jar;D:\repositories_git\HBaseXplorer\lib\jasper-runtime-5.5.12.jar;D:\repositories_git\HBaseXplorer\lib\jetty-6.1.14.jar;D:\repositories_git\HBaseXplorer\lib\jetty-util-6.1.14.jar;D:\repositories_git\HBaseXplorer\lib\jruby-complete-1.2.0.jar;D:\repositories_git\HBaseXplorer\lib\json.jar;D:\repositories_git\HBaseXplorer\lib\junit-3.8.1.jar;D:\repositories_git\HBaseXplorer\lib\libthrift-r771587.jar;D:\repositories_git\HBaseXplorer\lib\log4j-1.2.15.jar;D:\repositories_git\HBaseXplorer\lib\lucene-core-3.0.0.jar;D:\repositories_git\HBaseXplorer\lib\servlet-api-2.5-6.1.14.jar;D:\repositories_git\HBaseXplorer\lib\slf4j-api-1.6.1.jar;D:\repositories_git\HBaseXplorer\lib\slf4j-log4j12-1.6.1.jar;D:\repositories_git\HBaseXplorer\lib\swing-layout-1.0.4.jar;D:\repositories_git\HBaseXplorer\lib\swing-worker-1.1.jar;D:\repositories_git\HBaseXplorer\lib\xmlenc-0.52.jar;D:\repositories_git\HBaseXplorer\lib\zookeeper-3.2.2.jar;D:\repositories_git\HBaseXplorer\lib\commons-configuration-1.6.jar;D:\repositories_git\HBaseXplorer\lib\commons-lang-2.5.jar;D:\repositories_git\HBaseXplorer\lib\hadoop-common-2.5.1.jar;D:\repositories_git\HBaseXplorer\lib\hbase-client-1.2.6.jar;D:\repositories_git\HBaseXplorer\lib\hbase-common-1.2.6.jar;D:\repositories_git\HBaseXplorer\lib\guava-12.0.1.jar;D:\repositories_git\HBaseXplorer\lib\commons-collections-3.2.2.jar;D:\repositories_git\HBaseXplorer\lib\protobuf-java-2.5.0.jar;D:\repositories_git\HBaseXplorer\lib\hadoop-auth-2.5.1.jar;D:\repositories_git\HBaseXplorer\lib\hbase-protocol-1.2.6.jar;D:\repositories_git\HBaseXplorer\lib\htrace-core-3.1.0-incubating.jar;D:\repositories_git\HBaseXplorer\lib\netty-all-4.0.23.Final.jar;D:\repositories_git\HBaseXplorer\lib\metrics-core-2.2.0.jar;D:\repositories_git\HBaseXplorer\lib\commons-codec-1.9.jar
+2017-10-27 15:44:00,306 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.library.path=D:\Program Files\Java\jdk1.8.0_111\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\Program Files\Java\jdk1.8.0_111\jre\bin;D:/Program Files/Java/jdk1.8.0_111/bin/../jre/bin/server;D:/Program Files/Java/jdk1.8.0_111/bin/../jre/bin;D:/Program Files/Java/jdk1.8.0_111/bin/../jre/lib/amd64;D:\Ruby24-x64\bin;C:\Program Files (x86)\Common Files\NetSarang;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;D:\Program Files\Java\jdk1.8.0_111\bin;D:\projects\jws-1.6.0.4\;D:\projects\jws-1.6.2.1\;D:\apache-maven-3.2.5\bin\;D:\apache-ant-1.9.7\bin\;D:\Program Files\nodejs\;D:\gradle\bin;E:\study\apache\hadoop-common-2.2.0-bin-master\bin\;C:\cygwin64\bin\;C:\Users\Administrator\AppData\Roaming\npm;C:\Program Files\jee-neon\eclipse;;.
+2017-10-27 15:44:00,308 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.io.tmpdir=C:\Users\ADMINI~1\AppData\Local\Temp\
+2017-10-27 15:44:00,308 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.compiler=<NA>
+2017-10-27 15:44:00,308 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:os.name=Windows 7
+2017-10-27 15:44:00,309 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:os.arch=amd64
+2017-10-27 15:44:00,309 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:os.version=6.1
+2017-10-27 15:44:00,309 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:user.name=Administrator
+2017-10-27 15:44:00,309 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:user.home=C:\Users\Administrator
+2017-10-27 15:44:00,310 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:user.dir=D:\repositories_git\HBaseXplorer
+2017-10-27 15:44:00,311 INFO  [AWT-EventQueue-0] ZooKeeper (ZooKeeper.java:369) <init> - Initiating client connection, connectString=100.84.47.67:2181 sessionTimeout=90000 watcher=hconnection-0x356bb7440x0, quorum=100.84.47.67:2181, baseZNode=/hbase
+2017-10-27 15:44:00,312 INFO  [AWT-EventQueue-0] ClientCnxn (ClientCnxn.java:92) <clinit> - zookeeper.disableAutoWatchReset is false
+2017-10-27 15:44:00,526 INFO  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:869) startConnect - Attempting connection to server /100.84.47.67:2181
+2017-10-27 15:44:00,529 INFO  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:785) primeConnection - Priming connection to java.nio.channels.SocketChannel[connected local=/100.84.51.95:60916 remote=/100.84.47.67:2181]
+2017-10-27 15:44:00,535 INFO  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:937) run - Server connection successful
+2017-10-27 15:44:00,966 INFO  [AWT-EventQueue-0] Connection (Connection.java:64) refreshTables - *****table
+2017-10-27 15:44:00,967 INFO  [AWT-EventQueue-0] Connection (Connection.java:65) refreshTables - 5
+2017-10-27 15:45:57,488 INFO  [main] HBaseExplorerApp (HBaseExplorerApp.java:58) main - -----HADOOP_HOME:E:\study\apache\hadoop-common-2.2.0-bin-master
+2017-10-27 15:46:49,982 INFO  [main] HBaseExplorerApp (HBaseExplorerApp.java:58) main - -----HADOOP_HOME:E:\study\apache\hadoop-common-2.2.0-bin-master
+2017-10-27 15:50:44,245 INFO  [main] HBaseExplorerApp (HBaseExplorerApp.java:58) main - -----HADOOP_HOME:E:\study\apache\hadoop-common-2.2.0-bin-master
+2017-10-27 15:50:46,488 ERROR [AWT-EventQueue-0] HBaseExplorerView (HBaseExplorerView.java:306) newConnectionAction - ZK:100.84.47.67
+2017-10-27 15:50:47,207 INFO  [AWT-EventQueue-0] RecoverableZooKeeper (RecoverableZooKeeper.java:120) <init> - Process identifier=hconnection-0x42bacb64 connecting to ZooKeeper ensemble=100.84.47.67:2181
+2017-10-27 15:50:47,214 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:zookeeper.version=3.2.2-888565, built on 12/08/2009 21:51 GMT
+2017-10-27 15:50:47,214 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:host.name=100.84.51.95
+2017-10-27 15:50:47,215 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.version=1.8.0_111
+2017-10-27 15:50:47,215 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.vendor=Oracle Corporation
+2017-10-27 15:50:47,215 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.home=D:\Program Files\Java\jdk1.8.0_111\jre
+2017-10-27 15:50:47,216 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.class.path=D:\repositories_git\HBaseXplorer\bin;D:\repositories_git\HBaseXplorer\lib\AgileJSON-2009-03-30.jar;D:\repositories_git\HBaseXplorer\lib\appframework-1.0.3.jar;D:\repositories_git\HBaseXplorer\lib\beansbinding-1.2.1.jar;D:\repositories_git\HBaseXplorer\lib\commons-cli-2.0-SNAPSHOT.jar;D:\repositories_git\HBaseXplorer\lib\commons-el-from-jetty-5.1.4.jar;D:\repositories_git\HBaseXplorer\lib\commons-httpclient-3.0.1.jar;D:\repositories_git\HBaseXplorer\lib\commons-logging-1.0.4.jar;D:\repositories_git\HBaseXplorer\lib\commons-math-1.1.jar;D:\repositories_git\HBaseXplorer\lib\jasper-compiler-5.5.12.jar;D:\repositories_git\HBaseXplorer\lib\jasper-runtime-5.5.12.jar;D:\repositories_git\HBaseXplorer\lib\jetty-6.1.14.jar;D:\repositories_git\HBaseXplorer\lib\jetty-util-6.1.14.jar;D:\repositories_git\HBaseXplorer\lib\jruby-complete-1.2.0.jar;D:\repositories_git\HBaseXplorer\lib\json.jar;D:\repositories_git\HBaseXplorer\lib\junit-3.8.1.jar;D:\repositories_git\HBaseXplorer\lib\libthrift-r771587.jar;D:\repositories_git\HBaseXplorer\lib\log4j-1.2.15.jar;D:\repositories_git\HBaseXplorer\lib\lucene-core-3.0.0.jar;D:\repositories_git\HBaseXplorer\lib\servlet-api-2.5-6.1.14.jar;D:\repositories_git\HBaseXplorer\lib\slf4j-api-1.6.1.jar;D:\repositories_git\HBaseXplorer\lib\slf4j-log4j12-1.6.1.jar;D:\repositories_git\HBaseXplorer\lib\swing-layout-1.0.4.jar;D:\repositories_git\HBaseXplorer\lib\swing-worker-1.1.jar;D:\repositories_git\HBaseXplorer\lib\xmlenc-0.52.jar;D:\repositories_git\HBaseXplorer\lib\zookeeper-3.2.2.jar;D:\repositories_git\HBaseXplorer\lib\commons-configuration-1.6.jar;D:\repositories_git\HBaseXplorer\lib\commons-lang-2.5.jar;D:\repositories_git\HBaseXplorer\lib\hadoop-common-2.5.1.jar;D:\repositories_git\HBaseXplorer\lib\hbase-client-1.2.6.jar;D:\repositories_git\HBaseXplorer\lib\hbase-common-1.2.6.jar;D:\repositories_git\HBaseXplorer\lib\guava-12.0.1.jar;D:\repositories_git\HBaseXplorer\lib\commons-collections-3.2.2.jar;D:\repositories_git\HBaseXplorer\lib\protobuf-java-2.5.0.jar;D:\repositories_git\HBaseXplorer\lib\hadoop-auth-2.5.1.jar;D:\repositories_git\HBaseXplorer\lib\hbase-protocol-1.2.6.jar;D:\repositories_git\HBaseXplorer\lib\htrace-core-3.1.0-incubating.jar;D:\repositories_git\HBaseXplorer\lib\netty-all-4.0.23.Final.jar;D:\repositories_git\HBaseXplorer\lib\metrics-core-2.2.0.jar;D:\repositories_git\HBaseXplorer\lib\commons-codec-1.9.jar
+2017-10-27 15:50:47,217 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.library.path=D:\Program Files\Java\jdk1.8.0_111\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\Program Files\Java\jdk1.8.0_111\jre\bin;D:/Program Files/Java/jdk1.8.0_111/bin/../jre/bin/server;D:/Program Files/Java/jdk1.8.0_111/bin/../jre/bin;D:/Program Files/Java/jdk1.8.0_111/bin/../jre/lib/amd64;D:\Ruby24-x64\bin;C:\Program Files (x86)\Common Files\NetSarang;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;D:\Program Files\Java\jdk1.8.0_111\bin;D:\projects\jws-1.6.0.4\;D:\projects\jws-1.6.2.1\;D:\apache-maven-3.2.5\bin\;D:\apache-ant-1.9.7\bin\;D:\Program Files\nodejs\;D:\gradle\bin;E:\study\apache\hadoop-common-2.2.0-bin-master\bin\;C:\cygwin64\bin\;C:\Users\Administrator\AppData\Roaming\npm;C:\Program Files\jee-neon\eclipse;;.
+2017-10-27 15:50:47,217 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.io.tmpdir=C:\Users\ADMINI~1\AppData\Local\Temp\
+2017-10-27 15:50:47,218 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.compiler=<NA>
+2017-10-27 15:50:47,218 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:os.name=Windows 7
+2017-10-27 15:50:47,219 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:os.arch=amd64
+2017-10-27 15:50:47,219 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:os.version=6.1
+2017-10-27 15:50:47,219 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:user.name=Administrator
+2017-10-27 15:50:47,220 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:user.home=C:\Users\Administrator
+2017-10-27 15:50:47,220 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:user.dir=D:\repositories_git\HBaseXplorer
+2017-10-27 15:50:47,222 INFO  [AWT-EventQueue-0] ZooKeeper (ZooKeeper.java:369) <init> - Initiating client connection, connectString=100.84.47.67:2181 sessionTimeout=90000 watcher=hconnection-0x42bacb640x0, quorum=100.84.47.67:2181, baseZNode=/hbase
+2017-10-27 15:50:47,223 INFO  [AWT-EventQueue-0] ClientCnxn (ClientCnxn.java:92) <clinit> - zookeeper.disableAutoWatchReset is false
+2017-10-27 15:50:47,407 INFO  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:869) startConnect - Attempting connection to server /100.84.47.67:2181
+2017-10-27 15:50:47,412 INFO  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:785) primeConnection - Priming connection to java.nio.channels.SocketChannel[connected local=/100.84.51.95:56358 remote=/100.84.47.67:2181]
+2017-10-27 15:50:47,424 INFO  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:937) run - Server connection successful
+2017-10-27 15:50:47,976 INFO  [AWT-EventQueue-0] Connection (Connection.java:64) refreshTables - *****table
+2017-10-27 15:50:47,977 INFO  [AWT-EventQueue-0] Connection (Connection.java:65) refreshTables - 5
+2017-10-27 15:56:32,353 INFO  [main] HBaseExplorerApp (HBaseExplorerApp.java:58) main - -----HADOOP_HOME:E:\study\apache\hadoop-common-2.2.0-bin-master
+2017-10-27 17:12:25,960 INFO  [main] HBaseExplorerApp (HBaseExplorerApp.java:58) main - -----HADOOP_HOME:E:\study\apache\hadoop-common-2.2.0-bin-master
+2017-10-27 17:12:28,522 ERROR [AWT-EventQueue-0] HBaseExplorerView (HBaseExplorerView.java:306) newConnectionAction - ZK:100.84.47.67
+2017-10-27 17:12:29,140 INFO  [AWT-EventQueue-0] RecoverableZooKeeper (RecoverableZooKeeper.java:120) <init> - Process identifier=hconnection-0x21a30e4c connecting to ZooKeeper ensemble=100.84.47.67:2181
+2017-10-27 17:12:29,147 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:zookeeper.version=3.2.2-888565, built on 12/08/2009 21:51 GMT
+2017-10-27 17:12:29,148 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:host.name=100.84.51.95
+2017-10-27 17:12:29,148 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.version=1.8.0_111
+2017-10-27 17:12:29,149 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.vendor=Oracle Corporation
+2017-10-27 17:12:29,149 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.home=D:\Program Files\Java\jdk1.8.0_111\jre
+2017-10-27 17:12:29,150 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.class.path=D:\repositories_git\HBaseXplorer\bin;D:\repositories_git\HBaseXplorer\lib\AgileJSON-2009-03-30.jar;D:\repositories_git\HBaseXplorer\lib\appframework-1.0.3.jar;D:\repositories_git\HBaseXplorer\lib\beansbinding-1.2.1.jar;D:\repositories_git\HBaseXplorer\lib\commons-cli-2.0-SNAPSHOT.jar;D:\repositories_git\HBaseXplorer\lib\commons-el-from-jetty-5.1.4.jar;D:\repositories_git\HBaseXplorer\lib\commons-httpclient-3.0.1.jar;D:\repositories_git\HBaseXplorer\lib\commons-logging-1.0.4.jar;D:\repositories_git\HBaseXplorer\lib\commons-math-1.1.jar;D:\repositories_git\HBaseXplorer\lib\jasper-compiler-5.5.12.jar;D:\repositories_git\HBaseXplorer\lib\jasper-runtime-5.5.12.jar;D:\repositories_git\HBaseXplorer\lib\jetty-6.1.14.jar;D:\repositories_git\HBaseXplorer\lib\jetty-util-6.1.14.jar;D:\repositories_git\HBaseXplorer\lib\jruby-complete-1.2.0.jar;D:\repositories_git\HBaseXplorer\lib\json.jar;D:\repositories_git\HBaseXplorer\lib\junit-3.8.1.jar;D:\repositories_git\HBaseXplorer\lib\libthrift-r771587.jar;D:\repositories_git\HBaseXplorer\lib\log4j-1.2.15.jar;D:\repositories_git\HBaseXplorer\lib\lucene-core-3.0.0.jar;D:\repositories_git\HBaseXplorer\lib\servlet-api-2.5-6.1.14.jar;D:\repositories_git\HBaseXplorer\lib\slf4j-api-1.6.1.jar;D:\repositories_git\HBaseXplorer\lib\slf4j-log4j12-1.6.1.jar;D:\repositories_git\HBaseXplorer\lib\swing-layout-1.0.4.jar;D:\repositories_git\HBaseXplorer\lib\swing-worker-1.1.jar;D:\repositories_git\HBaseXplorer\lib\xmlenc-0.52.jar;D:\repositories_git\HBaseXplorer\lib\zookeeper-3.2.2.jar;D:\repositories_git\HBaseXplorer\lib\commons-configuration-1.6.jar;D:\repositories_git\HBaseXplorer\lib\commons-lang-2.5.jar;D:\repositories_git\HBaseXplorer\lib\hadoop-common-2.5.1.jar;D:\repositories_git\HBaseXplorer\lib\hbase-client-1.2.6.jar;D:\repositories_git\HBaseXplorer\lib\hbase-common-1.2.6.jar;D:\repositories_git\HBaseXplorer\lib\guava-12.0.1.jar;D:\repositories_git\HBaseXplorer\lib\commons-collections-3.2.2.jar;D:\repositories_git\HBaseXplorer\lib\protobuf-java-2.5.0.jar;D:\repositories_git\HBaseXplorer\lib\hadoop-auth-2.5.1.jar;D:\repositories_git\HBaseXplorer\lib\hbase-protocol-1.2.6.jar;D:\repositories_git\HBaseXplorer\lib\htrace-core-3.1.0-incubating.jar;D:\repositories_git\HBaseXplorer\lib\netty-all-4.0.23.Final.jar;D:\repositories_git\HBaseXplorer\lib\metrics-core-2.2.0.jar;D:\repositories_git\HBaseXplorer\lib\commons-codec-1.9.jar
+2017-10-27 17:12:29,150 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.library.path=D:\Program Files\Java\jdk1.8.0_111\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\Program Files\Java\jdk1.8.0_111\jre\bin;D:/Program Files/Java/jdk1.8.0_111/bin/../jre/bin/server;D:/Program Files/Java/jdk1.8.0_111/bin/../jre/bin;D:/Program Files/Java/jdk1.8.0_111/bin/../jre/lib/amd64;D:\Ruby24-x64\bin;C:\Program Files (x86)\Common Files\NetSarang;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;D:\Program Files\Java\jdk1.8.0_111\bin;D:\projects\jws-1.6.0.4\;D:\projects\jws-1.6.2.1\;D:\apache-maven-3.2.5\bin\;D:\apache-ant-1.9.7\bin\;D:\Program Files\nodejs\;D:\gradle\bin;E:\study\apache\hadoop-common-2.2.0-bin-master\bin\;C:\cygwin64\bin\;C:\Users\Administrator\AppData\Roaming\npm;C:\Program Files\jee-neon\eclipse;;.
+2017-10-27 17:12:29,151 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.io.tmpdir=C:\Users\ADMINI~1\AppData\Local\Temp\
+2017-10-27 17:12:29,151 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.compiler=<NA>
+2017-10-27 17:12:29,152 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:os.name=Windows 7
+2017-10-27 17:12:29,152 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:os.arch=amd64
+2017-10-27 17:12:29,153 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:os.version=6.1
+2017-10-27 17:12:29,153 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:user.name=Administrator
+2017-10-27 17:12:29,154 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:user.home=C:\Users\Administrator
+2017-10-27 17:12:29,154 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:user.dir=D:\repositories_git\HBaseXplorer
+2017-10-27 17:12:29,155 INFO  [AWT-EventQueue-0] ZooKeeper (ZooKeeper.java:369) <init> - Initiating client connection, connectString=100.84.47.67:2181 sessionTimeout=90000 watcher=hconnection-0x21a30e4c0x0, quorum=100.84.47.67:2181, baseZNode=/hbase
+2017-10-27 17:12:29,158 INFO  [AWT-EventQueue-0] ClientCnxn (ClientCnxn.java:92) <clinit> - zookeeper.disableAutoWatchReset is false
+2017-10-27 17:12:29,328 INFO  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:869) startConnect - Attempting connection to server /100.84.47.67:2181
+2017-10-27 17:12:29,333 INFO  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:785) primeConnection - Priming connection to java.nio.channels.SocketChannel[connected local=/100.84.51.95:56982 remote=/100.84.47.67:2181]
+2017-10-27 17:12:29,343 INFO  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:937) run - Server connection successful
+2017-10-27 17:12:29,787 INFO  [AWT-EventQueue-0] Connection (Connection.java:64) refreshTables - *****table
+2017-10-27 17:12:29,787 INFO  [AWT-EventQueue-0] Connection (Connection.java:65) refreshTables - 5
+2017-10-27 17:19:29,376 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f0
+2017-10-27 17:19:29,376 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f1
+2017-10-27 17:19:29,377 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f2
+2017-10-27 17:19:29,377 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f3
+2017-10-27 17:19:29,489 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:1
+2017-10-27 17:19:29,489 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:72) <init> - first show Data123
+2017-10-27 17:19:29,499 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:82) <init> - start load show Data10
+2017-10-27 17:19:29,502 INFO  [AWT-EventQueue-0] ConnectionTree (ConnectionTree.java:72) doubleClick - double click time time:199
+2017-10-27 17:19:36,753 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f0
+2017-10-27 17:19:36,754 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f1
+2017-10-27 17:19:36,754 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f2
+2017-10-27 17:19:36,755 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f3
+2017-10-27 17:19:36,794 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 17:19:36,797 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:72) <init> - first show Data44
+2017-10-27 17:19:36,805 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:82) <init> - start load show Data8
+2017-10-27 17:19:36,808 INFO  [AWT-EventQueue-0] ConnectionTree (ConnectionTree.java:72) doubleClick - double click time time:66
+2017-10-27 17:19:38,016 INFO  [AWT-EventQueue-0] ConnectionTree (ConnectionTree.java:72) doubleClick - double click time time:1
+2017-10-27 17:43:45,799 INFO  [AWT-EventQueue-0] ConnectionTree (ConnectionTree.java:72) doubleClick - double click time time:0
+2017-10-27 17:43:59,803 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f0
+2017-10-27 17:43:59,804 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f1
+2017-10-27 17:43:59,806 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f2
+2017-10-27 17:43:59,807 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f3
+2017-10-27 17:43:59,835 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:1
+2017-10-27 17:44:00,986 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f0
+2017-10-27 17:44:00,987 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f1
+2017-10-27 17:44:00,988 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f2
+2017-10-27 17:44:00,989 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f3
+2017-10-27 17:44:01,006 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:1
+2017-10-27 17:44:01,561 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f0
+2017-10-27 17:44:01,562 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f1
+2017-10-27 17:44:01,563 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f2
+2017-10-27 17:44:01,563 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f3
+2017-10-27 17:44:01,575 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:1
+2017-10-27 17:44:11,033 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f0
+2017-10-27 17:44:11,034 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f1
+2017-10-27 17:44:11,035 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f2
+2017-10-27 17:44:11,036 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f3
+2017-10-27 17:44:11,060 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:1
+2017-10-27 17:44:11,060 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:72) <init> - first show Data27
+2017-10-27 17:44:11,066 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:82) <init> - start load show Data5
+2017-10-27 17:44:11,068 INFO  [AWT-EventQueue-0] ConnectionTree (ConnectionTree.java:72) doubleClick - double click time time:67
+2017-10-27 17:44:12,073 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f0
+2017-10-27 17:44:12,074 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f1
+2017-10-27 17:44:12,074 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f2
+2017-10-27 17:44:12,074 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f3
+2017-10-27 17:44:12,090 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:1
+2017-10-27 17:44:12,090 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:72) <init> - first show Data17
+2017-10-27 17:44:12,095 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:82) <init> - start load show Data5
+2017-10-27 17:44:12,096 INFO  [AWT-EventQueue-0] ConnectionTree (ConnectionTree.java:72) doubleClick - double click time time:33
+2017-10-27 17:44:14,656 INFO  [AWT-EventQueue-0] ConnectionTree (ConnectionTree.java:72) doubleClick - double click time time:0
+2017-10-27 17:44:15,242 INFO  [AWT-EventQueue-0] ConnectionTree (ConnectionTree.java:72) doubleClick - double click time time:1
+2017-10-27 17:44:20,233 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f0
+2017-10-27 17:44:20,234 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f1
+2017-10-27 17:44:20,234 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f2
+2017-10-27 17:44:20,235 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f3
+2017-10-27 17:44:20,254 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 17:44:20,928 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f0
+2017-10-27 17:44:20,929 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f1
+2017-10-27 17:44:20,932 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f2
+2017-10-27 17:44:20,933 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f3
+2017-10-27 17:44:20,945 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 17:44:21,759 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f0
+2017-10-27 17:44:21,760 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f1
+2017-10-27 17:44:21,760 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f2
+2017-10-27 17:44:21,760 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f3
+2017-10-27 17:44:21,768 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 17:44:23,280 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f0
+2017-10-27 17:44:23,281 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f1
+2017-10-27 17:44:23,282 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f2
+2017-10-27 17:44:23,283 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f3
+2017-10-27 17:44:23,294 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 17:44:23,848 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f0
+2017-10-27 17:44:23,849 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f1
+2017-10-27 17:44:23,849 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f2
+2017-10-27 17:44:23,850 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f3
+2017-10-27 17:44:23,862 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 17:44:26,169 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f0
+2017-10-27 17:44:26,170 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f1
+2017-10-27 17:44:26,171 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f2
+2017-10-27 17:44:26,172 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f3
+2017-10-27 17:44:26,186 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:1
+2017-10-27 17:46:59,506 INFO  [AWT-EventQueue-0] ConnectionTree (ConnectionTree.java:72) doubleClick - double click time time:1
+2017-10-27 17:48:04,203 INFO  [AWT-EventQueue-0] ConnectionTree (ConnectionTree.java:72) doubleClick - double click time time:1
+2017-10-27 17:48:05,785 INFO  [AWT-EventQueue-0] ConnectionTree (ConnectionTree.java:72) doubleClick - double click time time:0
+2017-10-27 17:48:06,449 INFO  [AWT-EventQueue-0] ConnectionTree (ConnectionTree.java:72) doubleClick - double click time time:0
+2017-10-27 17:48:22,608 INFO  [main] HBaseExplorerApp (HBaseExplorerApp.java:58) main - -----HADOOP_HOME:E:\study\apache\hadoop-common-2.2.0-bin-master
+2017-10-27 17:48:34,770 ERROR [AWT-EventQueue-0] HBaseExplorerView (HBaseExplorerView.java:306) newConnectionAction - ZK:null
+2017-10-27 17:48:54,917 ERROR [AWT-EventQueue-0] HBaseExplorerView (?:?) newConnectionAction - ZK:null

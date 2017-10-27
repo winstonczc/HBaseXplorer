@@ -7,9 +7,15 @@ package org.hbaseexplorer.domain;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
+
+import org.apache.commons.lang.StringUtils;
 import org.apache.hadoop.conf.Configuration;
+import org.apache.hadoop.hbase.HColumnDescriptor;
+import org.apache.hadoop.hbase.HTableDescriptor;
 import org.apache.hadoop.hbase.MasterNotRunningException;
+import org.apache.hadoop.hbase.TableName;
 import org.apache.hadoop.hbase.client.HBaseAdmin;
+import org.apache.hadoop.hbase.io.compress.Compression.Algorithm;
 
 /**
  *
@@ -27,53 +33,50 @@ public class Query {
         this.queryS = queryStr;
     }
 
-
     public String runQuery() throws IOException {
-        
-        String keys[] = new String[4];
-        keys[0] = "create";
-        keys[1] = "disable";
-        keys[2] = "enable";
-        keys[3] = "drop";
-        
+
+        String cmds[] = new String[] {"create", "disable", "enable", "drop"};
+
         String valRet = "";
-        String head = "";
-        
-        String query =this.queryS;
+        String cmd = "";
+
+        String query = this.queryS;
         query = query.replaceAll("\\s{1,}", " ");
         if (query != null && query.length() > 0) {
             List<String> list = Arrays.asList(query.split(" "));
             if (!list.isEmpty()) {
-                head = list.get(0);
-                head = head.toLowerCase();
-                String table = list.get(1);
-                if(table != null && !table.isEmpty()){
+                cmd = list.get(0).toLowerCase();
+                String tableName = list.get(1);
+                String columnFamily = list.get(1);
+                if (StringUtils.isNotBlank(tableName)) {
                     for (int i = 0; i < 4; i++) {
-                        if (head.equals(keys[i])) {
-                            //run logic then return
-                            if(i==0){
-                                //run create
-                                
-                                
+                        if (cmd.equals(cmds[i])) {
+                            // run logic then return
+                            if (i == 0) {
+                                // run create
+                                HTableDescriptor td = new HTableDescriptor(TableName.valueOf(tableName));
+                                td.addFamily(new HColumnDescriptor(columnFamily).setCompressionType(Algorithm.GZ));
+                                this.hbaseAdmin.createTable(td);
+                                valRet = "create table ok";
                             }
 
-                            if(i==1){
-                                this.hbaseAdmin.disableTable(table);
-                                valRet = table + "  disable table ok";
+                            if (i == 1) {
+                                this.hbaseAdmin.disableTable(tableName);
+                                valRet = "disable table ok";
                             }
 
-                            if(i==2){
-                                this.hbaseAdmin.enableTable(table);
+                            if (i == 2) {
+                                this.hbaseAdmin.enableTable(tableName);
                                 valRet = "enable table ok";
                             }
 
-                            if(i==3){
-                                this.hbaseAdmin.disableTable(table);
-                                this.hbaseAdmin.deleteTable(table); 
+                            if (i == 3) {
+                                this.hbaseAdmin.disableTable(tableName);
+                                this.hbaseAdmin.deleteTable(tableName);
                                 valRet = "drop table ok";
                             }
 
-                            //valRet = head;
+                            // valRet = head;
                             break;
                         }
                     }

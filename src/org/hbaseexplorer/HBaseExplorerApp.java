@@ -5,7 +5,6 @@
 package org.hbaseexplorer;
 
 import org.apache.log4j.PropertyConfigurator;
-import org.buddy.javatools.ToolConfig;
 import org.buddy.javatools.Utils;
 import org.jdesktop.application.Application;
 import org.jdesktop.application.SingleFrameApplication;
@@ -33,7 +32,7 @@ public class HBaseExplorerApp extends SingleFrameApplication {
     @Override
     protected void configureWindow(java.awt.Window root) {
         // Set maxable of the window
-        this.getApplication().getMainFrame().setMaximumSize(null);
+        getApplication().getMainFrame().setMaximumSize(null);
     }
 
     /**
@@ -52,8 +51,6 @@ public class HBaseExplorerApp extends SingleFrameApplication {
 
         // set log info
         PropertyConfigurator.configure(LOG4J_CONF_FILE);
-        // load config
-        ToolConfig tc = new ToolConfig();
 
         // Utils.getLog().info("-----env:" + System.getenv());
         Utils.getLog().info("-----HADOOP_HOME:" + System.getenv("HADOOP_HOME"));
