@@ -12,7 +12,8 @@ import java.util.logging.Logger;
 import javax.swing.DefaultListModel;
 import javax.swing.table.AbstractTableModel;
 
-import org.apache.hadoop.hbase.KeyValue;
+import org.apache.hadoop.hbase.Cell;
+import org.apache.hadoop.hbase.CellUtil;
 import org.apache.hadoop.hbase.client.Result;
 import org.apache.hadoop.hbase.client.ResultScanner;
 import org.apache.hadoop.hbase.client.Scan;
@@ -177,15 +178,15 @@ public class EditTableDataModel extends AbstractTableModel {
                     // get the rowKey
                     rowKey = rowData.getRowKeyString();
                     // get rows data
-                    for (KeyValue kv : result.list()) {
+                    for (Cell cell : result.listCells()) {
                         // add hbase get family and get qualifier and get value
                         // if is in the filter then now display
-                        byte[] family = kv.getFamily();
-                        byte[] qualifier = kv.getQualifier();
-                        int valueLength = kv.getValueLength();
-                        byte[] value = kv.getValue();
+                        byte[] family = CellUtil.cloneFamily(cell);
+                        byte[] qualifier = CellUtil.cloneQualifier(cell);
+                        // int valueLength = cell.getValueLength();
+                        byte[] value = CellUtil.cloneValue(cell);
 
-                        rowData.add(new HBTriplet(kv.getFamily(), kv.getQualifier(), kv.getValue()));
+                        rowData.add(new HBTriplet(family, qualifier, value));
                     }
                 }
             } catch (IOException ioe) {
@@ -241,6 +242,25 @@ public class EditTableDataModel extends AbstractTableModel {
 
     public int getColumnCount() {
         return 3;
+    }
+
+    public String getColumnName(int column) {
+        String r = null;
+        switch (column) {
+            case 0:
+                r = "ColumnFamily";
+                break;
+            case 1:
+                r = "Qualifier";
+                break;
+            case 2:
+                r = "Value";
+                break;
+            default:
+                r = "Title" + column;
+                break;
+        }
+        return r;
     }
 
     public int getRowsTotal() {

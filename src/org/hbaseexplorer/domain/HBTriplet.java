@@ -3,6 +3,7 @@ package org.hbaseexplorer.domain;
 import java.io.UnsupportedEncodingException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
 import org.buddy.javatools.Utils;
 
 /**

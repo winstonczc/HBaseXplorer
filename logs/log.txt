@@ -871,3 +871,1076 @@ java.nio.channels.ClosedChannelException
 2017-10-27 17:48:22,608 INFO  [main] HBaseExplorerApp (HBaseExplorerApp.java:58) main - -----HADOOP_HOME:E:\study\apache\hadoop-common-2.2.0-bin-master
 2017-10-27 17:48:34,770 ERROR [AWT-EventQueue-0] HBaseExplorerView (HBaseExplorerView.java:306) newConnectionAction - ZK:null
 2017-10-27 17:48:54,917 ERROR [AWT-EventQueue-0] HBaseExplorerView (?:?) newConnectionAction - ZK:null
+2017-10-27 17:52:20,971 INFO  [main] HBaseExplorerApp (HBaseExplorerApp.java:56) main - -----HADOOP_HOME:E:\study\apache\hadoop-common-2.2.0-bin-master
+2017-10-27 17:52:22,822 ERROR [AWT-EventQueue-0] HBaseExplorerView (HBaseExplorerView.java:306) newConnectionAction - ZK:100.84.47.67
+2017-10-27 17:52:23,440 INFO  [AWT-EventQueue-0] RecoverableZooKeeper (RecoverableZooKeeper.java:120) <init> - Process identifier=hconnection-0xb42508c connecting to ZooKeeper ensemble=100.84.47.67:2181
+2017-10-27 17:52:23,449 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:zookeeper.version=3.2.2-888565, built on 12/08/2009 21:51 GMT
+2017-10-27 17:52:23,449 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:host.name=100.84.51.95
+2017-10-27 17:52:23,450 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.version=1.8.0_111
+2017-10-27 17:52:23,450 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.vendor=Oracle Corporation
+2017-10-27 17:52:23,450 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.home=D:\Program Files\Java\jdk1.8.0_111\jre
+2017-10-27 17:52:23,451 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.class.path=D:\repositories_git\HBaseXplorer\bin;D:\repositories_git\HBaseXplorer\lib\AgileJSON-2009-03-30.jar;D:\repositories_git\HBaseXplorer\lib\appframework-1.0.3.jar;D:\repositories_git\HBaseXplorer\lib\beansbinding-1.2.1.jar;D:\repositories_git\HBaseXplorer\lib\commons-cli-2.0-SNAPSHOT.jar;D:\repositories_git\HBaseXplorer\lib\commons-el-from-jetty-5.1.4.jar;D:\repositories_git\HBaseXplorer\lib\commons-httpclient-3.0.1.jar;D:\repositories_git\HBaseXplorer\lib\commons-logging-1.0.4.jar;D:\repositories_git\HBaseXplorer\lib\commons-math-1.1.jar;D:\repositories_git\HBaseXplorer\lib\jasper-compiler-5.5.12.jar;D:\repositories_git\HBaseXplorer\lib\jasper-runtime-5.5.12.jar;D:\repositories_git\HBaseXplorer\lib\jetty-6.1.14.jar;D:\repositories_git\HBaseXplorer\lib\jetty-util-6.1.14.jar;D:\repositories_git\HBaseXplorer\lib\jruby-complete-1.2.0.jar;D:\repositories_git\HBaseXplorer\lib\json.jar;D:\repositories_git\HBaseXplorer\lib\junit-3.8.1.jar;D:\repositories_git\HBaseXplorer\lib\libthrift-r771587.jar;D:\repositories_git\HBaseXplorer\lib\log4j-1.2.15.jar;D:\repositories_git\HBaseXplorer\lib\lucene-core-3.0.0.jar;D:\repositories_git\HBaseXplorer\lib\servlet-api-2.5-6.1.14.jar;D:\repositories_git\HBaseXplorer\lib\slf4j-api-1.6.1.jar;D:\repositories_git\HBaseXplorer\lib\slf4j-log4j12-1.6.1.jar;D:\repositories_git\HBaseXplorer\lib\swing-layout-1.0.4.jar;D:\repositories_git\HBaseXplorer\lib\swing-worker-1.1.jar;D:\repositories_git\HBaseXplorer\lib\xmlenc-0.52.jar;D:\repositories_git\HBaseXplorer\lib\zookeeper-3.2.2.jar;D:\repositories_git\HBaseXplorer\lib\commons-configuration-1.6.jar;D:\repositories_git\HBaseXplorer\lib\commons-lang-2.5.jar;D:\repositories_git\HBaseXplorer\lib\hadoop-common-2.5.1.jar;D:\repositories_git\HBaseXplorer\lib\hbase-client-1.2.6.jar;D:\repositories_git\HBaseXplorer\lib\hbase-common-1.2.6.jar;D:\repositories_git\HBaseXplorer\lib\guava-12.0.1.jar;D:\repositories_git\HBaseXplorer\lib\commons-collections-3.2.2.jar;D:\repositories_git\HBaseXplorer\lib\protobuf-java-2.5.0.jar;D:\repositories_git\HBaseXplorer\lib\hadoop-auth-2.5.1.jar;D:\repositories_git\HBaseXplorer\lib\hbase-protocol-1.2.6.jar;D:\repositories_git\HBaseXplorer\lib\htrace-core-3.1.0-incubating.jar;D:\repositories_git\HBaseXplorer\lib\netty-all-4.0.23.Final.jar;D:\repositories_git\HBaseXplorer\lib\metrics-core-2.2.0.jar;D:\repositories_git\HBaseXplorer\lib\commons-codec-1.9.jar
+2017-10-27 17:52:23,452 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.library.path=D:\Program Files\Java\jdk1.8.0_111\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\Program Files\Java\jdk1.8.0_111\jre\bin;D:/Program Files/Java/jdk1.8.0_111/bin/../jre/bin/server;D:/Program Files/Java/jdk1.8.0_111/bin/../jre/bin;D:/Program Files/Java/jdk1.8.0_111/bin/../jre/lib/amd64;D:\Ruby24-x64\bin;C:\Program Files (x86)\Common Files\NetSarang;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;D:\Program Files\Java\jdk1.8.0_111\bin;D:\projects\jws-1.6.0.4\;D:\projects\jws-1.6.2.1\;D:\apache-maven-3.2.5\bin\;D:\apache-ant-1.9.7\bin\;D:\Program Files\nodejs\;D:\gradle\bin;E:\study\apache\hadoop-common-2.2.0-bin-master\bin\;C:\cygwin64\bin\;C:\Users\Administrator\AppData\Roaming\npm;C:\Program Files\jee-neon\eclipse;;.
+2017-10-27 17:52:23,452 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.io.tmpdir=C:\Users\ADMINI~1\AppData\Local\Temp\
+2017-10-27 17:52:23,452 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.compiler=<NA>
+2017-10-27 17:52:23,453 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:os.name=Windows 7
+2017-10-27 17:52:23,453 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:os.arch=amd64
+2017-10-27 17:52:23,453 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:os.version=6.1
+2017-10-27 17:52:23,454 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:user.name=Administrator
+2017-10-27 17:52:23,455 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:user.home=C:\Users\Administrator
+2017-10-27 17:52:23,455 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:user.dir=D:\repositories_git\HBaseXplorer
+2017-10-27 17:52:23,456 INFO  [AWT-EventQueue-0] ZooKeeper (ZooKeeper.java:369) <init> - Initiating client connection, connectString=100.84.47.67:2181 sessionTimeout=90000 watcher=hconnection-0xb42508c0x0, quorum=100.84.47.67:2181, baseZNode=/hbase
+2017-10-27 17:52:23,458 INFO  [AWT-EventQueue-0] ClientCnxn (ClientCnxn.java:92) <clinit> - zookeeper.disableAutoWatchReset is false
+2017-10-27 17:52:23,613 INFO  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:869) startConnect - Attempting connection to server /100.84.47.67:2181
+2017-10-27 17:52:23,618 INFO  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:785) primeConnection - Priming connection to java.nio.channels.SocketChannel[connected local=/100.84.51.95:57510 remote=/100.84.47.67:2181]
+2017-10-27 17:52:23,623 INFO  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:937) run - Server connection successful
+2017-10-27 17:52:24,033 INFO  [AWT-EventQueue-0] Connection (Connection.java:64) refreshTables - *****table
+2017-10-27 17:52:24,033 INFO  [AWT-EventQueue-0] Connection (Connection.java:65) refreshTables - 5
+2017-10-27 17:52:25,575 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f0
+2017-10-27 17:52:25,576 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f1
+2017-10-27 17:52:25,576 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f2
+2017-10-27 17:52:25,577 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f3
+2017-10-27 17:52:25,674 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 17:52:25,675 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:72) <init> - first show Data108
+2017-10-27 17:52:25,683 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:82) <init> - start load show Data8
+2017-10-27 17:52:25,686 INFO  [AWT-EventQueue-0] ConnectionTree (ConnectionTree.java:72) doubleClick - double click time time:157
+2017-10-27 17:52:26,308 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f0
+2017-10-27 17:52:26,309 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f1
+2017-10-27 17:52:26,310 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f2
+2017-10-27 17:52:26,311 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f3
+2017-10-27 17:52:26,347 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 17:52:26,349 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:72) <init> - first show Data41
+2017-10-27 17:52:26,355 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:82) <init> - start load show Data5
+2017-10-27 17:52:26,358 INFO  [AWT-EventQueue-0] ConnectionTree (ConnectionTree.java:72) doubleClick - double click time time:69
+2017-10-27 17:55:08,794 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f0
+2017-10-27 17:55:08,796 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f1
+2017-10-27 17:55:08,797 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f2
+2017-10-27 17:55:08,798 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f3
+2017-10-27 17:55:08,831 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 17:55:08,834 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f0
+2017-10-27 17:55:08,835 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f1
+2017-10-27 17:55:08,836 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f2
+2017-10-27 17:55:08,836 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f3
+2017-10-27 17:55:08,845 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 17:55:09,737 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f0
+2017-10-27 17:55:09,739 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f1
+2017-10-27 17:55:09,740 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f2
+2017-10-27 17:55:09,759 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f3
+2017-10-27 17:55:09,768 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:1
+2017-10-27 17:55:09,769 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f0
+2017-10-27 17:55:09,769 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f1
+2017-10-27 17:55:09,769 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f2
+2017-10-27 17:55:09,770 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f3
+2017-10-27 17:55:09,777 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 17:55:10,793 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f0
+2017-10-27 17:55:10,959 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f1
+2017-10-27 17:55:10,961 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f2
+2017-10-27 17:55:10,962 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f3
+2017-10-27 17:55:10,983 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 17:55:10,985 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f0
+2017-10-27 17:55:10,985 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f1
+2017-10-27 17:55:10,986 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f2
+2017-10-27 17:55:10,986 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f3
+2017-10-27 17:55:10,995 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 17:56:34,392 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f0
+2017-10-27 17:56:35,569 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f1
+2017-10-27 17:56:36,792 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f2
+2017-10-27 17:56:37,633 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f3
+2017-10-27 17:58:19,331 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 17:58:19,333 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f0
+2017-10-27 17:58:19,333 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f1
+2017-10-27 17:58:19,334 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f2
+2017-10-27 17:58:19,343 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f3
+2017-10-27 17:58:19,357 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 17:58:19,357 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f0
+2017-10-27 17:58:19,358 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f1
+2017-10-27 17:58:19,358 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f2
+2017-10-27 17:58:19,358 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:144) refreshData - F AND Q :tmp  :  f3
+2017-10-27 17:58:19,364 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:24,561 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:24,562 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:24,562 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:24,562 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:24,576 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:1
+2017-10-27 18:07:24,588 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:24,588 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:24,589 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:24,589 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:24,605 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:24,606 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:24,607 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:24,607 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:24,608 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:24,614 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:25,192 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:25,193 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:25,193 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:25,193 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:25,199 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:25,200 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:25,201 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:25,201 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:25,201 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:25,208 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:25,209 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:25,209 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:25,243 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:25,243 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:25,271 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:25,685 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:25,686 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:25,687 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:25,687 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:25,702 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:25,704 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:25,705 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:25,706 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:25,706 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:25,717 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:1
+2017-10-27 18:07:25,718 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:25,718 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:25,719 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:25,719 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:25,726 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:26,513 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:26,513 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:26,514 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:26,514 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:26,520 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:1
+2017-10-27 18:07:26,520 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:26,520 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:26,521 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:26,521 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:26,529 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:26,530 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:26,531 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:26,531 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:26,532 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:26,541 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:1
+2017-10-27 18:07:26,820 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:26,821 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:26,822 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:26,822 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:26,835 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:1
+2017-10-27 18:07:26,836 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:26,837 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:26,837 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:26,838 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:26,849 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:1
+2017-10-27 18:07:26,850 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:26,851 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:26,851 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:26,852 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:26,861 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:27,082 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:27,083 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:27,084 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:27,084 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:27,097 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:27,107 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:27,108 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:27,109 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:27,110 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:27,124 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:1
+2017-10-27 18:07:27,125 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:27,125 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:27,126 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:27,126 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:27,131 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:27,418 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:27,419 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:27,420 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:27,420 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:27,429 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:27,431 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:27,431 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:27,432 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:27,433 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:27,442 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:1
+2017-10-27 18:07:27,443 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:27,444 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:27,444 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:27,445 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:27,454 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:27,682 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:27,683 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:27,684 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:27,684 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:27,696 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:27,698 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:27,698 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:27,698 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:27,699 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:27,706 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:27,707 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:27,707 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:27,708 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:27,708 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:27,716 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:1
+2017-10-27 18:07:27,970 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:27,970 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:27,971 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:27,972 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:27,981 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:27,983 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:27,983 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:27,984 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:27,985 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:28,001 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:28,002 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:28,002 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:28,003 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:28,003 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:28,010 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:1
+2017-10-27 18:07:28,233 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:28,234 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:28,234 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:28,235 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:28,246 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:1
+2017-10-27 18:07:28,247 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:28,248 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:28,249 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:28,249 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:28,264 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:28,265 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:28,265 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:28,265 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:28,265 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:28,272 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:28,498 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:28,499 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:28,500 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:28,500 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:28,510 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:28,512 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:28,512 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:28,513 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:28,514 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:28,525 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:28,527 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:28,528 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:28,528 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:28,529 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:28,536 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:1
+2017-10-27 18:07:29,162 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:29,163 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:29,163 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:29,164 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:29,173 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:29,175 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:29,176 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:29,177 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:29,177 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:29,188 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:29,191 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:29,191 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:29,192 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:29,194 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:29,200 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:1
+2017-10-27 18:07:29,802 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:29,802 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:29,802 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:29,802 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:29,808 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:29,809 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:29,809 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:29,810 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:29,810 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:29,820 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:29,821 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:29,821 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:29,822 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:29,822 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:29,828 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:1
+2017-10-27 18:07:30,314 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:30,315 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:30,316 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:30,316 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:30,330 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:30,332 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:30,333 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:30,333 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:30,333 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:30,342 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:30,344 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:30,344 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:30,345 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:30,345 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:30,353 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:31,378 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:31,379 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:31,379 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:31,380 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:31,390 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:1
+2017-10-27 18:07:31,391 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:31,392 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:31,392 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:31,393 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:31,413 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:5
+2017-10-27 18:07:31,413 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:31,414 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:31,414 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:31,414 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:31,419 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:31,810 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:31,811 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:31,811 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:31,812 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:31,822 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:31,826 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:31,827 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:31,827 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:31,828 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:31,837 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:31,838 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:31,838 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:31,839 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:31,839 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:31,846 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:32,129 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:32,129 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:32,129 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:32,130 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:32,135 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:32,135 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:32,136 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:32,136 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:32,136 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:32,145 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:32,146 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:32,146 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:32,146 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:32,146 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:32,169 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:1
+2017-10-27 18:07:32,473 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:32,473 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:32,473 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:32,473 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:32,478 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:32,479 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:32,479 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:32,479 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:32,479 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:32,496 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:32,497 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:32,497 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:32,497 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:32,497 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:32,502 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:32,801 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:32,801 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:32,801 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:32,801 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:32,806 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:32,807 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:32,807 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:32,807 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:32,807 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:32,814 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:1
+2017-10-27 18:07:32,814 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:32,814 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:32,814 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:32,815 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:32,819 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:33,368 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:33,369 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:33,369 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:33,369 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:33,375 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:33,376 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:33,376 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:33,376 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:33,376 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:33,382 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:33,382 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:33,383 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:33,383 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:33,383 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:33,389 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:33,872 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:33,873 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:33,873 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:33,873 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:33,878 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:33,879 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:33,879 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:33,880 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:33,880 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:33,885 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:33,886 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:33,886 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:33,887 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:33,887 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:33,892 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:34,289 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:34,290 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:34,290 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:34,290 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:34,295 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:34,296 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:34,296 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:34,297 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:34,297 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:34,303 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:1
+2017-10-27 18:07:34,303 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:34,304 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:34,304 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:34,304 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:34,311 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:35,129 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:35,129 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:35,129 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:35,130 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:35,138 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:35,140 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:35,140 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:35,140 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:35,141 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:35,145 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:35,146 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:35,146 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:35,146 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:35,146 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:35,151 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:35,498 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:35,498 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:35,498 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:35,499 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:35,515 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:1
+2017-10-27 18:07:35,516 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:35,516 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:35,516 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:35,516 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:35,528 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:35,530 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:35,530 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:35,530 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:35,531 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:35,537 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:1
+2017-10-27 18:07:35,960 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:35,960 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:35,961 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:35,961 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:35,966 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:35,967 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:35,967 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:35,967 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:35,967 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:35,972 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:35,973 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:35,973 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:35,973 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:35,974 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:35,979 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:36,465 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:36,465 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:36,466 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:36,466 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:36,473 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:36,473 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:36,474 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:36,474 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:36,474 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:36,478 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:36,478 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:36,478 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:36,479 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:36,479 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:36,483 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:37,088 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:37,089 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:37,089 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:37,089 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:37,095 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:37,096 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:37,096 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:37,096 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:37,096 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:37,102 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:37,102 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:37,103 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:37,103 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:37,103 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:37,109 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:37,408 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:37,408 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:37,409 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:37,409 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:37,414 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:37,415 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:37,415 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:37,416 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:37,416 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:37,421 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:37,422 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:37,422 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:37,423 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:37,423 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:37,429 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:37,736 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:37,737 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:37,737 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:37,737 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:37,773 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:37,775 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:37,775 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:37,775 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:37,776 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:37,789 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:37,790 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:37,790 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:37,790 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:37,790 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:37,804 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:38,097 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:38,097 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:38,097 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:38,097 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:38,102 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:38,103 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:38,103 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:38,104 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:38,104 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:38,108 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:38,109 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:38,109 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:38,109 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:38,110 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:38,114 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:38,696 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:38,696 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:38,697 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:38,697 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:38,703 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:38,704 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:38,704 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:38,704 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:38,704 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:38,708 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:38,709 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:38,709 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:38,709 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:38,709 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:38,713 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:39,073 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:39,073 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:39,073 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:39,073 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:39,078 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:39,078 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:39,078 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:39,078 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:39,079 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:39,083 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:39,083 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:39,083 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:39,083 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:39,084 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:39,087 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:39,585 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:39,585 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:39,585 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:39,586 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:39,592 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:1
+2017-10-27 18:07:39,592 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:39,592 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:39,593 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:39,593 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:39,597 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:39,608 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:39,608 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:39,608 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:39,608 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:39,613 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:41,643 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:41,643 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:41,644 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:41,645 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:41,653 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:41,655 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:41,655 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:41,656 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:41,656 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:41,665 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:07:41,666 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:07:41,667 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:07:41,667 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:07:41,668 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:07:41,677 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:12:24,228 INFO  [main] HBaseExplorerApp (HBaseExplorerApp.java:56) main - -----HADOOP_HOME:E:\study\apache\hadoop-common-2.2.0-bin-master
+2017-10-27 18:14:05,799 ERROR [AWT-EventQueue-0] HBaseExplorerView (HBaseExplorerView.java:306) newConnectionAction - ZK:100.84.47.67
+2017-10-27 18:14:06,532 INFO  [AWT-EventQueue-0] RecoverableZooKeeper (RecoverableZooKeeper.java:120) <init> - Process identifier=hconnection-0x6d21ca37 connecting to ZooKeeper ensemble=100.84.47.67:2181
+2017-10-27 18:14:06,539 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:zookeeper.version=3.2.2-888565, built on 12/08/2009 21:51 GMT
+2017-10-27 18:14:06,540 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:host.name=100.84.51.95
+2017-10-27 18:14:06,540 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.version=1.8.0_111
+2017-10-27 18:14:06,541 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.vendor=Oracle Corporation
+2017-10-27 18:14:06,541 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.home=D:\Program Files\Java\jdk1.8.0_111\jre
+2017-10-27 18:14:06,542 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.class.path=D:\repositories_git\HBaseXplorer\bin;D:\repositories_git\HBaseXplorer\lib\AgileJSON-2009-03-30.jar;D:\repositories_git\HBaseXplorer\lib\appframework-1.0.3.jar;D:\repositories_git\HBaseXplorer\lib\beansbinding-1.2.1.jar;D:\repositories_git\HBaseXplorer\lib\commons-cli-2.0-SNAPSHOT.jar;D:\repositories_git\HBaseXplorer\lib\commons-el-from-jetty-5.1.4.jar;D:\repositories_git\HBaseXplorer\lib\commons-httpclient-3.0.1.jar;D:\repositories_git\HBaseXplorer\lib\commons-logging-1.0.4.jar;D:\repositories_git\HBaseXplorer\lib\commons-math-1.1.jar;D:\repositories_git\HBaseXplorer\lib\jasper-compiler-5.5.12.jar;D:\repositories_git\HBaseXplorer\lib\jasper-runtime-5.5.12.jar;D:\repositories_git\HBaseXplorer\lib\jetty-6.1.14.jar;D:\repositories_git\HBaseXplorer\lib\jetty-util-6.1.14.jar;D:\repositories_git\HBaseXplorer\lib\jruby-complete-1.2.0.jar;D:\repositories_git\HBaseXplorer\lib\json.jar;D:\repositories_git\HBaseXplorer\lib\junit-3.8.1.jar;D:\repositories_git\HBaseXplorer\lib\libthrift-r771587.jar;D:\repositories_git\HBaseXplorer\lib\log4j-1.2.15.jar;D:\repositories_git\HBaseXplorer\lib\lucene-core-3.0.0.jar;D:\repositories_git\HBaseXplorer\lib\servlet-api-2.5-6.1.14.jar;D:\repositories_git\HBaseXplorer\lib\slf4j-api-1.6.1.jar;D:\repositories_git\HBaseXplorer\lib\slf4j-log4j12-1.6.1.jar;D:\repositories_git\HBaseXplorer\lib\swing-layout-1.0.4.jar;D:\repositories_git\HBaseXplorer\lib\swing-worker-1.1.jar;D:\repositories_git\HBaseXplorer\lib\xmlenc-0.52.jar;D:\repositories_git\HBaseXplorer\lib\zookeeper-3.2.2.jar;D:\repositories_git\HBaseXplorer\lib\commons-configuration-1.6.jar;D:\repositories_git\HBaseXplorer\lib\commons-lang-2.5.jar;D:\repositories_git\HBaseXplorer\lib\hadoop-common-2.5.1.jar;D:\repositories_git\HBaseXplorer\lib\hbase-client-1.2.6.jar;D:\repositories_git\HBaseXplorer\lib\hbase-common-1.2.6.jar;D:\repositories_git\HBaseXplorer\lib\guava-12.0.1.jar;D:\repositories_git\HBaseXplorer\lib\commons-collections-3.2.2.jar;D:\repositories_git\HBaseXplorer\lib\protobuf-java-2.5.0.jar;D:\repositories_git\HBaseXplorer\lib\hadoop-auth-2.5.1.jar;D:\repositories_git\HBaseXplorer\lib\hbase-protocol-1.2.6.jar;D:\repositories_git\HBaseXplorer\lib\htrace-core-3.1.0-incubating.jar;D:\repositories_git\HBaseXplorer\lib\netty-all-4.0.23.Final.jar;D:\repositories_git\HBaseXplorer\lib\metrics-core-2.2.0.jar;D:\repositories_git\HBaseXplorer\lib\commons-codec-1.9.jar
+2017-10-27 18:14:06,542 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.library.path=D:\Program Files\Java\jdk1.8.0_111\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\Program Files\Java\jdk1.8.0_111\jre\bin;D:/Program Files/Java/jdk1.8.0_111/bin/../jre/bin/server;D:/Program Files/Java/jdk1.8.0_111/bin/../jre/bin;D:/Program Files/Java/jdk1.8.0_111/bin/../jre/lib/amd64;D:\Ruby24-x64\bin;C:\Program Files (x86)\Common Files\NetSarang;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;D:\Program Files\Java\jdk1.8.0_111\bin;D:\projects\jws-1.6.0.4\;D:\projects\jws-1.6.2.1\;D:\apache-maven-3.2.5\bin\;D:\apache-ant-1.9.7\bin\;D:\Program Files\nodejs\;D:\gradle\bin;E:\study\apache\hadoop-common-2.2.0-bin-master\bin\;C:\cygwin64\bin\;C:\Users\Administrator\AppData\Roaming\npm;C:\Program Files\jee-neon\eclipse;;.
+2017-10-27 18:14:06,543 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.io.tmpdir=C:\Users\ADMINI~1\AppData\Local\Temp\
+2017-10-27 18:14:06,543 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.compiler=<NA>
+2017-10-27 18:14:06,543 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:os.name=Windows 7
+2017-10-27 18:14:06,544 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:os.arch=amd64
+2017-10-27 18:14:06,544 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:os.version=6.1
+2017-10-27 18:14:06,545 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:user.name=Administrator
+2017-10-27 18:14:06,545 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:user.home=C:\Users\Administrator
+2017-10-27 18:14:06,545 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:user.dir=D:\repositories_git\HBaseXplorer
+2017-10-27 18:14:06,546 INFO  [AWT-EventQueue-0] ZooKeeper (ZooKeeper.java:369) <init> - Initiating client connection, connectString=100.84.47.67:2181 sessionTimeout=90000 watcher=hconnection-0x6d21ca370x0, quorum=100.84.47.67:2181, baseZNode=/hbase
+2017-10-27 18:14:06,547 INFO  [AWT-EventQueue-0] ClientCnxn (ClientCnxn.java:92) <clinit> - zookeeper.disableAutoWatchReset is false
+2017-10-27 18:14:06,653 INFO  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:869) startConnect - Attempting connection to server /100.84.47.67:2181
+2017-10-27 18:14:06,658 INFO  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:785) primeConnection - Priming connection to java.nio.channels.SocketChannel[connected local=/100.84.51.95:57674 remote=/100.84.47.67:2181]
+2017-10-27 18:14:06,665 INFO  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:937) run - Server connection successful
+2017-10-27 18:14:07,106 INFO  [AWT-EventQueue-0] Connection (Connection.java:64) refreshTables - *****table
+2017-10-27 18:14:07,107 INFO  [AWT-EventQueue-0] Connection (Connection.java:65) refreshTables - 5
+2017-10-27 18:14:08,785 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:14:08,785 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:14:08,786 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:14:08,786 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:14:11,271 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:4
+2017-10-27 18:14:11,272 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:72) <init> - first show Data2493
+2017-10-27 18:14:11,316 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:82) <init> - start load show Data44
+2017-10-27 18:14:11,319 INFO  [AWT-EventQueue-0] ConnectionTree (ConnectionTree.java:72) doubleClick - double click time time:2604
+2017-10-27 18:14:14,016 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:14:14,017 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:14:14,018 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:14:14,018 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:14:14,612 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:14:14,615 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:72) <init> - first show Data599
+2017-10-27 18:14:14,625 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:82) <init> - start load show Data9
+2017-10-27 18:14:14,627 INFO  [AWT-EventQueue-0] ConnectionTree (ConnectionTree.java:72) doubleClick - double click time time:633
+2017-10-27 18:14:17,179 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:14:17,180 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:14:17,181 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:14:17,182 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:14:31,051 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:12000
+2017-10-27 18:33:18,634 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:33:18,634 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:33:18,635 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:33:18,635 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:33:18,663 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:38:51,166 INFO  [main] HBaseExplorerApp (HBaseExplorerApp.java:56) main - -----HADOOP_HOME:E:\study\apache\hadoop-common-2.2.0-bin-master
+2017-10-27 18:38:58,246 ERROR [AWT-EventQueue-0] HBaseExplorerView (HBaseExplorerView.java:306) newConnectionAction - ZK:100.84.51.95
+2017-10-27 18:38:58,891 INFO  [AWT-EventQueue-0] RecoverableZooKeeper (RecoverableZooKeeper.java:120) <init> - Process identifier=hconnection-0x61fce9b9 connecting to ZooKeeper ensemble=100.84.51.95:2181
+2017-10-27 18:38:58,900 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:zookeeper.version=3.2.2-888565, built on 12/08/2009 21:51 GMT
+2017-10-27 18:38:58,929 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:host.name=100.84.51.95
+2017-10-27 18:38:58,930 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.version=1.8.0_111
+2017-10-27 18:38:58,932 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.vendor=Oracle Corporation
+2017-10-27 18:38:58,932 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.home=D:\Program Files\Java\jdk1.8.0_111\jre
+2017-10-27 18:38:58,933 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.class.path=D:\repositories_git\HBaseXplorer\bin;D:\repositories_git\HBaseXplorer\lib\AgileJSON-2009-03-30.jar;D:\repositories_git\HBaseXplorer\lib\appframework-1.0.3.jar;D:\repositories_git\HBaseXplorer\lib\beansbinding-1.2.1.jar;D:\repositories_git\HBaseXplorer\lib\commons-cli-2.0-SNAPSHOT.jar;D:\repositories_git\HBaseXplorer\lib\commons-el-from-jetty-5.1.4.jar;D:\repositories_git\HBaseXplorer\lib\commons-httpclient-3.0.1.jar;D:\repositories_git\HBaseXplorer\lib\commons-logging-1.0.4.jar;D:\repositories_git\HBaseXplorer\lib\commons-math-1.1.jar;D:\repositories_git\HBaseXplorer\lib\jasper-compiler-5.5.12.jar;D:\repositories_git\HBaseXplorer\lib\jasper-runtime-5.5.12.jar;D:\repositories_git\HBaseXplorer\lib\jetty-6.1.14.jar;D:\repositories_git\HBaseXplorer\lib\jetty-util-6.1.14.jar;D:\repositories_git\HBaseXplorer\lib\jruby-complete-1.2.0.jar;D:\repositories_git\HBaseXplorer\lib\json.jar;D:\repositories_git\HBaseXplorer\lib\junit-3.8.1.jar;D:\repositories_git\HBaseXplorer\lib\libthrift-r771587.jar;D:\repositories_git\HBaseXplorer\lib\log4j-1.2.15.jar;D:\repositories_git\HBaseXplorer\lib\lucene-core-3.0.0.jar;D:\repositories_git\HBaseXplorer\lib\servlet-api-2.5-6.1.14.jar;D:\repositories_git\HBaseXplorer\lib\slf4j-api-1.6.1.jar;D:\repositories_git\HBaseXplorer\lib\slf4j-log4j12-1.6.1.jar;D:\repositories_git\HBaseXplorer\lib\swing-layout-1.0.4.jar;D:\repositories_git\HBaseXplorer\lib\swing-worker-1.1.jar;D:\repositories_git\HBaseXplorer\lib\xmlenc-0.52.jar;D:\repositories_git\HBaseXplorer\lib\zookeeper-3.2.2.jar;D:\repositories_git\HBaseXplorer\lib\commons-configuration-1.6.jar;D:\repositories_git\HBaseXplorer\lib\commons-lang-2.5.jar;D:\repositories_git\HBaseXplorer\lib\hadoop-common-2.5.1.jar;D:\repositories_git\HBaseXplorer\lib\hbase-client-1.2.6.jar;D:\repositories_git\HBaseXplorer\lib\hbase-common-1.2.6.jar;D:\repositories_git\HBaseXplorer\lib\guava-12.0.1.jar;D:\repositories_git\HBaseXplorer\lib\commons-collections-3.2.2.jar;D:\repositories_git\HBaseXplorer\lib\protobuf-java-2.5.0.jar;D:\repositories_git\HBaseXplorer\lib\hadoop-auth-2.5.1.jar;D:\repositories_git\HBaseXplorer\lib\hbase-protocol-1.2.6.jar;D:\repositories_git\HBaseXplorer\lib\htrace-core-3.1.0-incubating.jar;D:\repositories_git\HBaseXplorer\lib\netty-all-4.0.23.Final.jar;D:\repositories_git\HBaseXplorer\lib\metrics-core-2.2.0.jar;D:\repositories_git\HBaseXplorer\lib\commons-codec-1.9.jar
+2017-10-27 18:38:58,934 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.library.path=D:\Program Files\Java\jdk1.8.0_111\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\Program Files\Java\jdk1.8.0_111\jre\bin;D:/Program Files/Java/jdk1.8.0_111/bin/../jre/bin/server;D:/Program Files/Java/jdk1.8.0_111/bin/../jre/bin;D:/Program Files/Java/jdk1.8.0_111/bin/../jre/lib/amd64;D:\Ruby24-x64\bin;C:\Program Files (x86)\Common Files\NetSarang;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;D:\Program Files\Java\jdk1.8.0_111\bin;D:\projects\jws-1.6.0.4\;D:\projects\jws-1.6.2.1\;D:\apache-maven-3.2.5\bin\;D:\apache-ant-1.9.7\bin\;D:\Program Files\nodejs\;D:\gradle\bin;E:\study\apache\hadoop-common-2.2.0-bin-master\bin\;C:\cygwin64\bin\;C:\Users\Administrator\AppData\Roaming\npm;C:\Program Files\jee-neon\eclipse;;.
+2017-10-27 18:38:58,934 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.io.tmpdir=C:\Users\ADMINI~1\AppData\Local\Temp\
+2017-10-27 18:38:58,935 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.compiler=<NA>
+2017-10-27 18:38:58,935 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:os.name=Windows 7
+2017-10-27 18:38:58,936 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:os.arch=amd64
+2017-10-27 18:38:58,936 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:os.version=6.1
+2017-10-27 18:38:58,939 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:user.name=Administrator
+2017-10-27 18:38:58,939 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:user.home=C:\Users\Administrator
+2017-10-27 18:38:58,940 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:user.dir=D:\repositories_git\HBaseXplorer
+2017-10-27 18:38:58,941 INFO  [AWT-EventQueue-0] ZooKeeper (ZooKeeper.java:369) <init> - Initiating client connection, connectString=100.84.51.95:2181 sessionTimeout=90000 watcher=hconnection-0x61fce9b90x0, quorum=100.84.51.95:2181, baseZNode=/hbase
+2017-10-27 18:38:59,005 INFO  [AWT-EventQueue-0] ClientCnxn (ClientCnxn.java:92) <clinit> - zookeeper.disableAutoWatchReset is false
+2017-10-27 18:38:59,135 INFO  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:869) startConnect - Attempting connection to server /100.84.51.95:2181
+2017-10-27 18:39:00,145 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:967) run - Exception closing session 0x0 to sun.nio.ch.SelectionKeyImpl@3eb27991
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:933)
+2017-10-27 18:39:00,147 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:1001) cleanup - Ignoring exception during shutdown input
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.shutdownInput(SocketChannelImpl.java:780)
+	at sun.nio.ch.SocketAdaptor.shutdownInput(SocketAdaptor.java:399)
+	at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:999)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:970)
+2017-10-27 18:39:00,148 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:1006) cleanup - Ignoring exception during shutdown output
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.shutdownOutput(SocketChannelImpl.java:797)
+	at sun.nio.ch.SocketAdaptor.shutdownOutput(SocketAdaptor.java:407)
+	at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:1004)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:970)
+2017-10-27 18:39:02,221 INFO  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:869) startConnect - Attempting connection to server /100.84.51.95:2181
+2017-10-27 18:39:03,224 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:967) run - Exception closing session 0x0 to sun.nio.ch.SelectionKeyImpl@f1f52b8
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:933)
+2017-10-27 18:39:03,226 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:1001) cleanup - Ignoring exception during shutdown input
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.shutdownInput(SocketChannelImpl.java:780)
+	at sun.nio.ch.SocketAdaptor.shutdownInput(SocketAdaptor.java:399)
+	at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:999)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:970)
+2017-10-27 18:39:03,227 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:1006) cleanup - Ignoring exception during shutdown output
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.shutdownOutput(SocketChannelImpl.java:797)
+	at sun.nio.ch.SocketAdaptor.shutdownOutput(SocketAdaptor.java:407)
+	at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:1004)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:970)
+2017-10-27 18:39:05,080 INFO  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:869) startConnect - Attempting connection to server /100.84.51.95:2181
+2017-10-27 18:39:06,079 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:967) run - Exception closing session 0x0 to sun.nio.ch.SelectionKeyImpl@25342bd3
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:933)
+2017-10-27 18:39:06,079 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:1001) cleanup - Ignoring exception during shutdown input
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.shutdownInput(SocketChannelImpl.java:780)
+	at sun.nio.ch.SocketAdaptor.shutdownInput(SocketAdaptor.java:399)
+	at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:999)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:970)
+2017-10-27 18:39:06,079 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:1006) cleanup - Ignoring exception during shutdown output
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.shutdownOutput(SocketChannelImpl.java:797)
+	at sun.nio.ch.SocketAdaptor.shutdownOutput(SocketAdaptor.java:407)
+	at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:1004)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:970)
+2017-10-27 18:39:07,339 INFO  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:869) startConnect - Attempting connection to server /100.84.51.95:2181
+2017-10-27 18:39:08,341 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:967) run - Exception closing session 0x0 to sun.nio.ch.SelectionKeyImpl@2b209604
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:933)
+2017-10-27 18:39:08,341 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:1001) cleanup - Ignoring exception during shutdown input
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.shutdownInput(SocketChannelImpl.java:780)
+	at sun.nio.ch.SocketAdaptor.shutdownInput(SocketAdaptor.java:399)
+	at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:999)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:970)
+2017-10-27 18:39:08,342 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:1006) cleanup - Ignoring exception during shutdown output
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.shutdownOutput(SocketChannelImpl.java:797)
+	at sun.nio.ch.SocketAdaptor.shutdownOutput(SocketAdaptor.java:407)
+	at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:1004)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:970)
+2017-10-27 18:39:10,168 INFO  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:869) startConnect - Attempting connection to server /100.84.51.95:2181
+2017-10-27 18:39:11,173 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:967) run - Exception closing session 0x0 to sun.nio.ch.SelectionKeyImpl@4714fcba
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:933)
+2017-10-27 18:39:11,173 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:1001) cleanup - Ignoring exception during shutdown input
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.shutdownInput(SocketChannelImpl.java:780)
+	at sun.nio.ch.SocketAdaptor.shutdownInput(SocketAdaptor.java:399)
+	at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:999)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:970)
+2017-10-27 18:39:11,174 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:1006) cleanup - Ignoring exception during shutdown output
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.shutdownOutput(SocketChannelImpl.java:797)
+	at sun.nio.ch.SocketAdaptor.shutdownOutput(SocketAdaptor.java:407)
+	at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:1004)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:970)
+2017-10-27 18:39:12,616 INFO  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:869) startConnect - Attempting connection to server /100.84.51.95:2181
+2017-10-27 18:39:13,618 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:967) run - Exception closing session 0x0 to sun.nio.ch.SelectionKeyImpl@7bfaa0d3
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:933)
+2017-10-27 18:39:13,618 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:1001) cleanup - Ignoring exception during shutdown input
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.shutdownInput(SocketChannelImpl.java:780)
+	at sun.nio.ch.SocketAdaptor.shutdownInput(SocketAdaptor.java:399)
+	at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:999)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:970)
+2017-10-27 18:39:13,625 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:1006) cleanup - Ignoring exception during shutdown output
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.shutdownOutput(SocketChannelImpl.java:797)
+	at sun.nio.ch.SocketAdaptor.shutdownOutput(SocketAdaptor.java:407)
+	at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:1004)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:970)
+2017-10-27 18:39:15,075 INFO  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:869) startConnect - Attempting connection to server /100.84.51.95:2181
+2017-10-27 18:39:16,078 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:967) run - Exception closing session 0x0 to sun.nio.ch.SelectionKeyImpl@50128360
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:933)
+2017-10-27 18:39:16,079 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:1001) cleanup - Ignoring exception during shutdown input
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.shutdownInput(SocketChannelImpl.java:780)
+	at sun.nio.ch.SocketAdaptor.shutdownInput(SocketAdaptor.java:399)
+	at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:999)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:970)
+2017-10-27 18:39:16,079 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:1006) cleanup - Ignoring exception during shutdown output
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.shutdownOutput(SocketChannelImpl.java:797)
+	at sun.nio.ch.SocketAdaptor.shutdownOutput(SocketAdaptor.java:407)
+	at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:1004)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:970)
+2017-10-27 18:39:17,195 INFO  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:869) startConnect - Attempting connection to server /100.84.51.95:2181
+2017-10-27 18:39:18,196 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:967) run - Exception closing session 0x0 to sun.nio.ch.SelectionKeyImpl@5bb8fa4f
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:933)
+2017-10-27 18:39:18,196 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:1001) cleanup - Ignoring exception during shutdown input
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.shutdownInput(SocketChannelImpl.java:780)
+	at sun.nio.ch.SocketAdaptor.shutdownInput(SocketAdaptor.java:399)
+	at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:999)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:970)
+2017-10-27 18:39:18,196 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:1006) cleanup - Ignoring exception during shutdown output
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.shutdownOutput(SocketChannelImpl.java:797)
+	at sun.nio.ch.SocketAdaptor.shutdownOutput(SocketAdaptor.java:407)
+	at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:1004)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:970)
+2017-10-27 18:39:20,081 INFO  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:869) startConnect - Attempting connection to server /100.84.51.95:2181
+2017-10-27 18:39:21,082 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:967) run - Exception closing session 0x0 to sun.nio.ch.SelectionKeyImpl@2c6c1d3e
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:933)
+2017-10-27 18:39:21,082 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:1001) cleanup - Ignoring exception during shutdown input
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.shutdownInput(SocketChannelImpl.java:780)
+	at sun.nio.ch.SocketAdaptor.shutdownInput(SocketAdaptor.java:399)
+	at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:999)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:970)
+2017-10-27 18:39:21,082 WARN  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:1006) cleanup - Ignoring exception during shutdown output
+java.nio.channels.ClosedChannelException
+	at sun.nio.ch.SocketChannelImpl.shutdownOutput(SocketChannelImpl.java:797)
+	at sun.nio.ch.SocketAdaptor.shutdownOutput(SocketAdaptor.java:407)
+	at org.apache.zookeeper.ClientCnxn$SendThread.cleanup(ClientCnxn.java:1004)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:970)
+2017-10-27 18:39:21,183 ERROR [AWT-EventQueue-0] RecoverableZooKeeper (RecoverableZooKeeper.java:274) retryOrThrow - ZooKeeper exists failed after 4 attempts
+2017-10-27 18:39:21,184 WARN  [AWT-EventQueue-0] ZKUtil (ZKUtil.java:422) checkExists - hconnection-0x61fce9b90x0, quorum=100.84.51.95:2181, baseZNode=/hbase Unable to set watcher on znode (/hbase/hbaseid)
+org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /hbase/hbaseid
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:90)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:42)
+	at org.apache.zookeeper.ZooKeeper.exists(ZooKeeper.java:780)
+	at org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper.exists(RecoverableZooKeeper.java:220)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.checkExists(ZKUtil.java:419)
+	at org.apache.hadoop.hbase.zookeeper.ZKClusterId.readClusterIdZNode(ZKClusterId.java:65)
+	at org.apache.hadoop.hbase.client.ZooKeeperRegistry.getClusterId(ZooKeeperRegistry.java:105)
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation.retrieveClusterId(ConnectionManager.java:905)
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation.<init>(ConnectionManager.java:648)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.apache.hadoop.hbase.client.ConnectionFactory.createConnection(ConnectionFactory.java:238)
+	at org.apache.hadoop.hbase.client.ConnectionManager.createConnection(ConnectionManager.java:431)
+	at org.apache.hadoop.hbase.client.ConnectionManager.createConnection(ConnectionManager.java:424)
+	at org.apache.hadoop.hbase.client.ConnectionManager.getConnectionInternal(ConnectionManager.java:302)
+	at org.apache.hadoop.hbase.client.HBaseAdmin.<init>(HBaseAdmin.java:236)
+	at org.hbaseexplorer.domain.Connection.connect(Connection.java:40)
+	at org.hbaseexplorer.components.ConnectionTree.createConnection(ConnectionTree.java:54)
+	at org.hbaseexplorer.HBaseExplorerView.newConnectionAction(HBaseExplorerView.java:314)
+	at org.hbaseexplorer.HBaseExplorerView.<init>(HBaseExplorerView.java:100)
+	at org.hbaseexplorer.HBaseExplorerApp.startup(HBaseExplorerApp.java:24)
+	at org.jdesktop.application.Application$1.run(Application.java:171)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:756)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:726)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+2017-10-27 18:39:21,186 ERROR [AWT-EventQueue-0] ZooKeeperWatcher (ZooKeeperWatcher.java:744) keeperException - hconnection-0x61fce9b90x0, quorum=100.84.51.95:2181, baseZNode=/hbase Received unexpected KeeperException, re-throwing exception
+org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /hbase/hbaseid
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:90)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:42)
+	at org.apache.zookeeper.ZooKeeper.exists(ZooKeeper.java:780)
+	at org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper.exists(RecoverableZooKeeper.java:220)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.checkExists(ZKUtil.java:419)
+	at org.apache.hadoop.hbase.zookeeper.ZKClusterId.readClusterIdZNode(ZKClusterId.java:65)
+	at org.apache.hadoop.hbase.client.ZooKeeperRegistry.getClusterId(ZooKeeperRegistry.java:105)
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation.retrieveClusterId(ConnectionManager.java:905)
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation.<init>(ConnectionManager.java:648)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.apache.hadoop.hbase.client.ConnectionFactory.createConnection(ConnectionFactory.java:238)
+	at org.apache.hadoop.hbase.client.ConnectionManager.createConnection(ConnectionManager.java:431)
+	at org.apache.hadoop.hbase.client.ConnectionManager.createConnection(ConnectionManager.java:424)
+	at org.apache.hadoop.hbase.client.ConnectionManager.getConnectionInternal(ConnectionManager.java:302)
+	at org.apache.hadoop.hbase.client.HBaseAdmin.<init>(HBaseAdmin.java:236)
+	at org.hbaseexplorer.domain.Connection.connect(Connection.java:40)
+	at org.hbaseexplorer.components.ConnectionTree.createConnection(ConnectionTree.java:54)
+	at org.hbaseexplorer.HBaseExplorerView.newConnectionAction(HBaseExplorerView.java:314)
+	at org.hbaseexplorer.HBaseExplorerView.<init>(HBaseExplorerView.java:100)
+	at org.hbaseexplorer.HBaseExplorerApp.startup(HBaseExplorerApp.java:24)
+	at org.jdesktop.application.Application$1.run(Application.java:171)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:756)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:726)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+2017-10-27 18:39:21,193 WARN  [AWT-EventQueue-0] ZooKeeperRegistry (ZooKeeperRegistry.java:110) getClusterId - Can't retrieve clusterId from Zookeeper
+org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /hbase/hbaseid
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:90)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:42)
+	at org.apache.zookeeper.ZooKeeper.exists(ZooKeeper.java:780)
+	at org.apache.hadoop.hbase.zookeeper.RecoverableZooKeeper.exists(RecoverableZooKeeper.java:220)
+	at org.apache.hadoop.hbase.zookeeper.ZKUtil.checkExists(ZKUtil.java:419)
+	at org.apache.hadoop.hbase.zookeeper.ZKClusterId.readClusterIdZNode(ZKClusterId.java:65)
+	at org.apache.hadoop.hbase.client.ZooKeeperRegistry.getClusterId(ZooKeeperRegistry.java:105)
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation.retrieveClusterId(ConnectionManager.java:905)
+	at org.apache.hadoop.hbase.client.ConnectionManager$HConnectionImplementation.<init>(ConnectionManager.java:648)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.apache.hadoop.hbase.client.ConnectionFactory.createConnection(ConnectionFactory.java:238)
+	at org.apache.hadoop.hbase.client.ConnectionManager.createConnection(ConnectionManager.java:431)
+	at org.apache.hadoop.hbase.client.ConnectionManager.createConnection(ConnectionManager.java:424)
+	at org.apache.hadoop.hbase.client.ConnectionManager.getConnectionInternal(ConnectionManager.java:302)
+	at org.apache.hadoop.hbase.client.HBaseAdmin.<init>(HBaseAdmin.java:236)
+	at org.hbaseexplorer.domain.Connection.connect(Connection.java:40)
+	at org.hbaseexplorer.components.ConnectionTree.createConnection(ConnectionTree.java:54)
+	at org.hbaseexplorer.HBaseExplorerView.newConnectionAction(HBaseExplorerView.java:314)
+	at org.hbaseexplorer.HBaseExplorerView.<init>(HBaseExplorerView.java:100)
+	at org.hbaseexplorer.HBaseExplorerApp.startup(HBaseExplorerApp.java:24)
+	at org.jdesktop.application.Application$1.run(Application.java:171)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:756)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:726)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+2017-10-27 18:39:26,826 INFO  [main] HBaseExplorerApp (HBaseExplorerApp.java:56) main - -----HADOOP_HOME:E:\study\apache\hadoop-common-2.2.0-bin-master
+2017-10-27 18:39:30,016 ERROR [AWT-EventQueue-0] HBaseExplorerView (HBaseExplorerView.java:306) newConnectionAction - ZK:100.84.47.67
+2017-10-27 18:39:30,678 INFO  [AWT-EventQueue-0] RecoverableZooKeeper (RecoverableZooKeeper.java:120) <init> - Process identifier=hconnection-0xb42508c connecting to ZooKeeper ensemble=100.84.47.67:2181
+2017-10-27 18:39:30,685 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:zookeeper.version=3.2.2-888565, built on 12/08/2009 21:51 GMT
+2017-10-27 18:39:30,686 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:host.name=100.84.51.95
+2017-10-27 18:39:30,686 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.version=1.8.0_111
+2017-10-27 18:39:30,686 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.vendor=Oracle Corporation
+2017-10-27 18:39:30,687 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.home=D:\Program Files\Java\jdk1.8.0_111\jre
+2017-10-27 18:39:30,687 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.class.path=D:\repositories_git\HBaseXplorer\bin;D:\repositories_git\HBaseXplorer\lib\AgileJSON-2009-03-30.jar;D:\repositories_git\HBaseXplorer\lib\appframework-1.0.3.jar;D:\repositories_git\HBaseXplorer\lib\beansbinding-1.2.1.jar;D:\repositories_git\HBaseXplorer\lib\commons-cli-2.0-SNAPSHOT.jar;D:\repositories_git\HBaseXplorer\lib\commons-el-from-jetty-5.1.4.jar;D:\repositories_git\HBaseXplorer\lib\commons-httpclient-3.0.1.jar;D:\repositories_git\HBaseXplorer\lib\commons-logging-1.0.4.jar;D:\repositories_git\HBaseXplorer\lib\commons-math-1.1.jar;D:\repositories_git\HBaseXplorer\lib\jasper-compiler-5.5.12.jar;D:\repositories_git\HBaseXplorer\lib\jasper-runtime-5.5.12.jar;D:\repositories_git\HBaseXplorer\lib\jetty-6.1.14.jar;D:\repositories_git\HBaseXplorer\lib\jetty-util-6.1.14.jar;D:\repositories_git\HBaseXplorer\lib\jruby-complete-1.2.0.jar;D:\repositories_git\HBaseXplorer\lib\json.jar;D:\repositories_git\HBaseXplorer\lib\junit-3.8.1.jar;D:\repositories_git\HBaseXplorer\lib\libthrift-r771587.jar;D:\repositories_git\HBaseXplorer\lib\log4j-1.2.15.jar;D:\repositories_git\HBaseXplorer\lib\lucene-core-3.0.0.jar;D:\repositories_git\HBaseXplorer\lib\servlet-api-2.5-6.1.14.jar;D:\repositories_git\HBaseXplorer\lib\slf4j-api-1.6.1.jar;D:\repositories_git\HBaseXplorer\lib\slf4j-log4j12-1.6.1.jar;D:\repositories_git\HBaseXplorer\lib\swing-layout-1.0.4.jar;D:\repositories_git\HBaseXplorer\lib\swing-worker-1.1.jar;D:\repositories_git\HBaseXplorer\lib\xmlenc-0.52.jar;D:\repositories_git\HBaseXplorer\lib\zookeeper-3.2.2.jar;D:\repositories_git\HBaseXplorer\lib\commons-configuration-1.6.jar;D:\repositories_git\HBaseXplorer\lib\commons-lang-2.5.jar;D:\repositories_git\HBaseXplorer\lib\hadoop-common-2.5.1.jar;D:\repositories_git\HBaseXplorer\lib\hbase-client-1.2.6.jar;D:\repositories_git\HBaseXplorer\lib\hbase-common-1.2.6.jar;D:\repositories_git\HBaseXplorer\lib\guava-12.0.1.jar;D:\repositories_git\HBaseXplorer\lib\commons-collections-3.2.2.jar;D:\repositories_git\HBaseXplorer\lib\protobuf-java-2.5.0.jar;D:\repositories_git\HBaseXplorer\lib\hadoop-auth-2.5.1.jar;D:\repositories_git\HBaseXplorer\lib\hbase-protocol-1.2.6.jar;D:\repositories_git\HBaseXplorer\lib\htrace-core-3.1.0-incubating.jar;D:\repositories_git\HBaseXplorer\lib\netty-all-4.0.23.Final.jar;D:\repositories_git\HBaseXplorer\lib\metrics-core-2.2.0.jar;D:\repositories_git\HBaseXplorer\lib\commons-codec-1.9.jar
+2017-10-27 18:39:30,688 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.library.path=D:\Program Files\Java\jdk1.8.0_111\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;D:\Program Files\Java\jdk1.8.0_111\jre\bin;D:/Program Files/Java/jdk1.8.0_111/bin/../jre/bin/server;D:/Program Files/Java/jdk1.8.0_111/bin/../jre/bin;D:/Program Files/Java/jdk1.8.0_111/bin/../jre/lib/amd64;D:\Ruby24-x64\bin;C:\Program Files (x86)\Common Files\NetSarang;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;D:\Program Files\Java\jdk1.8.0_111\bin;D:\projects\jws-1.6.0.4\;D:\projects\jws-1.6.2.1\;D:\apache-maven-3.2.5\bin\;D:\apache-ant-1.9.7\bin\;D:\Program Files\nodejs\;D:\gradle\bin;E:\study\apache\hadoop-common-2.2.0-bin-master\bin\;C:\cygwin64\bin\;C:\Users\Administrator\AppData\Roaming\npm;C:\Program Files\jee-neon\eclipse;;.
+2017-10-27 18:39:30,688 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.io.tmpdir=C:\Users\ADMINI~1\AppData\Local\Temp\
+2017-10-27 18:39:30,688 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:java.compiler=<NA>
+2017-10-27 18:39:30,689 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:os.name=Windows 7
+2017-10-27 18:39:30,689 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:os.arch=amd64
+2017-10-27 18:39:30,689 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:os.version=6.1
+2017-10-27 18:39:30,690 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:user.name=Administrator
+2017-10-27 18:39:30,690 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:user.home=C:\Users\Administrator
+2017-10-27 18:39:30,690 INFO  [AWT-EventQueue-0] ZooKeeper (Environment.java:97) logEnv - Client environment:user.dir=D:\repositories_git\HBaseXplorer
+2017-10-27 18:39:30,691 INFO  [AWT-EventQueue-0] ZooKeeper (ZooKeeper.java:369) <init> - Initiating client connection, connectString=100.84.47.67:2181 sessionTimeout=90000 watcher=hconnection-0xb42508c0x0, quorum=100.84.47.67:2181, baseZNode=/hbase
+2017-10-27 18:39:30,693 INFO  [AWT-EventQueue-0] ClientCnxn (ClientCnxn.java:92) <clinit> - zookeeper.disableAutoWatchReset is false
+2017-10-27 18:39:30,883 INFO  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:869) startConnect - Attempting connection to server /100.84.47.67:2181
+2017-10-27 18:39:30,886 INFO  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:785) primeConnection - Priming connection to java.nio.channels.SocketChannel[connected local=/100.84.51.95:57865 remote=/100.84.47.67:2181]
+2017-10-27 18:39:30,894 INFO  [AWT-EventQueue-0-SendThread] ClientCnxn (ClientCnxn.java:937) run - Server connection successful
+2017-10-27 18:39:31,359 INFO  [AWT-EventQueue-0] Connection (Connection.java:64) refreshTables - *****table
+2017-10-27 18:39:31,359 INFO  [AWT-EventQueue-0] Connection (Connection.java:65) refreshTables - 5
+2017-10-27 18:39:33,657 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:39:33,658 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:39:33,658 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:39:33,658 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:39:33,770 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:1
+2017-10-27 18:39:33,771 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:72) <init> - first show Data119
+2017-10-27 18:39:33,783 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:82) <init> - start load show Data12
+2017-10-27 18:39:33,786 INFO  [AWT-EventQueue-0] ConnectionTree (ConnectionTree.java:72) doubleClick - double click time time:182
+2017-10-27 18:39:35,210 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:39:35,210 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:39:35,210 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:39:35,211 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:39:35,239 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:39:35,241 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:72) <init> - first show Data31
+2017-10-27 18:39:35,247 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:82) <init> - start load show Data5
+2017-10-27 18:39:35,249 INFO  [AWT-EventQueue-0] ConnectionTree (ConnectionTree.java:72) doubleClick - double click time time:47
+2017-10-27 18:39:36,031 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:39:36,032 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:39:36,032 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:39:36,032 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:39:36,046 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:39:36,046 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:72) <init> - first show Data15
+2017-10-27 18:39:36,051 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:82) <init> - start load show Data4
+2017-10-27 18:39:36,054 INFO  [AWT-EventQueue-0] ConnectionTree (ConnectionTree.java:72) doubleClick - double click time time:28
+2017-10-27 18:39:37,868 INFO  [AWT-EventQueue-0] ConnectionTree (ConnectionTree.java:72) doubleClick - double click time time:0
+2017-10-27 18:39:38,499 INFO  [AWT-EventQueue-0] ConnectionTree (ConnectionTree.java:72) doubleClick - double click time time:1
+2017-10-27 18:39:40,085 INFO  [AWT-EventQueue-0] ConnectionTree (ConnectionTree.java:72) doubleClick - double click time time:1
+2017-10-27 18:39:40,571 INFO  [AWT-EventQueue-0] ConnectionTree (ConnectionTree.java:72) doubleClick - double click time time:0
+2017-10-27 18:39:41,245 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:39:41,246 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:39:41,246 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:39:41,247 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:39:41,265 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:39:41,996 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:39:41,997 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:39:41,998 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:39:41,998 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:39:42,005 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:39:42,419 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:39:42,419 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:39:42,420 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:39:42,420 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:39:42,432 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:39:42,858 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:39:42,859 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:39:42,860 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:39:42,860 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:39:42,869 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:1
+2017-10-27 18:39:43,306 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:39:43,306 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:39:43,306 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:39:43,307 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:39:43,313 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:1
+2017-10-27 18:39:43,875 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:39:43,877 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:39:43,878 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:39:43,879 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:39:43,893 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:39:44,434 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:39:44,434 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:39:44,434 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:39:44,434 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:39:44,440 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:39:44,739 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:39:44,740 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:39:44,741 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:39:44,742 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:39:44,756 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:1
+2017-10-27 18:39:45,002 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:39:45,002 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:39:45,002 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:39:45,002 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:39:45,009 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:39:45,274 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:39:45,275 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:39:45,275 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:39:45,275 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:39:45,283 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:1
+2017-10-27 18:39:45,522 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:39:45,522 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:39:45,523 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:39:45,523 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:39:45,530 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:39:45,754 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:39:45,755 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:39:45,755 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:39:45,756 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:39:45,764 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:1
+2017-10-27 18:39:46,090 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:39:46,091 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:39:46,091 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:39:46,091 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:39:46,122 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
+2017-10-27 18:39:46,403 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f0
+2017-10-27 18:39:46,404 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f1
+2017-10-27 18:39:46,404 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f2
+2017-10-27 18:39:46,405 INFO  [AWT-EventQueue-0] EditTableDataModel (EditTableDataModel.java:145) refreshData - F AND Q :tmp  :  f3
+2017-10-27 18:39:46,415 INFO  [AWT-EventQueue-0] EditTableData (EditTableData.java:136) showData - end time:0
