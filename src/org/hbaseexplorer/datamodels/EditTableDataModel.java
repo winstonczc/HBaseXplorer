@@ -34,6 +34,10 @@ import org.hbaseexplorer.exception.ExplorerException;
  */
 public class EditTableDataModel extends AbstractTableModel {
 
+    /**
+     * serialVersionUID
+     */
+    private static final long serialVersionUID = 3620982582750735008L;
     public String rowKey;
     private Table table;
     // private ArrayList<HBTriplet> data;

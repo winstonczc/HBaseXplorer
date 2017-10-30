@@ -27,7 +27,9 @@ import javax.swing.table.TableCellRenderer;
 import javax.swing.table.TableColumn;
 import javax.swing.table.TableColumnModel;
 
+import org.apache.commons.lang.StringUtils;
 import org.apache.commons.logging.Log;
+import org.apache.hadoop.hbase.HColumnDescriptor;
 import org.apache.hadoop.hbase.client.Delete;
 import org.apache.hadoop.hbase.client.Put;
 import org.buddy.javatools.ToolConfig;
@@ -215,7 +217,7 @@ public class EditTableData extends javax.swing.JPanel {
         refreshBtn = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
         btnAddColumn = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        btnDelColumn = new javax.swing.JButton();
         btnAddRow = new javax.swing.JButton();
         btnRemoveRow = new javax.swing.JButton();
         checkBoxFilter = new javax.swing.JCheckBox();
@@ -296,24 +298,26 @@ public class EditTableData extends javax.swing.JPanel {
         btnAddColumn.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jToolBar2.add(btnAddColumn);
 
-        jButton2.setAction(actionMap.get("btnDeleteColumnActionClick")); // NOI18N
-        jButton2.setText(resourceMap.getString("jButton2.text")); // NOI18N
-        jButton2.setFocusable(false);
-        jButton2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton2.setName("jButton2"); // NOI18N
-        jButton2.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jToolBar2.add(jButton2);
+        btnDelColumn.setAction(actionMap.get("btnDeleteColumnClickAction")); // NOI18N
+        btnDelColumn.setText(resourceMap.getString("btnDelColumn.text")); // NOI18N
+        btnDelColumn.setFocusable(false);
+        btnDelColumn.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnDelColumn.setName("btnDelColumn"); // NOI18N
+        btnDelColumn.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jToolBar2.add(btnDelColumn);
 
+        btnAddRow.setAction(actionMap.get("btnAddRowClickAction"));
         btnAddRow.setText(resourceMap.getString("btnAddRow.text")); // NOI18N
-        btnAddRow.setEnabled(false);
+        // btnAddRow.setEnabled(false);
         btnAddRow.setFocusable(false);
         btnAddRow.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnAddRow.setName("btnAddRow"); // NOI18N
         btnAddRow.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jToolBar2.add(btnAddRow);
 
+        btnRemoveRow.setAction(actionMap.get("btnRemoveRowClickAction"));
         btnRemoveRow.setText(resourceMap.getString("btnRemoveRow.text")); // NOI18N
-        btnRemoveRow.setEnabled(false);
+        // btnRemoveRow.setEnabled(false);
         btnRemoveRow.setFocusable(false);
         btnRemoveRow.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnRemoveRow.setName("btnRemoveRow"); // NOI18N
@@ -447,6 +451,52 @@ public class EditTableData extends javax.swing.JPanel {
     }
 
     @Action
+    public void btnAddRowClickAction() {
+        JFrame mainFrame = HBaseExplorerApp.getApplication().getMainFrame();
+        NewRowDialog dialog = new NewRowDialog(mainFrame);
+        dialog.setLocationRelativeTo(mainFrame);
+        HBaseExplorerApp.getApplication().show(dialog);
+
+        String rk = dialog.getRowKey();
+        if (StringUtils.isNotBlank(rk)) {
+            try {
+                Put put = new Put(rk.getBytes());
+                HColumnDescriptor[] descriptors = table.getHTable().getTableDescriptor().getColumnFamilies();
+                for (HColumnDescriptor desc : descriptors) {
+                    put.addColumn(desc.getName(), null, null);
+                }
+                table.getHTable().put(put);
+                loadRows(ToolConfig.maxLoadRow.intValue());
+            } catch (Exception ex) {
+                ex.printStackTrace();
+                throw new ExplorerException("Error adding row : " + rk);
+            }
+        }
+    }
+
+    @Action
+    public void btnRemoveRowClickAction() {
+        int rowId = jListRow.getSelectedIndex();
+        if (rowId != -1) {
+            int result = JOptionPane.showConfirmDialog(
+                this,
+                "Are you sure you wanna to delete\n" + rowKey,
+                "Delete column",
+                JOptionPane.YES_NO_OPTION);
+            if (result == JOptionPane.YES_OPTION) {
+                Delete delete = new Delete(rowKey.getBytes());
+                try {
+                    table.getHTable().delete(delete);
+                    loadRows(ToolConfig.maxLoadRow.intValue());
+                } catch (Exception ex) {
+                    ex.printStackTrace();
+                    throw new ExplorerException("Error deleting " + rowKey);
+                }
+            }
+        }
+    }
+
+    @Action
     public void btnAddColumnClickAction() {
         JFrame mainFrame = HBaseExplorerApp.getApplication().getMainFrame();
         NewColumnDialog dialog = new NewColumnDialog(mainFrame, table);
@@ -460,15 +510,15 @@ public class EditTableData extends javax.swing.JPanel {
                 put.addColumn(triplet.getFamily(), triplet.getQualifier(), triplet.getValue());
                 table.getHTable().put(put);
                 showData(0);
-            } catch (IOException ex) {
+            } catch (Exception ex) {
+                ex.printStackTrace();
                 throw new ExplorerException("Error adding column : " + triplet);
             }
         }
-
     }
 
     @Action
-    public void btnDeleteColumnActionClick() {
+    public void btnDeleteColumnClickAction() {
         int rowId = tableData.getSelectedRow();
         if (rowId != -1) {
             String family = tableData.getModel().getValueAt(rowId, 0).toString();
@@ -484,10 +534,11 @@ public class EditTableData extends javax.swing.JPanel {
                 delete.addColumns(family.getBytes(), column.getBytes());
                 try {
                     table.getHTable().delete(delete);
-                } catch (IOException ex) {
+                    showData(0);
+                } catch (Exception ex) {
+                    loadRows(ToolConfig.maxLoadRow.intValue());
                     throw new ExplorerException("Error deleting " + rowKey + "@" + family + ":" + column);
                 }
-                showData(0);
             }
         }
     }
@@ -532,7 +583,7 @@ public class EditTableData extends javax.swing.JPanel {
     private javax.swing.JButton btnRemoveRow;
     private javax.swing.JCheckBox checkBoxFilter;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton btnDelColumn;
     private javax.swing.JButton refreshBtn;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JList<String> jListRow;
