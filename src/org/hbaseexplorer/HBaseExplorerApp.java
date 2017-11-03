@@ -54,8 +54,10 @@ public class HBaseExplorerApp extends SingleFrameApplication {
 
         // Utils.getLog().info("-----env:" + System.getenv());
         Utils.getLog().info("-----HADOOP_HOME:" + System.getenv("HADOOP_HOME"));
-
-        launch(HBaseExplorerApp.class, args);
-
+        try {
+            launch(HBaseExplorerApp.class, args);
+        } catch (Throwable e) {
+            Utils.getLog().error("launch exception", e);
+        }
     }
 }

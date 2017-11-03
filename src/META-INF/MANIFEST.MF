@@ -20,5 +20,5 @@ Class-Path: lib/appframework-1.0.3.jar lib/swing-worker-1.1.jar
  lib/protobuf-java-2.5.0.jar lib/servlet-api-2.5-6.1.14.jar 
  lib/slf4j-api-1.6.1.jar lib/slf4j-log4j12-1.6.1.jar lib/swing-layout-1.0.4.jar 
  lib/xmlenc-0.52.jar lib/zookeeper-3.4.3.jar 
- lib/netty-all-4.0.23.Final.jar lib/metrics-core-2.2.0.jar 
+ lib/netty-all-4.0.23.Final.jar lib/metrics-core-2.2.0.jar lib/commons-io-2.0.1.jar 
 Main-Class: org.hbaseexplorer.HBaseExplorerApp

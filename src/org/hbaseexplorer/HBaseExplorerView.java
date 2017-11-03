@@ -309,7 +309,7 @@ public final class HBaseExplorerView extends FrameView {
             try {
                 Configuration conf = new Configuration();
                 conf.set("hbase.zookeeper.quorum", zookeeper);
-                // conf.set("hbase.zookeeper.property.clientPort","2181");
+                conf.set("hbase.zookeeper.property.clientPort","2181");
                 conf.set("hbase.client.retries.number", "1");
                 getTree().createConnection(conf);
                 getTree().setMainApp(this);
