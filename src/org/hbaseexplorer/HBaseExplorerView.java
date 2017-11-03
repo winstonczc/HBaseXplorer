@@ -3,31 +3,31 @@
  */
 package org.hbaseexplorer;
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import org.jdesktop.application.Action;
-import org.jdesktop.application.ResourceMap;
-import org.jdesktop.application.SingleFrameApplication;
-import org.jdesktop.application.FrameView;
-import org.jdesktop.application.TaskMonitor;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import javax.swing.Timer;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
 import javax.swing.Icon;
 import javax.swing.JDialog;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
+import javax.swing.Timer;
 
+import org.apache.commons.lang.StringUtils;
 import org.apache.hadoop.conf.Configuration;
-import org.hbaseexplorer.components.ConnectionTree;
-import org.hbaseexplorer.components.DataTabPane;
 import org.buddy.javatools.BuddyFile;
 import org.buddy.javatools.Utils;
+import org.hbaseexplorer.components.ConnectionTree;
+import org.hbaseexplorer.components.DataTabPane;
 import org.hbaseexplorer.domain.Query;
+import org.jdesktop.application.Action;
+import org.jdesktop.application.FrameView;
+import org.jdesktop.application.ResourceMap;
+import org.jdesktop.application.SingleFrameApplication;
+import org.jdesktop.application.TaskMonitor;
 
 /**
  * The application's main frame.
@@ -293,23 +293,24 @@ public final class HBaseExplorerView extends FrameView {
                 strConfig = config;
             }
         } catch (FileNotFoundException ex) {
-            Logger.getLogger(HBaseExplorerView.class.getName()).log(Level.SEVERE, null, ex);
+            Utils.getLog().error(null, ex);
         } catch (IOException ex) {
-            Logger.getLogger(HBaseExplorerView.class.getName()).log(Level.SEVERE, null, ex);
+            Utils.getLog().error(null, ex);
         }
 
-        Utils.getLog().debug("config:" + strConfig);
+        Utils.getLog().debug("hbasexplorerconfig.ini ZK:" + strConfig);
+        JOptionPane.getRootFrame().setAlwaysOnTop(true);
         String zookeeper = JOptionPane.showInputDialog("HBase zookeeper", strConfig);
 
         new TaskMonitor(getApplication().getContext());
 
-        Utils.getLog().error("ZK:" + zookeeper);
+        Utils.getLog().error("input ZK:" + zookeeper);
 
-        if (zookeeper != null && !zookeeper.isEmpty() && zookeeper.length() > 1) {
+        if (StringUtils.isNotBlank(zookeeper)) {
             try {
                 Configuration conf = new Configuration();
                 conf.set("hbase.zookeeper.quorum", zookeeper);
-                conf.set("hbase.zookeeper.property.clientPort","2181");
+                conf.set("hbase.zookeeper.property.clientPort", "2181");
                 conf.set("hbase.client.retries.number", "1");
                 getTree().createConnection(conf);
                 getTree().setMainApp(this);
@@ -318,13 +319,12 @@ public final class HBaseExplorerView extends FrameView {
                 try {
                     BuddyFile.write("hbasexplorerconfig.ini", zookeeper, false);
                 } catch (IOException ex) {
-                    Logger.getLogger(HBaseExplorerView.class.getName()).log(Level.SEVERE, null, ex);
+                    Utils.getLog().error(null, ex);
                 }
 
             } catch (Exception ex) {
-                Logger.getLogger(HBaseExplorerView.class.getName()).log(Level.SEVERE, null, ex);
+                Utils.getLog().error(null, ex);
             }
-
         }
     }
 

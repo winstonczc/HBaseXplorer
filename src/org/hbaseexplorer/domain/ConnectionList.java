@@ -9,6 +9,11 @@ import java.util.ArrayList;
  */
 public class ConnectionList implements Serializable {
 
+    /**
+     * serialVersionUID
+     */
+    private static final long serialVersionUID = 2278553441723985257L;
+
     private ArrayList<Connection> connectionList;
 
     public ConnectionList() {

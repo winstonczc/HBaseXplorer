@@ -1,7 +1,9 @@
 package org.hbaseexplorer.components;
 
 import java.util.ArrayList;
+
 import javax.swing.JTabbedPane;
+
 import org.hbaseexplorer.domain.Table;
 
 /**
@@ -9,6 +11,11 @@ import org.hbaseexplorer.domain.Table;
  * @author zaharije
  */
 public class DataTabPane extends JTabbedPane {
+
+    /**
+     * serialVersionUID
+     */
+    private static final long serialVersionUID = 5295901442628109309L;
 
     private ArrayList<Table> tables;
 
@@ -31,7 +38,7 @@ public class DataTabPane extends JTabbedPane {
     }
 
     public int tableExists(Table table) {
-        for (int i=0; i<tables.size(); i++) {
+        for (int i = 0; i < tables.size(); i++) {
             Table t = tables.get(i);
             if (t.getFullName().equals(table.getFullName())) {
                 return i;

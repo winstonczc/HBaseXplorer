@@ -44,7 +44,7 @@ public class NewColumnDialog extends javax.swing.JDialog {
     }
 
     /**
-     *  void 
+     * void
      */
     private void fillData() {
         try {

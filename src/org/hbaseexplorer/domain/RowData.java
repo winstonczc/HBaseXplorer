@@ -8,7 +8,9 @@ import org.apache.hadoop.hbase.client.Put;
  * @author zaharije
  */
 public class RowData {
+
     private ArrayList<HBTriplet> triplets;
+
     private byte[] rowKey;
 
     public RowData() {
@@ -19,7 +21,8 @@ public class RowData {
         triplets = new ArrayList<HBTriplet>();
         this.rowKey = rowKey;
     }
-//
+
+    //
     public void add(HBTriplet column) {
         triplets.add(column);
     }
@@ -34,7 +37,7 @@ public class RowData {
 
     public RowData getChangedData() {
         RowData changed = new RowData(rowKey);
-        for(HBTriplet hbt : triplets) {
+        for (HBTriplet hbt : triplets) {
             if (hbt.isChanged()) {
                 changed.add(hbt);
             }
@@ -46,8 +49,8 @@ public class RowData {
         Put put = new Put(rowKey);
 
         RowData changedData = getChangedData();
-        for(HBTriplet hbt : changedData.getTriplets()) {
-            put.add(hbt.getFamily(), hbt.getQualifier(), hbt.getValue());
+        for (HBTriplet hbt : changedData.getTriplets()) {
+            put.addColumn(hbt.getFamily(), hbt.getQualifier(), hbt.getValue());
         }
 
         return put;
@@ -69,5 +72,8 @@ public class RowData {
         this.rowKey = rowKey;
     }
 
+    public String toString() {
+        return this.rowKey != null ? new String(this.rowKey) : "null";
+    }
 
 }

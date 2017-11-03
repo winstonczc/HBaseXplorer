@@ -14,7 +14,7 @@ import org.apache.hadoop.hbase.HColumnDescriptor;
 import org.apache.hadoop.hbase.HTableDescriptor;
 import org.apache.hadoop.hbase.MasterNotRunningException;
 import org.apache.hadoop.hbase.TableName;
-import org.apache.hadoop.hbase.client.HBaseAdmin;
+import org.apache.hadoop.hbase.client.Admin;
 import org.apache.hadoop.hbase.io.compress.Compression.Algorithm;
 
 /**
@@ -23,7 +23,7 @@ import org.apache.hadoop.hbase.io.compress.Compression.Algorithm;
  */
 public class Query {
 
-    private HBaseAdmin hbaseAdmin;
+    private Admin hbaseAdmin;
     private String queryS;
 
     public Query(Configuration conf, String queryStr) throws MasterNotRunningException {
@@ -61,18 +61,18 @@ public class Query {
                             }
 
                             if (i == 1) {
-                                this.hbaseAdmin.disableTable(tableName);
+                                this.hbaseAdmin.disableTable(TableName.valueOf(tableName));
                                 valRet = "disable table ok";
                             }
 
                             if (i == 2) {
-                                this.hbaseAdmin.enableTable(tableName);
+                                this.hbaseAdmin.enableTable(TableName.valueOf(tableName));
                                 valRet = "enable table ok";
                             }
 
                             if (i == 3) {
-                                this.hbaseAdmin.disableTable(tableName);
-                                this.hbaseAdmin.deleteTable(tableName);
+                                this.hbaseAdmin.disableTable(TableName.valueOf(tableName));
+                                this.hbaseAdmin.deleteTable(TableName.valueOf(tableName));
                                 valRet = "drop table ok";
                             }
 

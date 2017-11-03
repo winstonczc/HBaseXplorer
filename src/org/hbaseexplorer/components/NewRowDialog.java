@@ -11,6 +11,13 @@
 
 package org.hbaseexplorer.components;
 
+import java.io.IOException;
+
+import org.apache.commons.lang.StringUtils;
+import org.apache.hadoop.hbase.HColumnDescriptor;
+import org.hbaseexplorer.domain.HBTriplet;
+import org.hbaseexplorer.domain.RowData;
+import org.hbaseexplorer.domain.Table;
 import org.jdesktop.application.Action;
 
 /**
@@ -25,12 +32,14 @@ public class NewRowDialog extends javax.swing.JDialog {
      * serialVersionUID
      */
     private static final long serialVersionUID = -9055717435302019569L;
-    private String rowKey;
+    private Table table;
+    private RowData rowData;
 
     /** Creates new form NewColumnDialog */
-    public NewRowDialog(java.awt.Frame parent) {
+    public NewRowDialog(java.awt.Frame parent, Table table) {
         super(parent, true);
-        this.rowKey = null;
+        this.table = table;
+        this.rowData = null;
         initComponents();
     }
 
@@ -45,6 +54,13 @@ public class NewRowDialog extends javax.swing.JDialog {
 
         rowKeyLabel = new javax.swing.JLabel();
         rowKeyTextField = new javax.swing.JTextField();
+        cfLabel = new javax.swing.JLabel();
+        cfTextField = new javax.swing.JTextField();
+        qualLabel = new javax.swing.JLabel();
+        qualTextField = new javax.swing.JTextField();
+        valueLabel = new javax.swing.JLabel();
+        valueTextField = new javax.swing.JTextField();
+
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
 
@@ -59,8 +75,31 @@ public class NewRowDialog extends javax.swing.JDialog {
         rowKeyLabel.setText(resourceMap.getString("rowKey.text")); // NOI18N
         rowKeyLabel.setName("rowKey"); // NOI18N
 
+        cfLabel.setText(resourceMap.getString("cf.text")); // NOI18N
+        cfLabel.setName("cf"); // NOI18N
+
+        qualLabel.setText(resourceMap.getString("qual.text")); // NOI18N
+        qualLabel.setName("qual"); // NOI18N
+
+        valueLabel.setText(resourceMap.getString("value.text")); // NOI18N
+        valueLabel.setName("value"); // NOI18N
+
         rowKeyTextField.setText(resourceMap.getString("rowKeyTextField.text")); // NOI18N
         rowKeyTextField.setName("rowKeyTextField"); // NOI18N
+
+        HColumnDescriptor[] descriptors = null;
+        try {
+            descriptors = table.getHTable().getTableDescriptor().getColumnFamilies();
+        } catch (IOException e) {
+        }
+        cfTextField.setText(descriptors != null && descriptors.length > 0 ? descriptors[0].getNameAsString() : ""); // NOI18N
+        cfTextField.setName("cfTextField"); // NOI18N
+
+        qualTextField.setText(""); // NOI18N
+        qualTextField.setName("qualTextField"); // NOI18N
+
+        valueTextField.setText(""); // NOI18N
+        valueTextField.setName("valueTextField"); // NOI18N
 
         javax.swing.ActionMap actionMap
             = org.jdesktop.application.Application.getInstance(org.hbaseexplorer.HBaseExplorerApp.class).getContext()
@@ -82,10 +121,15 @@ public class NewRowDialog extends javax.swing.JDialog {
                     .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
                         .add(layout.createSequentialGroup()
                             .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                                .add(rowKeyLabel))
+                                .add(rowKeyLabel)
+                                .add(cfLabel)
+                                .add(qualLabel)
+                                .add(valueLabel))
                             .add(18, 18, 18)
                             .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
-                                .add(rowKeyTextField, 0, 248, Short.MAX_VALUE))
+                                .add(rowKeyTextField, 0, 248, Short.MAX_VALUE).add(cfTextField, 0, 248, Short.MAX_VALUE)
+                                .add(qualTextField, 0, 248, Short.MAX_VALUE)
+                                .add(valueTextField, 0, 248, Short.MAX_VALUE))
                             .addContainerGap())
                         .add(org.jdesktop.layout.GroupLayout.TRAILING, layout.createSequentialGroup()
                             .add(jButton1)
@@ -101,6 +145,24 @@ public class NewRowDialog extends javax.swing.JDialog {
                         .add(rowKeyTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE,
                             org.jdesktop.layout.GroupLayout.DEFAULT_SIZE,
                             org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                    .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                    .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                        .add(cfLabel)
+                        .add(cfTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE,
+                            org.jdesktop.layout.GroupLayout.DEFAULT_SIZE,
+                            org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                    .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                    .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                        .add(qualLabel)
+                        .add(qualTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE,
+                            org.jdesktop.layout.GroupLayout.DEFAULT_SIZE,
+                            org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                    .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                    .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                        .add(valueLabel)
+                        .add(valueTextField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE,
+                            org.jdesktop.layout.GroupLayout.DEFAULT_SIZE,
+                            org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                     .addPreferredGap(org.jdesktop.layout.LayoutStyle.UNRELATED)
                     .add(layout.createParallelGroup(org.jdesktop.layout.GroupLayout.CENTER)
                         .add(jButton2)
@@ -112,7 +174,20 @@ public class NewRowDialog extends javax.swing.JDialog {
 
     @Action
     public void btnAddClickAction() {
-        this.rowKey = rowKeyTextField.getText();
+        String rowKey = rowKeyTextField.getText();
+        String cf = cfTextField.getText();
+        String qual = qualTextField.getText();
+        String value = valueTextField.getText();
+        if (StringUtils.isNotBlank(rowKey) && StringUtils.isNotBlank(cf)) {
+            this.rowData = new RowData();
+            this.rowData.setRowKey(rowKey.getBytes());
+            HBTriplet c
+                = new HBTriplet(cf.getBytes(),
+                    qual != null ? qual.getBytes() : null,
+                    value != null ? value.getBytes() : null);
+            c.setIsChanged(true);
+            this.rowData.add(c);
+        }
         dispose();
     }
 
@@ -121,8 +196,8 @@ public class NewRowDialog extends javax.swing.JDialog {
         dispose();
     }
 
-    public String getRowKey() {
-        return rowKey;
+    public RowData getRowData() {
+        return rowData;
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -130,6 +205,12 @@ public class NewRowDialog extends javax.swing.JDialog {
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel rowKeyLabel;
     private javax.swing.JTextField rowKeyTextField;
+    private javax.swing.JLabel cfLabel;
+    private javax.swing.JTextField cfTextField;
+    private javax.swing.JLabel qualLabel;
+    private javax.swing.JTextField qualTextField;
+    private javax.swing.JLabel valueLabel;
+    private javax.swing.JTextField valueTextField;
     // End of variables declaration//GEN-END:variables
 
 }

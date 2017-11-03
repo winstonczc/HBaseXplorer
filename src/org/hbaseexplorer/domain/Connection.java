@@ -11,7 +11,8 @@ import org.apache.hadoop.hbase.HBaseConfiguration;
 import org.apache.hadoop.hbase.HTableDescriptor;
 import org.apache.hadoop.hbase.MasterNotRunningException;
 import org.apache.hadoop.hbase.ZooKeeperConnectionException;
-import org.apache.hadoop.hbase.client.HBaseAdmin;
+import org.apache.hadoop.hbase.client.Admin;
+import org.apache.hadoop.hbase.client.ConnectionFactory;
 import org.buddy.javatools.Utils;
 import org.hbaseexplorer.exception.ExplorerException;
 
@@ -20,9 +21,14 @@ import org.hbaseexplorer.exception.ExplorerException;
  * @author zaharije
  */
 public class Connection implements Serializable {
+    /**
+     * serialVersionUID
+     */
+    private static final long serialVersionUID = -7250890083202179517L;
+
     private Configuration hbaseConfiguration;
 
-    private HBaseAdmin hbaseAdmin;
+    private org.apache.hadoop.hbase.client.Connection hbaseConnection;
 
     private ArrayList<Table> tableList;
 
@@ -36,8 +42,7 @@ public class Connection implements Serializable {
 
     public void connect() throws ZooKeeperConnectionException, IOException {
         try {
-            //
-            hbaseAdmin = new HBaseAdmin(hbaseConfiguration);
+            this.hbaseConnection = ConnectionFactory.createConnection(hbaseConfiguration);
             /*
             HBaseConfiguration config = new HBaseConfiguration();
             config.clear();
@@ -58,7 +63,7 @@ public class Connection implements Serializable {
     public void refreshTables() {
         try {
             tableList = new ArrayList<Table>();
-            HTableDescriptor hTables[] = hbaseAdmin.listTables();
+            HTableDescriptor hTables[] = this.hbaseConnection.getAdmin().listTables();
 
             Log log = Utils.getLog();
             log.info("*****table");
@@ -85,8 +90,13 @@ public class Connection implements Serializable {
         return hbaseConfiguration;
     }
 
-    public HBaseAdmin getHbaseAdmin() {
-        return hbaseAdmin;
+    public Admin getHbaseAdmin() {
+        try {
+            return this.hbaseConnection.getAdmin();
+        } catch (IOException e) {
+            Utils.getLog().error("getHbaseAdmin exception", e);
+        }
+        return null;
     }
 
     public String toString() {

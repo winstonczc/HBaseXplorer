@@ -27,9 +27,7 @@ import javax.swing.table.TableCellRenderer;
 import javax.swing.table.TableColumn;
 import javax.swing.table.TableColumnModel;
 
-import org.apache.commons.lang.StringUtils;
 import org.apache.commons.logging.Log;
-import org.apache.hadoop.hbase.HColumnDescriptor;
 import org.apache.hadoop.hbase.client.Delete;
 import org.apache.hadoop.hbase.client.Put;
 import org.buddy.javatools.ToolConfig;
@@ -453,23 +451,19 @@ public class EditTableData extends javax.swing.JPanel {
     @Action
     public void btnAddRowClickAction() {
         JFrame mainFrame = HBaseExplorerApp.getApplication().getMainFrame();
-        NewRowDialog dialog = new NewRowDialog(mainFrame);
+        NewRowDialog dialog = new NewRowDialog(mainFrame, table);
         dialog.setLocationRelativeTo(mainFrame);
         HBaseExplorerApp.getApplication().show(dialog);
 
-        String rk = dialog.getRowKey();
-        if (StringUtils.isNotBlank(rk)) {
+        RowData rd = dialog.getRowData();
+        if (rd != null) {
             try {
-                Put put = new Put(rk.getBytes());
-                HColumnDescriptor[] descriptors = table.getHTable().getTableDescriptor().getColumnFamilies();
-                for (HColumnDescriptor desc : descriptors) {
-                    put.addColumn(desc.getName(), null, null);
-                }
+                Put put = rd.convertToPut();
                 table.getHTable().put(put);
                 loadRows(ToolConfig.maxLoadRow.intValue());
             } catch (Exception ex) {
                 ex.printStackTrace();
-                throw new ExplorerException("Error adding row : " + rk);
+                throw new ExplorerException("Error adding row : " + rd.toString());
             }
         }
     }
