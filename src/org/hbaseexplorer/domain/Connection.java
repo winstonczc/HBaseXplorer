@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.io.Serializable;
 import java.util.ArrayList;
 
+import org.apache.commons.lang.StringUtils;
 import org.apache.commons.logging.Log;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
@@ -13,6 +14,7 @@ import org.apache.hadoop.hbase.MasterNotRunningException;
 import org.apache.hadoop.hbase.ZooKeeperConnectionException;
 import org.apache.hadoop.hbase.client.HBaseAdmin;
 import org.buddy.javatools.Utils;
+import org.hbaseexplorer.common.HConfConstants;
 import org.hbaseexplorer.exception.ExplorerException;
 
 /**
@@ -42,27 +44,25 @@ public class Connection implements Serializable {
     public void connect() throws ZooKeeperConnectionException, IOException {
         try {
             hbaseAdmin = new HBaseAdmin(hbaseConfiguration);
-            /*
-            HBaseConfiguration config = new HBaseConfiguration();
-            config.clear();
-                config.set("hbase.zookeeper.quorum", "192.168.56.56");
-                config.set("hbase.zookeeper.property.clientPort","2181");
-                config.set("hbase.master", "192.168.56.56:60000");
-                //HBaseConfiguration config = HBaseConfiguration.create();
-            //config.set("hbase.zookeeper.quorum", "localhost");  // Here we are running zookeeper locally
-                HBaseAdmin.checkHBaseAvailable(config);
-             * 
-             */
-            refreshTables();
+            if (StringUtils.isNotBlank(this.hbaseConfiguration.get(HConfConstants.TABLE_FILTER_REGX))) {
+                refreshTables(this.hbaseConfiguration.get(HConfConstants.TABLE_FILTER_REGX));
+            } else {
+                refreshTables(null);
+            }
         } catch (MasterNotRunningException me) {
             throw new ExplorerException("Cannot connect to cluster");
         }
     }
 
-    public void refreshTables() {
+    public void refreshTables(String regx) {
         try {
             tableList = new ArrayList<Table>();
-            HTableDescriptor hTables[] = this.hbaseAdmin.listTables("aligame.*");
+            HTableDescriptor[] hTables = null;
+            if (StringUtils.isNotBlank(regx)) {
+                hTables = this.hbaseAdmin.listTables(regx);
+            } else {
+                hTables = this.hbaseAdmin.listTables();
+            }
 
             Log log = Utils.getLog();
             log.info("*****table");
