@@ -50,7 +50,7 @@ public class RowData {
 
         RowData changedData = getChangedData();
         for (HBTriplet hbt : changedData.getTriplets()) {
-            put.addColumn(hbt.getFamily(), hbt.getQualifier(), hbt.getValue());
+            put.add(hbt.getFamily(), hbt.getQualifier(), hbt.getValue());
         }
 
         return put;

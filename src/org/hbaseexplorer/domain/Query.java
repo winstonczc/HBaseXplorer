@@ -13,17 +13,16 @@ import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.hbase.HColumnDescriptor;
 import org.apache.hadoop.hbase.HTableDescriptor;
 import org.apache.hadoop.hbase.MasterNotRunningException;
-import org.apache.hadoop.hbase.TableName;
-import org.apache.hadoop.hbase.client.Admin;
-import org.apache.hadoop.hbase.io.compress.Compression.Algorithm;
+import org.apache.hadoop.hbase.client.HBaseAdmin;
+import org.apache.hadoop.hbase.io.hfile.Compression.Algorithm;
 
 /**
  *
  * @author xinqiyang
  */
-public class Query {
+public class Query { 
 
-    private Admin hbaseAdmin;
+    private HBaseAdmin hbaseAdmin;
     private String queryS;
 
     public Query(Configuration conf, String queryStr) throws MasterNotRunningException {
@@ -54,25 +53,25 @@ public class Query {
                             // run logic then return
                             if (i == 0) {
                                 // run create
-                                HTableDescriptor td = new HTableDescriptor(TableName.valueOf(tableName));
+                                HTableDescriptor td = new HTableDescriptor(tableName);
                                 td.addFamily(new HColumnDescriptor(columnFamily).setCompressionType(Algorithm.GZ));
                                 this.hbaseAdmin.createTable(td);
                                 valRet = "create table ok";
                             }
 
                             if (i == 1) {
-                                this.hbaseAdmin.disableTable(TableName.valueOf(tableName));
+                                this.hbaseAdmin.disableTable(tableName);
                                 valRet = "disable table ok";
                             }
 
                             if (i == 2) {
-                                this.hbaseAdmin.enableTable(TableName.valueOf(tableName));
+                                this.hbaseAdmin.enableTable(tableName);
                                 valRet = "enable table ok";
                             }
 
                             if (i == 3) {
-                                this.hbaseAdmin.disableTable(TableName.valueOf(tableName));
-                                this.hbaseAdmin.deleteTable(TableName.valueOf(tableName));
+                                this.hbaseAdmin.disableTable(tableName);
+                                this.hbaseAdmin.deleteTable(tableName);
                                 valRet = "drop table ok";
                             }
 

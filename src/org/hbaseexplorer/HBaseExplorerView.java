@@ -18,6 +18,7 @@ import javax.swing.Timer;
 
 import org.apache.commons.lang.StringUtils;
 import org.apache.hadoop.conf.Configuration;
+import org.apache.hadoop.hbase.HConstants;
 import org.buddy.javatools.BuddyFile;
 import org.buddy.javatools.Utils;
 import org.hbaseexplorer.components.ConnectionTree;
@@ -309,9 +310,12 @@ public final class HBaseExplorerView extends FrameView {
         if (StringUtils.isNotBlank(zookeeper)) {
             try {
                 Configuration conf = new Configuration();
-                conf.set("hbase.zookeeper.quorum", zookeeper);
-                conf.set("hbase.zookeeper.property.clientPort", "2181");
-                conf.set("hbase.client.retries.number", "1");
+                conf.set(HConstants.ZOOKEEPER_QUORUM, zookeeper);
+                conf.set(HConstants.ZOOKEEPER_CLIENT_PORT, "2181");
+                conf.set(HConstants.HBASE_CLIENT_RETRIES_NUMBER, "3");
+
+                conf.set(HConstants.ZOOKEEPER_ZNODE_PARENT, "/hbase-et2sqa-perf");
+
                 getTree().createConnection(conf);
                 getTree().setMainApp(this);
                 // @TODO:add by xinqiyang

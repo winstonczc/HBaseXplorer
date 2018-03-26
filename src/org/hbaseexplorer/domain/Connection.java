@@ -11,8 +11,7 @@ import org.apache.hadoop.hbase.HBaseConfiguration;
 import org.apache.hadoop.hbase.HTableDescriptor;
 import org.apache.hadoop.hbase.MasterNotRunningException;
 import org.apache.hadoop.hbase.ZooKeeperConnectionException;
-import org.apache.hadoop.hbase.client.Admin;
-import org.apache.hadoop.hbase.client.ConnectionFactory;
+import org.apache.hadoop.hbase.client.HBaseAdmin;
 import org.buddy.javatools.Utils;
 import org.hbaseexplorer.exception.ExplorerException;
 
@@ -28,7 +27,7 @@ public class Connection implements Serializable {
 
     private Configuration hbaseConfiguration;
 
-    private org.apache.hadoop.hbase.client.Connection hbaseConnection;
+    private HBaseAdmin hbaseAdmin;
 
     private ArrayList<Table> tableList;
 
@@ -42,7 +41,7 @@ public class Connection implements Serializable {
 
     public void connect() throws ZooKeeperConnectionException, IOException {
         try {
-            this.hbaseConnection = ConnectionFactory.createConnection(hbaseConfiguration);
+            hbaseAdmin = new HBaseAdmin(hbaseConfiguration);
             /*
             HBaseConfiguration config = new HBaseConfiguration();
             config.clear();
@@ -63,7 +62,7 @@ public class Connection implements Serializable {
     public void refreshTables() {
         try {
             tableList = new ArrayList<Table>();
-            HTableDescriptor hTables[] = this.hbaseConnection.getAdmin().listTables();
+            HTableDescriptor hTables[] = this.hbaseAdmin.listTables("aligame.*");
 
             Log log = Utils.getLog();
             log.info("*****table");
@@ -90,13 +89,8 @@ public class Connection implements Serializable {
         return hbaseConfiguration;
     }
 
-    public Admin getHbaseAdmin() {
-        try {
-            return this.hbaseConnection.getAdmin();
-        } catch (IOException e) {
-            Utils.getLog().error("getHbaseAdmin exception", e);
-        }
-        return null;
+    public HBaseAdmin getHbaseAdmin() {
+        return this.hbaseAdmin;
     }
 
     public String toString() {
