@@ -341,6 +341,7 @@ public final class HBaseExplorerView extends FrameView {
                 }
                 if (StringUtils.isNotBlank(confs.get(HConfConstants.TABLE_FILTER_REGX))) {
                     conf.set(HConfConstants.TABLE_FILTER_REGX, confs.get(HConfConstants.TABLE_FILTER_REGX));
+                    ConnectionTree.TABLE_REGX = confs.get(HConfConstants.TABLE_FILTER_REGX);
                 }
 
                 getTree().createConnection(conf);
@@ -400,7 +401,11 @@ public final class HBaseExplorerView extends FrameView {
 
     @Action
     public void filterTableAction() {
-        JTextField msg = new JTextField("");
+        if (this.getTree().getCurrConn() == null) {
+            JOptionPane.showMessageDialog(null, "please click any connection you want to filter first");
+            return;
+        }
+        JTextField msg = new JTextField(ConnectionTree.TABLE_REGX);
         msg.setColumns(100);
 
         JScrollPane scrollPane = new JScrollPane(msg);
@@ -410,6 +415,7 @@ public final class HBaseExplorerView extends FrameView {
         if (JOptionPane.YES_OPTION == selected) {
             String regx = msg.getText();
             if (StringUtils.isNotBlank(regx)) {
+                ConnectionTree.TABLE_REGX = regx;
                 this.getTree().refreshCurrConnTables(regx);
             } else {
                 JOptionPane.showMessageDialog(null, "please input the regx expression");
