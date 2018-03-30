@@ -18,6 +18,7 @@ import javax.swing.tree.TreePath;
 
 import org.apache.commons.logging.Log;
 import org.apache.hadoop.conf.Configuration;
+import org.apache.hadoop.hbase.TableName;
 import org.buddy.javatools.Utils;
 import org.hbaseexplorer.HBaseExplorerView;
 import org.hbaseexplorer.domain.Connection;
@@ -93,8 +94,8 @@ public class ConnectionTree extends JTree {
                             JOptionPane.OK_CANCEL_OPTION);
                     if (JOptionPane.YES_OPTION == selected) {
                         try {
-                            currConn.getHbaseAdmin().disableTable(currTable.getName());
-                            currConn.getHbaseAdmin().deleteTable(currTable.getName());
+                            currConn.getHbaseAdmin().disableTable(TableName.valueOf(currTable.getName()));
+                            currConn.getHbaseAdmin().deleteTable(TableName.valueOf(currTable.getName()));
                             ((DefaultMutableTreeNode)currConnNode.getChildAt(0)).remove(currTableNode);
                             that.setCurrTable(null);
                             that.setCurrTableNode(null);

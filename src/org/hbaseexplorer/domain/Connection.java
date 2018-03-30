@@ -12,9 +12,9 @@ import org.apache.hadoop.hbase.HBaseConfiguration;
 import org.apache.hadoop.hbase.HTableDescriptor;
 import org.apache.hadoop.hbase.MasterNotRunningException;
 import org.apache.hadoop.hbase.ZooKeeperConnectionException;
-import org.apache.hadoop.hbase.client.HBaseAdmin;
+import org.apache.hadoop.hbase.client.Admin;
+import org.apache.hadoop.hbase.client.ConnectionFactory;
 import org.buddy.javatools.Utils;
-import org.hbaseexplorer.common.HConfConstants;
 import org.hbaseexplorer.exception.ExplorerException;
 
 /**
@@ -29,7 +29,7 @@ public class Connection implements Serializable {
 
     private Configuration hbaseConfiguration;
 
-    private HBaseAdmin hbaseAdmin;
+    private org.apache.hadoop.hbase.client.Connection hbaseConnection;
 
     private ArrayList<Table> tableList;
 
@@ -44,19 +44,9 @@ public class Connection implements Serializable {
     public void connect() throws ZooKeeperConnectionException, IOException {
         try {
             this.hbaseConnection = ConnectionFactory.createConnection(hbaseConfiguration);
-            /*
-            HBaseConfiguration config = new HBaseConfiguration();
-            config.clear();
-                config.set("hbase.zookeeper.quorum", "192.168.56.56");
-                config.set("hbase.zookeeper.property.clientPort","2181");
-                config.set("hbase.master", "192.168.56.56:60000");
-                //HBaseConfiguration config = HBaseConfiguration.create();
-            //config.set("hbase.zookeeper.quorum", "localhost");  // Here we are running zookeeper locally
-                HBaseAdmin.checkHBaseAvailable(config);
-             * 
-             */
+           
                 refreshTables(null);
-            }
+            
         } catch (MasterNotRunningException me) {
             throw new ExplorerException("Cannot connect to cluster");
         }
@@ -67,9 +57,9 @@ public class Connection implements Serializable {
             tableList = new ArrayList<Table>();
             HTableDescriptor[] hTables = null;
             if (StringUtils.isNotBlank(regx)) {
-                hTables = this.hbaseAdmin.listTables(regx);
+                hTables = this.hbaseConnection.getAdmin().listTables(regx);
             } else {
-                hTables = this.hbaseAdmin.listTables();
+                hTables = this.hbaseConnection.getAdmin().listTables();
             }
 
             Log log = Utils.getLog();
@@ -97,8 +87,13 @@ public class Connection implements Serializable {
         return hbaseConfiguration;
     }
 
-    public HBaseAdmin getHbaseAdmin() {
-        return this.hbaseAdmin;
+    public Admin getHbaseAdmin() {
+        try {
+            return this.hbaseConnection.getAdmin();
+        } catch (IOException e) {
+            Utils.getLog().error("getHbaseAdmin exception", e);
+        }
+        return null;
     }
 
     public String toString() {
