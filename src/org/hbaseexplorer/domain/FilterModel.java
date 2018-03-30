@@ -10,7 +10,10 @@ package org.hbaseexplorer.domain;
  * @author zaharije
  */
 public class FilterModel {
-    private String family, column, value,CompareOp;
+    private String family;
+    private String column;
+    private String value;
+    private String CompareOp;
     private boolean enabled = true;
 
     public FilterModel() {
@@ -47,15 +50,15 @@ public class FilterModel {
         this.value = value;
     }
 
-    //@add set compare oparation
+    // @add set compare oparation
     public void setCompareOP(String val) {
         this.CompareOp = val;
     }
-    
-    public String getCompareOP(){
+
+    public String getCompareOP() {
         return CompareOp;
     }
-    
+
     public boolean isEnabled() {
         return enabled;
     }
@@ -67,5 +70,5 @@ public class FilterModel {
     public String toString() {
         return getFamily() + ":" + getColumn() + "=" + getValue();
     }
-    
+
 }

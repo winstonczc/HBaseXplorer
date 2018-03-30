@@ -24,7 +24,7 @@ import org.buddy.javatools.Utils;
 import org.hbaseexplorer.domain.FilterModel;
 import org.hbaseexplorer.domain.HBTriplet;
 import org.hbaseexplorer.domain.RowData;
-import org.hbaseexplorer.domain.Table;
+import org.hbaseexplorer.domain.HTableWapper;
 import org.hbaseexplorer.exception.ExplorerException;
 
 /**
@@ -38,7 +38,7 @@ public class EditTableDataModel extends AbstractTableModel {
      */
     private static final long serialVersionUID = 3620982582750735008L;
     public String rowKey;
-    private Table table;
+    private HTableWapper table;
     // private ArrayList<HBTriplet> data;
     private Integer skip;
     private boolean dirty = false;
@@ -47,22 +47,18 @@ public class EditTableDataModel extends AbstractTableModel {
 
     private int loadCount = 0;
 
-    // load data wast to ma
-    public EditTableDataModel(Table table, Integer skip, String rowKey, FilterModel filterModel) {
+    // load data 
+    public EditTableDataModel(HTableWapper table, Integer skip, String rowKey, FilterModel filterModel) {
         this.table = table;
-        this.rowData = null;
         this.skip = skip;
         this.rowKey = rowKey;
         this.filterModel = filterModel;
         refreshData(skip);
-        // get
-
     }
 
     // load row from table
-    public EditTableDataModel(Table table, Integer skip) {
+    public EditTableDataModel(HTableWapper table, Integer skip) {
         this.table = table;
-        this.rowData = null;
         this.skip = skip;
         // this.rowKey = rowKey;
         this.filterModel = new FilterModel();
@@ -210,7 +206,6 @@ public class EditTableDataModel extends AbstractTableModel {
     // it will wast time here , the num max set 1000
     public DefaultListModel<String> getRowData(int num) {
         DefaultListModel<String> rklist = new DefaultListModel<String>();
-
         try {
             // load first,scan class have a limit setting????
             Scan scan = new Scan();
@@ -221,9 +216,7 @@ public class EditTableDataModel extends AbstractTableModel {
             ResultScanner resultScanner = table.getHTable().getScanner(scan);
             while (num > 0) {
                 Result result = resultScanner.next();
-
                 if (result != null) {
-
                     rowData = new RowData();
                     // load so many data,we need row name
                     // log.info(result.getRowResult());

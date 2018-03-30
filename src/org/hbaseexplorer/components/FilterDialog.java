@@ -15,7 +15,7 @@ import java.io.IOException;
 import javax.swing.DefaultComboBoxModel;
 import org.apache.hadoop.hbase.HColumnDescriptor;
 import org.hbaseexplorer.domain.FilterModel;
-import org.hbaseexplorer.domain.Table;
+import org.hbaseexplorer.domain.HTableWapper;
 import org.hbaseexplorer.exception.ExplorerException;
 import org.jdesktop.application.Action;
 
@@ -26,10 +26,10 @@ import org.jdesktop.application.Action;
 public class FilterDialog extends javax.swing.JDialog {
 
     private FilterModel filterModel;
-    private Table table;
+    private HTableWapper table;
 
     /** Creates new form FindDialog */
-    public FilterDialog(java.awt.Frame parent, Table table) {
+    public FilterDialog(java.awt.Frame parent, HTableWapper table) {
         super(parent, true);
         this.filterModel = new FilterModel();
         this.table = table;

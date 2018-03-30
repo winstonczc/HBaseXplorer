@@ -7,7 +7,8 @@ import java.util.ArrayList;
 import javax.swing.JTabbedPane;
 
 import org.apache.commons.lang.StringUtils;
-import org.hbaseexplorer.domain.Table;
+import org.buddy.javatools.Utils;
+import org.hbaseexplorer.domain.HTableWapper;
 
 /**
  *
@@ -20,46 +21,48 @@ public class DataTabPane extends JTabbedPane {
      */
     private static final long serialVersionUID = 5295901442628109309L;
 
-    private ArrayList<Table> tables;
+    private ArrayList<HTableWapper> tables;
 
     public DataTabPane() {
         super();
+        tables = new ArrayList<HTableWapper>();
 
-        tables = new ArrayList<Table>();
+        // click handler
+        this.addMouseListener(
+            new MouseAdapter() {
+                public void mouseReleased(MouseEvent e) {
+                    Utils.getLog().info("----------DataTabPane mouseReleased");
+                    if (e.getClickCount() == 2) {
+                        DataTabPane tabPane = (DataTabPane)e.getComponent();
+                        int idx = tabPane.indexAtLocation(e.getX(), e.getY());
+                        if (idx >= 0) {
+                            EditTableDataPanel com = (EditTableDataPanel)tabPane.getComponentAt(idx);
+                            tabPane.remove(idx);
+                            tables.remove(com.getTable());
+                            com = null;
+                        }
+                    }
+                }
+            });
     }
 
-    public void showTable(Table table) {
+    public void showTable(HTableWapper table) {
         int index = tableExists(table);
 
         if (index == -1) {
             tables.add(table);
             String tabName = table.getFullName().length() > 50 ? StringUtils.left(table.getFullName(), 50) + "..."
                 : table.getFullName();
-            this.addTab(tabName, null, new EditTableData(table), table.getFullName());
+            this.addTab(tabName, null, new EditTableDataPanel(table), table.getFullName());
             index = tables.size() - 1;
         }
-        // click handler
-        this.addMouseListener(
-            new MouseAdapter() {
-                public void mouseClicked(MouseEvent e) {
-                    if (e.getClickCount() == 2) {
-                        DataTabPane tabPane = (DataTabPane)e.getComponent();
-                        int idx = tabPane.indexAtLocation(e.getX(), e.getY());
-                        if (idx >= 0) {
-                            EditTableData com = (EditTableData)tabPane.getComponentAt(idx);
-                            tabPane.remove(idx);
-                            tables.remove(com.getTable());
-                        }
-                    }
-                }
-            });
 
         this.getModel().setSelectedIndex(index);
     }
 
-    public int tableExists(Table table) {
+    public int tableExists(HTableWapper table) {
         for (int i = 0; i < tables.size(); i++) {
-            Table t = tables.get(i);
+            HTableWapper t = tables.get(i);
             if (t.getFullName().equals(table.getFullName())) {
                 return i;
             }

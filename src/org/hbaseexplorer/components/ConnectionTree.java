@@ -21,7 +21,7 @@ import org.apache.hadoop.conf.Configuration;
 import org.buddy.javatools.Utils;
 import org.hbaseexplorer.HBaseExplorerView;
 import org.hbaseexplorer.domain.Connection;
-import org.hbaseexplorer.domain.Table;
+import org.hbaseexplorer.domain.HTableWapper;
 
 /**
  *
@@ -33,7 +33,7 @@ public class ConnectionTree extends JTree {
      */
     private static final long serialVersionUID = 2355154241501959396L;
 
-    private Table currTable;
+    private HTableWapper currTable;
 
     private DefaultMutableTreeNode currTableNode;
 
@@ -82,7 +82,7 @@ public class ConnectionTree extends JTree {
             private static final long serialVersionUID = 1L;
 
             public void actionPerformed(ActionEvent e) {
-                Table currTable = that.getCurrTable();
+                HTableWapper currTable = that.getCurrTable();
                 DefaultMutableTreeNode currTableNode = that.getCurrTableNode();
                 Connection currConn = that.getCurrConn();
                 DefaultMutableTreeNode currConnNode = that.getCurrConnNode();
@@ -154,8 +154,8 @@ public class ConnectionTree extends JTree {
         long start = System.currentTimeMillis();
         DefaultMutableTreeNode selectedNode = (DefaultMutableTreeNode)selectionPath.getLastPathComponent();
         Object userObject = selectedNode.getUserObject();
-        if (userObject instanceof Table) {
-            this.currTable = (Table)userObject;
+        if (userObject instanceof HTableWapper) {
+            this.currTable = (HTableWapper)userObject;
             this.currTableNode = selectedNode;
         }
 
@@ -182,9 +182,9 @@ public class ConnectionTree extends JTree {
         DefaultMutableTreeNode selectedNode = (DefaultMutableTreeNode)selectionPath.getLastPathComponent();
 
         Object userObject = selectedNode.getUserObject();
-        if (userObject instanceof Table) {
-            this.mainApp.getTabPane().showTable((Table)userObject);
-            this.currTable = (Table)userObject;
+        if (userObject instanceof HTableWapper) {
+            this.mainApp.getTabPane().showTable((HTableWapper)userObject);
+            this.currTable = (HTableWapper)userObject;
             this.currTableNode = selectedNode;
         }
 
@@ -218,7 +218,7 @@ public class ConnectionTree extends JTree {
             DefaultMutableTreeNode tablesNode = (DefaultMutableTreeNode)this.getCurrConnNode().getChildAt(0);
             tablesNode.removeAllChildren();
 
-            for (Table mtable : this.getCurrConn().getTableList()) {
+            for (HTableWapper mtable : this.getCurrConn().getTableList()) {
                 DefaultMutableTreeNode tableNode = new DefaultMutableTreeNode(mtable.getName(), true);
                 tableNode.setUserObject(mtable);
                 tablesNode.add(tableNode);
@@ -243,7 +243,7 @@ public class ConnectionTree extends JTree {
         connNode.setUserObject(conn);
         connNode.add(tablesNode);
 
-        for (Table mtable : conn.getTableList()) {
+        for (HTableWapper mtable : conn.getTableList()) {
             // log.info(mtable);
             DefaultMutableTreeNode tableNode = new DefaultMutableTreeNode(mtable.getName(), true);
             tableNode.setUserObject(mtable);
@@ -280,11 +280,11 @@ public class ConnectionTree extends JTree {
         this.reloadTree();
     }
 
-    public Table getCurrTable() {
+    public HTableWapper getCurrTable() {
         return currTable;
     }
 
-    public void setCurrTable(Table currTable) {
+    public void setCurrTable(HTableWapper currTable) {
         this.currTable = currTable;
     }
 

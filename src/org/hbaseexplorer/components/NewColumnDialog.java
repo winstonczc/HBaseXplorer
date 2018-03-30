@@ -17,7 +17,7 @@ import javax.swing.DefaultComboBoxModel;
 
 import org.apache.hadoop.hbase.HColumnDescriptor;
 import org.hbaseexplorer.domain.HBTriplet;
-import org.hbaseexplorer.domain.Table;
+import org.hbaseexplorer.domain.HTableWapper;
 import org.hbaseexplorer.exception.ExplorerException;
 import org.jdesktop.application.Action;
 
@@ -31,11 +31,11 @@ public class NewColumnDialog extends javax.swing.JDialog {
      * serialVersionUID
      */
     private static final long serialVersionUID = -9055717435302019569L;
-    private Table table;
+    private HTableWapper table;
     private HBTriplet triplet;
 
     /** Creates new form NewColumnDialog */
-    public NewColumnDialog(java.awt.Frame parent, Table table) {
+    public NewColumnDialog(java.awt.Frame parent, HTableWapper table) {
         super(parent, true);
         this.table = table;
         this.triplet = null;

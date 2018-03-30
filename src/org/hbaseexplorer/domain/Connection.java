@@ -31,14 +31,14 @@ public class Connection implements Serializable {
 
     private HBaseAdmin hbaseAdmin;
 
-    private ArrayList<Table> tableList;
+    private ArrayList<HTableWapper> tableList;
 
     public Connection(Configuration configuration) {
         hbaseConfiguration = HBaseConfiguration.create(configuration);
         String resource = "./conf/hbase.xml";
         Path path = new Path(resource);
         hbaseConfiguration.addResource(path);
-        tableList = new ArrayList<Table>();
+        tableList = new ArrayList<HTableWapper>();
     }
 
     public void connect() throws ZooKeeperConnectionException, IOException {
@@ -56,7 +56,7 @@ public class Connection implements Serializable {
 
     public void refreshTables(String regx) {
         try {
-            tableList = new ArrayList<Table>();
+            tableList = new ArrayList<HTableWapper>();
             HTableDescriptor[] hTables = null;
             if (StringUtils.isNotBlank(regx)) {
                 hTables = this.hbaseAdmin.listTables(regx);
@@ -69,7 +69,7 @@ public class Connection implements Serializable {
             log.info(hTables.length);
 
             for (HTableDescriptor tableDescriptor : hTables) {
-                tableList.add(new Table(tableDescriptor, this));
+                tableList.add(new HTableWapper(tableDescriptor, this));
             }
         } catch (IOException ioe) {
             ioe.printStackTrace();
@@ -81,7 +81,7 @@ public class Connection implements Serializable {
         return hbaseConfiguration.get("hbase.zookeeper.quorum");
     }
 
-    public ArrayList<Table> getTableList() {
+    public ArrayList<HTableWapper> getTableList() {
         return tableList;
     }
 

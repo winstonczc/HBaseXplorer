@@ -17,7 +17,7 @@ import org.apache.commons.lang.StringUtils;
 import org.apache.hadoop.hbase.HColumnDescriptor;
 import org.hbaseexplorer.domain.HBTriplet;
 import org.hbaseexplorer.domain.RowData;
-import org.hbaseexplorer.domain.Table;
+import org.hbaseexplorer.domain.HTableWapper;
 import org.jdesktop.application.Action;
 
 /**
@@ -32,11 +32,11 @@ public class NewRowDialog extends javax.swing.JDialog {
      * serialVersionUID
      */
     private static final long serialVersionUID = -9055717435302019569L;
-    private Table table;
+    private HTableWapper table;
     private RowData rowData;
 
     /** Creates new form NewColumnDialog */
-    public NewRowDialog(java.awt.Frame parent, Table table) {
+    public NewRowDialog(java.awt.Frame parent, HTableWapper table) {
         super(parent, true);
         this.table = table;
         this.rowData = null;

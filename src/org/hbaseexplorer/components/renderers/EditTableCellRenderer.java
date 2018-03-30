@@ -16,6 +16,11 @@ import org.hbaseexplorer.datamodels.EditTableDataModel;
  */
 public class EditTableCellRenderer extends DefaultTableCellRenderer {
 
+    /** 
+     * serialVersionUID 
+     */  
+    private static final long serialVersionUID = -3595694768822063835L;
+
     public EditTableCellRenderer() {
         super();
     }

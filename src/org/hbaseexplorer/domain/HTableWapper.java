@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.io.Serializable;
 import java.nio.charset.Charset;
 
-import org.apache.commons.lang.StringUtils;
 import org.apache.hadoop.hbase.HTableDescriptor;
 import org.apache.hadoop.hbase.client.HTable;
 import org.hbaseexplorer.exception.ExplorerException;
@@ -13,13 +12,17 @@ import org.hbaseexplorer.exception.ExplorerException;
  *
  * @author zaharije
  */
-public class Table implements Serializable {
+public class HTableWapper implements Serializable {
 
+    /** 
+     * serialVersionUID 
+     */  
+    private static final long serialVersionUID = -1176934932361671353L;
     private HTableDescriptor tableDescriptor;
     private Connection connection;
     private HTable hTable;
 
-    public Table(HTableDescriptor tableDescriptor, Connection connection) {
+    public HTableWapper(HTableDescriptor tableDescriptor, Connection connection) {
         this.tableDescriptor = tableDescriptor;
         this.connection = connection;
         hTable = null;
