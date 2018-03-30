@@ -15,6 +15,7 @@ import org.apache.hadoop.hbase.ZooKeeperConnectionException;
 import org.apache.hadoop.hbase.client.Admin;
 import org.apache.hadoop.hbase.client.ConnectionFactory;
 import org.buddy.javatools.Utils;
+import org.hbaseexplorer.common.HConfConstants;
 import org.hbaseexplorer.exception.ExplorerException;
 
 /**
@@ -44,9 +45,11 @@ public class Connection implements Serializable {
     public void connect() throws ZooKeeperConnectionException, IOException {
         try {
             this.hbaseConnection = ConnectionFactory.createConnection(hbaseConfiguration);
-
-            refreshTables(null);
-
+            if (StringUtils.isNotBlank(this.hbaseConfiguration.get(HConfConstants.TABLE_FILTER_REGX))) {
+                refreshTables(this.hbaseConfiguration.get(HConfConstants.TABLE_FILTER_REGX));
+            } else {
+                refreshTables(null);
+            }
         } catch (MasterNotRunningException me) {
             throw new ExplorerException("Cannot connect to cluster");
         }
