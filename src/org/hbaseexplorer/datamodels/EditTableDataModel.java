@@ -12,7 +12,8 @@ import java.util.logging.Logger;
 import javax.swing.DefaultListModel;
 import javax.swing.table.AbstractTableModel;
 
-import org.apache.hadoop.hbase.KeyValue;
+import org.apache.hadoop.hbase.Cell;
+import org.apache.hadoop.hbase.CellUtil;
 import org.apache.hadoop.hbase.client.Result;
 import org.apache.hadoop.hbase.client.ResultScanner;
 import org.apache.hadoop.hbase.client.Scan;
@@ -31,7 +32,7 @@ import org.hbaseexplorer.exception.ExplorerException;
  *
  * @author zaharije
  */
-public class EditTableDataModel extends AbstractTableModel { 
+public class EditTableDataModel extends AbstractTableModel {
 
     /**
      * serialVersionUID
@@ -181,13 +182,13 @@ public class EditTableDataModel extends AbstractTableModel {
                     // get the rowKey
                     rowKey = rowData.getRowKeyString();
                     // get rows data
-                    for (KeyValue kv : result.list()) {
+                    for (Cell cell : result.listCells()) {
                         // add hbase get family and get qualifier and get value
                         // if is in the filter then now display
-                        byte[] family = kv.getFamily();
-                        byte[] qualifier = kv.getQualifier();
-                        // int valueLength = kv..getValueLength();
-                        byte[] value = kv.getValue();
+                        byte[] family = CellUtil.cloneFamily(cell);
+                        byte[] qualifier = CellUtil.cloneQualifier(cell);
+                        // int valueLength = cell.getValueLength();
+                        byte[] value = CellUtil.cloneValue(cell);
 
                         rowData.add(new HBTriplet(family, qualifier, value));
                     }

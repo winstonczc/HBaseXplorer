@@ -44,9 +44,9 @@ public class Connection implements Serializable {
     public void connect() throws ZooKeeperConnectionException, IOException {
         try {
             this.hbaseConnection = ConnectionFactory.createConnection(hbaseConfiguration);
-           
-                refreshTables(null);
-            
+
+            refreshTables(null);
+
         } catch (MasterNotRunningException me) {
             throw new ExplorerException("Cannot connect to cluster");
         }
@@ -80,11 +80,15 @@ public class Connection implements Serializable {
     }
 
     public ArrayList<Table> getTableList() {
-        return tableList;
+        return this.tableList;
     }
 
     public Configuration getHbaseConfiguration() {
-        return hbaseConfiguration;
+        return this.hbaseConfiguration;
+    }
+
+    public org.apache.hadoop.hbase.client.Connection getHbaseConnection() {
+        return this.hbaseConnection;
     }
 
     public Admin getHbaseAdmin() {

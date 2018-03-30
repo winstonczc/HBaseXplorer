@@ -12,7 +12,9 @@
 package org.hbaseexplorer.components;
 
 import java.io.IOException;
+
 import javax.swing.DefaultComboBoxModel;
+
 import org.apache.hadoop.hbase.HColumnDescriptor;
 import org.hbaseexplorer.domain.FilterModel;
 import org.hbaseexplorer.domain.Table;
@@ -25,6 +27,10 @@ import org.jdesktop.application.Action;
  */
 public class FilterDialog extends javax.swing.JDialog {
 
+    /** 
+     * serialVersionUID 
+     */  
+    private static final long serialVersionUID = 8897235212920225244L;
     private FilterModel filterModel;
     private Table table;
 

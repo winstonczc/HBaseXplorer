@@ -4,9 +4,7 @@ import java.io.IOException;
 import java.io.Serializable;
 import java.nio.charset.Charset;
 
-import org.apache.commons.lang.StringUtils;
 import org.apache.hadoop.hbase.HTableDescriptor;
-import org.apache.hadoop.hbase.client.HTable;
 import org.hbaseexplorer.exception.ExplorerException;
 
 /**
@@ -15,9 +13,13 @@ import org.hbaseexplorer.exception.ExplorerException;
  */
 public class Table implements Serializable {
 
+    /**
+     * serialVersionUID
+     */
+    private static final long serialVersionUID = -1176934932361671353L;
     private HTableDescriptor tableDescriptor;
     private Connection connection;
-    private HTable hTable;
+    private org.apache.hadoop.hbase.client.Table hTable;
 
     public Table(HTableDescriptor tableDescriptor, Connection connection) {
         this.tableDescriptor = tableDescriptor;
@@ -29,10 +31,10 @@ public class Table implements Serializable {
         return connection;
     }
 
-    public HTable getHTable() {
+    public org.apache.hadoop.hbase.client.Table getHTable() {
         try {
             if (hTable == null) {
-                hTable = new HTable(connection.getHbaseConfiguration(), tableDescriptor.getName());
+                hTable = connection.getHbaseConnection().getTable(tableDescriptor.getTableName());
                 return hTable;
             } else {
                 return hTable;
@@ -43,7 +45,7 @@ public class Table implements Serializable {
     }
 
     public String getName() {
-        return new String(tableDescriptor.getName(), Charset.forName("UTF8"));
+        return new String(tableDescriptor.getTableName().getName(), Charset.forName("UTF8"));
     }
 
     public String getFullName() {
