@@ -420,7 +420,7 @@ public final class HBaseExplorerView extends FrameView {
                 if (result.isSucc()) {
                     // reload tree and data
                     // getTree().setMainApp(this);
-                    getTree().refreshCurrConnTables(null);
+                    getTree().refreshCurrConnTables(ConnectionTree.TABLE_REGX);
                 }
 
             } else {
