@@ -501,7 +501,7 @@ public class EditTableData extends javax.swing.JPanel {
         if (triplet != null) {
             try {
                 Put put = new Put(rowKey.getBytes());
-                put.add(triplet.getFamily(), triplet.getQualifier(), triplet.getValue());
+                put.addColumn(triplet.getFamily(), triplet.getQualifier(), triplet.getValue());
                 table.getHTable().put(put);
                 showData(0);
             } catch (Exception ex) {
@@ -525,7 +525,7 @@ public class EditTableData extends javax.swing.JPanel {
                 JOptionPane.YES_NO_OPTION);
             if (result == JOptionPane.YES_OPTION) {
                 Delete delete = new Delete(rowKey.getBytes());
-                delete.deleteColumn(family.getBytes(), column.getBytes());
+                delete.addColumn(family.getBytes(), column.getBytes());
                 try {
                     table.getHTable().delete(delete);
                     showData(0);
