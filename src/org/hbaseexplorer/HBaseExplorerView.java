@@ -7,6 +7,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.Map;
 
 import javax.swing.Icon;
 import javax.swing.JDialog;
@@ -14,12 +15,18 @@ import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
+import javax.swing.JTextField;
 import javax.swing.Timer;
 
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
+import org.apache.commons.collections.MapUtils;
 import org.apache.commons.lang.StringUtils;
 import org.apache.hadoop.conf.Configuration;
+import org.apache.hadoop.hbase.HConstants;
 import org.buddy.javatools.BuddyFile;
 import org.buddy.javatools.Utils;
+import org.hbaseexplorer.common.HConfConstants;
 import org.hbaseexplorer.components.ConnectionTree;
 import org.hbaseexplorer.components.DataTabPane;
 import org.hbaseexplorer.domain.Query;
@@ -98,7 +105,6 @@ public final class HBaseExplorerView extends FrameView {
         });
 
         newConnectionAction();
-
     }
 
     @Action
@@ -128,6 +134,7 @@ public final class HBaseExplorerView extends FrameView {
         tabPane = new DataTabPane();
         menuBar = new javax.swing.JMenuBar();
         javax.swing.JMenu fileMenu = new javax.swing.JMenu();
+        jMenuItem3 = new javax.swing.JMenuItem();
         jMenuItem2 = new javax.swing.JMenuItem();
         jMenuItem1 = new javax.swing.JMenuItem();
         jSeparator1 = new javax.swing.JPopupMenu.Separator();
@@ -195,6 +202,14 @@ public final class HBaseExplorerView extends FrameView {
         jMenuItem2.setName("jMenuItem2"); // NOI18N
         jMenuItem2.setToolTipText("only support create、disable、enable、drop table now");
         fileMenu.add(jMenuItem2);
+
+        jMenuItem3.setAction(actionMap.get("filterTableAction")); // NOI18N
+        jMenuItem3.setAccelerator(
+            javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_R, java.awt.event.InputEvent.CTRL_MASK));
+        jMenuItem3.setText(resourceMap.getString("jMenuItem3.text")); // NOI18N
+        jMenuItem3.setName("jMenuItem2"); // NOI18N
+        jMenuItem3.setToolTipText("use regx to filter current connection tables");
+        fileMenu.add(jMenuItem3);
 
         jMenuItem1.setAction(actionMap.get("newConnectionAction")); // NOI18N
         jMenuItem1.setAccelerator(
@@ -272,24 +287,10 @@ public final class HBaseExplorerView extends FrameView {
     @Action
     public void newConnectionAction() {
 
-        // TODO:add by xinqiyang
-        // if config.ini exist then load the database
         String strConfig = "";
         try {
             String config = BuddyFile.get("hbasexplorerconfig.ini");
             if (config.length() > 0) {
-                /*
-                //configuration set haven't use 
-                Configuration conf = new Configuration();
-                conf.set("hbase.zookeeper.quorum", config);
-                conf.set("hbase.client.retries.number", "1");
-                this.localconf = conf;
-                //save it to file
-                getTree().createConnection(conf);
-                
-                getTree().setMainApp(this);
-                 * 
-                 */
                 strConfig = config;
             }
         } catch (FileNotFoundException ex) {
@@ -300,24 +301,55 @@ public final class HBaseExplorerView extends FrameView {
 
         Utils.getLog().debug("hbasexplorerconfig.ini ZK:" + strConfig);
         JOptionPane.getRootFrame().setAlwaysOnTop(true);
-        String zookeeper = JOptionPane.showInputDialog("HBase zookeeper", strConfig);
+
+        String confJson = "";
+        Map<String, String> confs = null;
+        JTextArea msg = new JTextArea(strConfig);
+        msg.setRows(10);
+        msg.setColumns(100);
+        msg.setLineWrap(true);
+        msg.setWrapStyleWord(true);
+
+        JScrollPane scrollPane = new JScrollPane(msg);
+        int selected
+            = JOptionPane.showConfirmDialog(null, scrollPane, "input hbase conf(json)", JOptionPane.OK_CANCEL_OPTION,
+                JOptionPane.PLAIN_MESSAGE);
+        if (JOptionPane.YES_OPTION == selected) {
+            confJson = msg.getText();
+            if (StringUtils.isNotBlank(confJson)) {
+                confs = new Gson().fromJson(confJson, new TypeToken<Map<String, String>>() {}.getType());
+            } else {
+                JOptionPane.showMessageDialog(null, "please input the conf(json)");
+            }
+        }
 
         new TaskMonitor(getApplication().getContext());
 
-        Utils.getLog().error("input ZK:" + zookeeper);
+        Utils.getLog().error("input conf:" + confJson);
 
-        if (StringUtils.isNotBlank(zookeeper)) {
+        if (MapUtils.isNotEmpty(confs) && StringUtils.isNotBlank(confs.get(HConstants.ZOOKEEPER_QUORUM))) {
             try {
                 Configuration conf = new Configuration();
-                conf.set("hbase.zookeeper.quorum", zookeeper);
-                conf.set("hbase.zookeeper.property.clientPort", "2181");
-                conf.set("hbase.client.retries.number", "1");
+                conf.set(HConstants.ZOOKEEPER_QUORUM, confs.get(HConstants.ZOOKEEPER_QUORUM));
+                conf.set(HConstants.ZOOKEEPER_CLIENT_PORT,
+                    MapUtils.getString(confs, HConstants.ZOOKEEPER_CLIENT_PORT, "2181"));
+                conf.set(HConstants.HBASE_CLIENT_RETRIES_NUMBER,
+                    MapUtils.getString(confs, HConstants.HBASE_CLIENT_RETRIES_NUMBER, "3"));
+
+                if (StringUtils.isNotBlank(confs.get(HConstants.ZOOKEEPER_ZNODE_PARENT))) {
+                    conf.set(HConstants.ZOOKEEPER_ZNODE_PARENT, confs.get(HConstants.ZOOKEEPER_ZNODE_PARENT));
+                }
+                if (StringUtils.isNotBlank(confs.get(HConfConstants.TABLE_FILTER_REGX))) {
+                    conf.set(HConfConstants.TABLE_FILTER_REGX, confs.get(HConfConstants.TABLE_FILTER_REGX));
+                    ConnectionTree.TABLE_REGX = confs.get(HConfConstants.TABLE_FILTER_REGX);
+                }
+
                 getTree().createConnection(conf);
                 getTree().setMainApp(this);
                 // @TODO:add by xinqiyang
                 // save it to file
                 try {
-                    BuddyFile.write("hbasexplorerconfig.ini", zookeeper, false);
+                    BuddyFile.write("hbasexplorerconfig.ini", confJson, false);
                 } catch (IOException ex) {
                     Utils.getLog().error(null, ex);
                 }
@@ -365,13 +397,37 @@ public final class HBaseExplorerView extends FrameView {
                 JOptionPane.showMessageDialog(null, "please input the query string");
             }
         }
+    }
 
+    @Action
+    public void filterTableAction() {
+        if (this.getTree().getCurrConn() == null) {
+            JOptionPane.showMessageDialog(null, "please click any connection you want to filter first");
+            return;
+        }
+        JTextField msg = new JTextField(ConnectionTree.TABLE_REGX);
+        msg.setColumns(100);
+
+        JScrollPane scrollPane = new JScrollPane(msg);
+
+        int selected = JOptionPane.showConfirmDialog(null, scrollPane, "input the regx expression",
+            JOptionPane.OK_CANCEL_OPTION);
+        if (JOptionPane.YES_OPTION == selected) {
+            String regx = msg.getText();
+            if (StringUtils.isNotBlank(regx)) {
+                ConnectionTree.TABLE_REGX = regx;
+                this.getTree().refreshCurrConnTables(regx);
+            } else {
+                JOptionPane.showMessageDialog(null, "please input the regx expression");
+            }
+        }
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTree conTree;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
+    private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JPopupMenu.Separator jSeparator1;

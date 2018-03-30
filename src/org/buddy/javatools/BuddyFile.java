@@ -58,6 +58,7 @@ public class BuddyFile {
 
                 while ((s = br.readLine()) != null) {
                     content.append(s);
+                    content.append(System.lineSeparator());
                 }
             } catch (IOException e) {
                 Utils.getLog().error("read file[" + fileName + "] exception", e);

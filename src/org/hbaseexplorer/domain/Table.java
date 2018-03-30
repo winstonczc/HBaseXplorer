@@ -3,6 +3,8 @@ package org.hbaseexplorer.domain;
 import java.io.IOException;
 import java.io.Serializable;
 import java.nio.charset.Charset;
+
+import org.apache.commons.lang.StringUtils;
 import org.apache.hadoop.hbase.HTableDescriptor;
 import org.apache.hadoop.hbase.client.HTable;
 import org.hbaseexplorer.exception.ExplorerException;
@@ -32,12 +34,10 @@ public class Table implements Serializable {
             if (hTable == null) {
                 hTable = new HTable(connection.getHbaseConfiguration(), tableDescriptor.getName());
                 return hTable;
-            }
-            else {
+            } else {
                 return hTable;
             }
-        }
-        catch (IOException ioe) {
+        } catch (IOException ioe) {
             throw new ExplorerException("Error creating HTable for table " + getFullName());
         }
     }

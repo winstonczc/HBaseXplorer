@@ -590,4 +590,12 @@ public class EditTableData extends javax.swing.JPanel {
     private javax.swing.JTextField txtFieldRowKey;
     // End of variables declaration//GEN-END:variables
 
+    public Table getTable() {
+        return table;
+    }
+
+    public void setTable(Table table) {
+        this.table = table;
+    }
+
 }
