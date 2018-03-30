@@ -53,7 +53,7 @@ public class EditTableDataModel extends AbstractTableModel {
         this.skip = skip;
         this.rowKey = rowKey;
         this.filterModel = filterModel;
-        refreshData(skip);
+        refreshRowData(skip);
     }
 
     // load row from table
@@ -65,8 +65,7 @@ public class EditTableDataModel extends AbstractTableModel {
     }
 
     // refresh data from hbase
-    private void refreshData(int skip) {
-
+    private void refreshRowData(int skip) {
         if (rowData == null) {
             Scan scan;
             if (rowKey == null) {
@@ -140,7 +139,6 @@ public class EditTableDataModel extends AbstractTableModel {
                 if (familyAndQualifier.length > 0) {
                     for (String one : familyAndQualifier) {
                         String[] fq = one.split(":");
-
                         Utils.getLog().info("F AND Q :" + fq[0] + "  :  " + fq[1]);
 
                     }
@@ -149,8 +147,7 @@ public class EditTableDataModel extends AbstractTableModel {
 
                     /*
                     QualifierFilter f = new QualifierFilter (CompareFilter.CompareOp.NOT_EQUAL,new RegexStringComparator("f*"));
-                                scan.setFilter(f);
-                        
+                                scan.setFilter(f);                        
                     */
                 }
 
@@ -197,7 +194,7 @@ public class EditTableDataModel extends AbstractTableModel {
     }
 
     public int getRowCount() {
-        refreshData(skip);
+        refreshRowData(skip);
         return rowData.size();
     }
 
@@ -264,7 +261,7 @@ public class EditTableDataModel extends AbstractTableModel {
     }
 
     public Object getValueAt(int rowIndex, int columnIndex) {
-        refreshData(skip);
+        refreshRowData(skip);
         HBTriplet triplet = rowData.get(rowIndex);
         switch (columnIndex) {
             // case 0: return triplet.getRowKeyString();
