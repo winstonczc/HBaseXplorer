@@ -3,8 +3,11 @@
  */
 package org.hbaseexplorer;
 
+import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.FocusEvent;
+import java.awt.event.FocusListener;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Map;
@@ -30,6 +33,7 @@ import org.hbaseexplorer.common.HConfConstants;
 import org.hbaseexplorer.components.ConnectionTree;
 import org.hbaseexplorer.components.DataTabPane;
 import org.hbaseexplorer.domain.Query;
+import org.hbaseexplorer.domain.QueryResult;
 import org.jdesktop.application.Action;
 import org.jdesktop.application.FrameView;
 import org.jdesktop.application.ResourceMap;
@@ -40,8 +44,6 @@ import org.jdesktop.application.TaskMonitor;
  * The application's main frame.
  */
 public final class HBaseExplorerView extends FrameView {
-
-    private Configuration localconf;
 
     public HBaseExplorerView(SingleFrameApplication app) {
         super(app);
@@ -372,26 +374,54 @@ public final class HBaseExplorerView extends FrameView {
     // do run query
     @Action
     public void runQueryAction() throws IOException {
-
-        JTextArea msg = new JTextArea("");
+        if (this.getTree().getCurrConn() == null) {
+            JOptionPane.showMessageDialog(null, "please select a connection to run query first");
+            return;
+        }
+        StringBuilder tips = new StringBuilder("command support:" + System.lineSeparator());
+        for (String cmd : Query.SUPPORT_CMDS) {
+            tips.append(cmd).append(System.lineSeparator());
+        }
+        JTextArea msg = new JTextArea(tips.toString());
         msg.setRows(6);
         msg.setColumns(100);
+        msg.setForeground(Color.GRAY);
         msg.setLineWrap(true);
         msg.setWrapStyleWord(true);
+        msg.addFocusListener(new FocusListener() {
+            @Override
+            public void focusGained(FocusEvent e) {
+                if (msg.getText().startsWith("command support")) {
+                    msg.setText("");
+                    msg.setForeground(Color.BLACK);
+                }
+            }
+
+            @Override
+            public void focusLost(FocusEvent e) {
+                if (msg.getText().isEmpty()) {
+                    msg.setForeground(Color.GRAY);
+                    msg.setText(tips.toString());
+                }
+            }
+        });
 
         JScrollPane scrollPane = new JScrollPane(msg);
 
-        int selected = JOptionPane.showConfirmDialog(null, scrollPane);
+        int selected = JOptionPane.showConfirmDialog(null, scrollPane, "input the hbase command",
+            JOptionPane.OK_CANCEL_OPTION, JOptionPane.PLAIN_MESSAGE);
         if (JOptionPane.YES_OPTION == selected) {
             String runQuery = msg.getText();
-            if (runQuery.trim() != null && !runQuery.isEmpty() && runQuery.length() > 0) {
+            if (StringUtils.isNotBlank(runQuery)) {
                 // run the query
-
-                Query q = new Query(this.localconf, runQuery);
-                String result = q.runQuery();
-                JOptionPane.showMessageDialog(null, result);
-                // reload tree and data
-                getTree().setMainApp(this);
+                Query q = new Query(this.getTree().getCurrConn(), runQuery);
+                QueryResult result = q.runQuery();
+                JOptionPane.showMessageDialog(null, result.getMsg());
+                if (result.isSucc()) {
+                    // reload tree and data
+                    // getTree().setMainApp(this);
+                    getTree().refreshCurrConnTables(null);
+                }
 
             } else {
                 JOptionPane.showMessageDialog(null, "please input the query string");
@@ -411,14 +441,14 @@ public final class HBaseExplorerView extends FrameView {
         JScrollPane scrollPane = new JScrollPane(msg);
 
         int selected = JOptionPane.showConfirmDialog(null, scrollPane, "input the regx expression",
-            JOptionPane.OK_CANCEL_OPTION);
+            JOptionPane.OK_CANCEL_OPTION, JOptionPane.PLAIN_MESSAGE);
         if (JOptionPane.YES_OPTION == selected) {
             String regx = msg.getText();
             if (StringUtils.isNotBlank(regx)) {
                 ConnectionTree.TABLE_REGX = regx;
                 this.getTree().refreshCurrConnTables(regx);
             } else {
-                JOptionPane.showMessageDialog(null, "please input the regx expression");
+                this.getTree().refreshCurrConnTables(null);
             }
         }
     }
