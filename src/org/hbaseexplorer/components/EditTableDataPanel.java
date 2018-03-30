@@ -97,7 +97,7 @@ public class EditTableDataPanel extends javax.swing.JPanel {
      */
     private void loadRowkeys(int num) {
         EditTableDataModel model = new EditTableDataModel(this.hTableWapper, num);
-        jListRow.setModel(model.getRowData(num));
+        jListRow.setModel(model.getRowKeys(num));
         this.total = model.getRowsTotal();
         // jLabel1.setText(String.valueOf(model.getRowsTotal()));
 
@@ -127,9 +127,7 @@ public class EditTableDataPanel extends javax.swing.JPanel {
     // get row from list
     // when click or set a row find the column family and columns.
     private void showRowData(int skip) {
-
-        EditTableDataModel model = new EditTableDataModel(hTableWapper, skip, rowKey, filterModel);
-
+        EditTableDataModel model = new EditTableDataModel(hTableWapper, skip, this.rowKey, filterModel);
         autoResizeColWidth(this.jTable, model);
 
         Log log = Utils.getLog();
@@ -143,7 +141,7 @@ public class EditTableDataPanel extends javax.swing.JPanel {
         }
 
         log.info("end time:" + (System.currentTimeMillis() - start));
-        rowKey = model.getRowKey();
+        this.rowKey = model.getRowKey();
         // set the first rowkey
         txtFieldRowKey.setText(rowKey);
 
@@ -152,6 +150,8 @@ public class EditTableDataPanel extends javax.swing.JPanel {
         if (skip == 0) {
             // if is get single row
         }
+
+        jListRow.setSelectedValue(this.rowKey, true);
     }
 
     public EditTableDataModel getTableModel() {
@@ -179,13 +179,10 @@ public class EditTableDataPanel extends javax.swing.JPanel {
 
             // Get width of column header
             TableCellRenderer renderer = col.getHeaderRenderer();
-
             if (renderer == null) {
                 renderer = table.getTableHeader().getDefaultRenderer();
             }
-
             Component comp = renderer.getTableCellRendererComponent(table, col.getHeaderValue(), false, false, 0, 0);
-
             width = comp.getPreferredSize().width;
 
             // Get maximum width of column data
@@ -195,10 +192,8 @@ public class EditTableDataPanel extends javax.swing.JPanel {
                     r, vColIndex);
                 width = Math.max(width, comp.getPreferredSize().width);
             }
-
             // Add margin
             width += 2 * margin;
-
             // Set the width
             col.setPreferredWidth(width);
         }
@@ -366,16 +361,6 @@ public class EditTableDataPanel extends javax.swing.JPanel {
         jScrollPane1.setName("jScrollPane1"); // NOI18N
 
         jTable.setFont(resourceMap.getFont("tableData.font")); // NOI18N
-        jTable.setModel(new javax.swing.table.DefaultTableModel(
-            new Object[][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
-            },
-            new String[] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
-            }));
         jTable.setName("tableData"); // NOI18N
         jScrollPane1.setViewportView(jTable);
 
@@ -559,10 +544,6 @@ public class EditTableDataPanel extends javax.swing.JPanel {
         // get row key then load data
         rowKey = txtFieldRowKey.getText();
         showRowData(0);
-    }
-
-    public void jListItemClickAction() {
-
     }
 
     @Action

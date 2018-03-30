@@ -31,7 +31,7 @@ import org.hbaseexplorer.exception.ExplorerException;
  *
  * @author zaharije
  */
-public class EditTableDataModel extends AbstractTableModel { 
+public class EditTableDataModel extends AbstractTableModel {
 
     /**
      * serialVersionUID
@@ -41,13 +41,14 @@ public class EditTableDataModel extends AbstractTableModel {
     private HTableWapper table;
     // private ArrayList<HBTriplet> data;
     private Integer skip;
+    // 是否修改过数据
     private boolean dirty = false;
     private FilterModel filterModel;
     private RowData rowData;
 
     private int loadCount = 0;
 
-    // load data 
+    // load data
     public EditTableDataModel(HTableWapper table, Integer skip, String rowKey, FilterModel filterModel) {
         this.table = table;
         this.skip = skip;
@@ -201,7 +202,7 @@ public class EditTableDataModel extends AbstractTableModel {
     // add by xinqiyang
     // return the rowData of the table
     // it will wast time here , the num max set 1000
-    public DefaultListModel<String> getRowData(int num) {
+    public DefaultListModel<String> getRowKeys(int num) {
         DefaultListModel<String> rklist = new DefaultListModel<String>();
         try {
             // load first,scan class have a limit setting????
@@ -264,7 +265,6 @@ public class EditTableDataModel extends AbstractTableModel {
         refreshRowData(skip);
         HBTriplet triplet = rowData.get(rowIndex);
         switch (columnIndex) {
-            // case 0: return triplet.getRowKeyString();
             case 0:
                 try {
                     return triplet.getFamilyString();
@@ -279,7 +279,6 @@ public class EditTableDataModel extends AbstractTableModel {
                 }
             case 2:
                 try {
-                    // code change
                     return triplet.getValueString();
                 } catch (UnsupportedEncodingException ex) {
                     Logger.getLogger(EditTableDataModel.class.getName()).log(Level.SEVERE, null, ex);

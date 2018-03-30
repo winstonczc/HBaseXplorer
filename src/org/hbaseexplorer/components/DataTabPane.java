@@ -31,7 +31,6 @@ public class DataTabPane extends JTabbedPane {
         this.addMouseListener(
             new MouseAdapter() {
                 public void mouseReleased(MouseEvent e) {
-                    Utils.getLog().info("----------DataTabPane mouseReleased");
                     if (e.getClickCount() == 2) {
                         DataTabPane tabPane = (DataTabPane)e.getComponent();
                         int idx = tabPane.indexAtLocation(e.getX(), e.getY());
